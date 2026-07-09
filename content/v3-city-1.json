@@ -1,0 +1,100 @@
+[
+ {
+  "city": "Erie, PA",
+  "hero_topic": "hero_winter",
+  "hook": "Snow off the lake doesn't ask permission. It buries vent pipes, loads hundreds of extra running hours onto every furnace in the county, and drops power lines in the same storm that makes you need them most.",
+  "intro": [
+   "Erie winters are measured differently than the rest of Pennsylvania's. Between the lake-effect bands that set up off Lake Erie and a heating season that can stretch from early October into late April, homes here rack up more furnace hours per year than homes in Pittsburgh or Philadelphia by a wide margin. Erie routinely ranks among the snowiest cities of its size in the country, and the machinery in your basement pays for every inch of it.",
+   "Three problems dominate the service calls we see between Presque Isle and the ridge south of I-90, and none of them show up in a generic furnace brochure: equipment that wears out years ahead of the calendar because of raw runtime, high-efficiency vent terminations that ice over or drift under during multi-day snow events, and houses with no workable plan for heat when the power goes out mid-storm. Each one has a concrete engineering answer, and each answer is cheaper before the first band sets up in November."
+  ],
+  "sections": [
+   {
+    "title": "Your furnace ages in running hours, not birthdays",
+    "layout": "text",
+    "paras": [
+     "Manufacturers rate furnace components against duty cycles: how many times the hot surface ignitor glows, how many hours the inducer and blower bearings spin, how many thousand heat-and-cool cycles the heat exchanger metal flexes through. A furnace in a milder Pennsylvania climate might log 1,200 to 1,500 burner hours in a winter. An Erie furnace fighting a long season and lake wind can push well past 2,000. Over a decade, that gap compounds into the equivalent of three or four extra winters of wear.",
+     "This is why the standard advice — 'furnaces last fifteen to twenty years' — misleads Erie homeowners in both directions. A twelve-year-old furnace here can be mechanically older than a sixteen-year-old unit in Lancaster, with an ignitor on its third replacement and an inducer bearing starting to sing. Meanwhile a well-maintained unit that was correctly sized, so it runs long steady cycles instead of short frantic ones, can beat the average because steady runtime is far gentler than constant restarting.",
+     "The practical takeaway: judge your furnace by its service record and its measured condition, not its install date. Combustion analysis, ignitor resistance, inducer amp draw, and a camera look at the heat exchanger tell you where the unit actually sits on its wear curve — and whether the smart money this year goes to parts, a deep service, or a replacement planned on your schedule instead of the weather's."
+    ]
+   },
+   {
+    "title": "Intake icing: how a healthy furnace locks itself out mid-blizzard",
+    "layout": "imgcol",
+    "image_topic": "furnace",
+    "img_side": "right",
+    "paras": [
+     "Most furnaces installed in the last two decades are high-efficiency condensing units vented through PVC pipes out a sidewall — one pipe drawing combustion air in, one pushing exhaust out. That design works beautifully until lake-effect snow enters the picture. A drift against the west or north wall can bury both terminations in a single afternoon. More subtly, on very cold days the moist exhaust plume can curl back and freeze onto the intake screen as rime ice, choking airflow a little more with each cycle until the pressure switch refuses to let the burner light.",
+     "The furnace isn't broken when this happens — it's protecting you, because a blocked vent is how combustion gases end up indoors. But the symptom is identical to a failure: no heat, an error code blinking in the basement, and a storm outside. Clearing the ice restores operation, and too many Erie households have simply accepted that ritual as normal.",
+     "It's fixable permanently. Terminations can be raised well above the historical drift line for that wall, intake and exhaust can be separated far enough that the plume can't feed the intake, fittings can be oriented so snow can't sit on the openings, and in stubborn cases the venting can be rerouted to a wall the prevailing wind doesn't load. While we're at it, the condensate line deserves the same scrutiny — a condensing furnace produces gallons of water on a hard-running day, and a drain that passes through an unheated space or exits above grade will freeze, back up, and trip the unit just as surely as an iced intake."
+    ]
+   },
+   {
+    "title": "Outage readiness: heat when the grid gives up",
+    "layout": "imgcol",
+    "image_topic": "woodstove",
+    "img_side": "left",
+    "paras": [
+     "A gas furnace without electricity is a metal box. The blower, inducer, ignition, and controls all need 120 volts, so the same storm that buries your vents can silence a perfectly good heating system. In a tight modern house an outage means slow cooling over a day or two; in an older Erie double or a drafty farmhouse in the townships, interior temperatures can reach pipe-freezing territory overnight.",
+     "The good news is that a furnace is a modest electrical load — typically under 1,000 watts running — so even a small portable generator can carry it, along with the refrigerator and some lights. What makes that safe and practical is preparation: the furnace wired through a proper transfer switch or interlock so generator power can't backfeed the utility lines, or converted to a cord-and-plug connection at a dedicated receptacle. Backfeeding through a dryer outlet is the improvisation that injures line workers, and it's exactly what pre-wiring eliminates.",
+     "Non-electric backup deserves a place in the plan too. A wood stove or a direct-vent gas fireplace that operates without power can hold the core of a house above freezing indefinitely, which turns a three-day outage from an emergency into an inconvenience. If you already own one, have its clearances and venting checked before you depend on it; if you're considering one, placement on the main floor near plumbing walls protects the most vulnerable pipes first."
+    ]
+   },
+   {
+    "title": "The November walkthrough: what to verify before the first band",
+    "layout": "textlist",
+    "paras": [
+     "Every item below is checkable in a single visit, and each one maps to a specific mid-winter failure we'd both rather prevent than diagnose at gale force:"
+    ],
+    "list": [
+     "Vent termination height against the worst drift that wall has seen, with intake and exhaust spacing checked for plume recirculation",
+     "Condensate routing: slope, trap condition, pump operation, and no runs through unheated spaces",
+     "Ignitor resistance and flame-sensor condition, because high cycle counts consume both faster here",
+     "Inducer and blower amp draw compared to nameplate — bearings announce themselves electrically before they fail audibly",
+     "Filter fit and a winter's supply on the shelf; long runtime loads filters in weeks, not months",
+     "Generator connection tested under load, not just purchased and shelved",
+     "Carbon monoxide alarms on every sleeping floor with fresh batteries — blocked vents and backup heat both raise the stakes"
+    ]
+   },
+   {
+    "title": "Sizing for wind: why lake-facing walls change the math",
+    "layout": "text",
+    "paras": [
+     "Heat-loss calculations assume a design temperature and a certain amount of air leakage. Sustained wind off the lake rewrites the leakage half of that equation: a twenty-mile-per-hour northwest wind can double the infiltration through an older home's west wall, which is why some Erie houses feel fine on a calm ten-degree night and struggle on a windy twenty-degree one. If your comfort complaints track the wind more than the thermometer, the answer is usually air-sealing and targeted insulation on the windward side, not a bigger furnace.",
+     "This matters most at replacement time. Sizing a new furnace to the drafty-house worst case locks in short-cycling for the equipment's whole life once the envelope improves even slightly. The better sequence is to measure the leakage, fix the worst of it, and size the new equipment to the house you'll actually have — smaller, longer-running, and quieter, which as the first section explained is also the wear pattern that lasts."
+    ]
+   }
+  ],
+  "local": {
+   "title": "From the bayfront to the snow belt: location changes the problem",
+   "paras": [
+    "Erie County's winter is not one climate. The snow belt east of the city toward Harborcreek and North East catches the heaviest lake-effect totals, so vent burial and roof snow-load on attic ductwork lead the list there. The bayfront and west-side blocks near Presque Isle take the wind directly, which makes infiltration and windward-wall comfort the dominant complaint in the older housing stock. Millcreek's postwar ranches mostly have their equipment in shallow crawlspaces or small basements where condensate freezing and duct losses concentrate. Inland toward Edinboro and the southern townships, longer power restoration times push outage planning to the top. The same three themes run through all of it — runtime, icing, outages — but the right first dollar depends on which band of the county you heat in."
+   ]
+  },
+  "faq_heading": "What Erie homeowners ask us about winter",
+  "faq": [
+   {
+    "q": "How high should my furnace vents be above the snow?",
+    "a": "Manufacturers typically require terminations at least twelve inches above the anticipated snow level, but 'anticipated' in Erie means the drift line for that specific wall, not the regional average. If you've ever dug your vents out, they're too low for your house regardless of what the manual says, and extending them is a small, permanent fix."
+   },
+   {
+    "q": "Will a portable generator really run my furnace?",
+    "a": "Yes — most gas furnaces draw well under 1,000 watts running, within reach of even compact inverter generators. The requirement is a safe connection: a transfer switch, interlock kit, or cord-and-plug conversion installed ahead of time. Without one, there's no legitimate way to connect it during a storm."
+   },
+   {
+    "q": "My furnace is only twelve years old. Why plan for major parts already?",
+    "a": "Because Erie furnaces accumulate running hours faster than almost anywhere in the state, and components wear by hours and cycles rather than years. A condition check tells you whether yours has aged gracefully or is carrying big-lake mileage — and either answer lets you plan instead of react."
+   }
+  ],
+  "closing": {
+   "title": "Get winter-proofed while the lake is still warm",
+   "para": "A winter readiness visit works through everything on this page at your house: the vent terminations and drift exposure, condensate routing, component wear readings, generator connection, and a windward-wall leakage check. You end up with a written punch list ordered by what fails first in a storm, so the fixes happen in October daylight instead of January dark.",
+   "cta": "Book the Winter Readiness Visit"
+  },
+  "meta_description": "Lake-effect winters wear Erie furnaces fast: runtime aging, iced intake vents, and outage planning — what to fix before the first band hits.",
+  "nearby": [
+   "Meadville, PA",
+   "Edinboro, PA",
+   "North East, PA"
+  ]
+ }
+]

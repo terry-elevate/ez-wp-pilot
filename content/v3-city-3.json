@@ -1,0 +1,99 @@
+[
+ {
+  "city": "Altoona, PA",
+  "hero_topic": "hero_winter",
+  "hook": "A furnace can pass every visual inspection and still be burning wrong, and the only place that truth shows up is in the flue gases. Measure them in October, or meet them in January.",
+  "intro": [
+   "Altoona heats longer and harder than most of Pennsylvania. The city sits roughly twelve hundred feet up, wedged between Brush Mountain and the Allegheny Front, and the valley holds its cold — furnaces here routinely fire from early October into April. A machine asked to run six months out of twelve deserves more than a vacuuming and a thumbs-up before the season opens.",
+   "Yet most of what gets sold as a tune-up is exactly that: pull the doors, brush the burners, eyeball the flame, gone in twenty minutes. Combustion problems do not announce themselves to eyeballs. They announce themselves as numbers — oxygen percentage, carbon monoxide concentration, stack temperature, draft pressure — and a technician who never puts an analyzer probe into your flue has not actually tested whether your furnace is burning safely or wastefully. What follows is the measured version of the visit, reading by reading, and what those readings catch."
+  ],
+  "sections": [
+   {
+    "title": "Why a clean blue flame is not a verdict",
+    "layout": "text",
+    "paras": [
+     "Natural gas burns blue, and a tidy blue flame looks reassuring. But flame color is a crude signal. Proper combustion is a ratio problem — a specific gas input meeting a specific volume of air — and either side of that ratio can drift without changing how the fire looks. Dust chokes the burner intakes a little more each year, gas pressure creeps as a regulator ages, a flue restriction slows the exhaust path. The flame stays blue long after the chemistry behind it has gone off.",
+     "The byproduct that matters most is carbon monoxide, produced whenever the fire runs short of oxygen. It is invisible and odorless, and at the concentrations where a technician should already be intervening, it changes nothing you can see or smell at the burner. The only honest way to know how much CO your furnace makes is to sample the flue and read the number.",
+     "The gentler failure mode is waste. A furnace out of tune still heats the house — it just sends a growing share of your gas bill up the chimney as excess heat. A four or five point efficiency loss has no symptom a homeowner would ever notice. Over an Altoona-length winter, it has a cost you definitely would."
+    ]
+   },
+   {
+    "title": "Four flue readings and what each one says",
+    "layout": "imgcol",
+    "image_topic": "furnace",
+    "img_side": "right",
+    "paras": [
+     "Oxygen comes first. A healthy gas furnace shows roughly six to nine percent O2 in the flue. Much lower and the fire is running rich, edging toward CO production; much higher and excess air is sweeping heat up the vent before the exchanger can capture it. One number, and it tells you which direction the burn has drifted.",
+     "Carbon monoxide is read in parts per million, corrected to an air-free basis so the excess air can't dilute the truth. A well-tuned furnace runs comfortably under 100 ppm. Just as important as the level is the trend: a good visit watches CO over several minutes of steady firing and again as the blower starts. A stable low reading is health. A curve that climbs when the blower energizes is a red flag with a specific meaning, covered below.",
+     "Stack temperature and draft round out the set. An 80 percent furnace should send exhaust up at roughly 350 to 450 degrees; a condensing furnace runs its vent barely warm, near 110. Draft — measured in hundredths of an inch of water column — confirms the chimney or vent is actually pulling. Each reading gets logged, because next year's visit is only as useful as the baseline it can compare against."
+    ]
+   },
+   {
+    "title": "What the numbers catch before winter does",
+    "layout": "textlist",
+    "paras": [
+     "Every reading above is a symptom detector. These are the actual failures a combustion analysis flags — most of them silent, most of them invisible from the burner compartment:"
+    ],
+    "list": [
+     "A cracked or perforated heat exchanger: O2 and CO readings that shift the moment the blower starts are the classic signature, because house air pushed into the combustion side disturbs the burn",
+     "Underfiring from low gas pressure or a tired regulator: confirmed by clocking the gas meter against the nameplate input, a check the flame's appearance never reveals",
+     "A partially blocked flue or deteriorating chimney liner: weak draft numbers surface the problem while it is still a cleaning job rather than a carbon monoxide event",
+     "A fouling secondary heat exchanger on condensing furnaces: stack temperature creeping up year over year is the early warning, long before the furnace short-cycles",
+     "Excess-air drift after a blower or control board was replaced: efficiency quietly down several points, visible only as elevated O2",
+     "Delayed ignition across the burner crossovers: it shows as a CO spike at light-off months before it becomes the thud that startles everyone upstairs"
+    ]
+   },
+   {
+    "title": "The other half of the visit: electrical, airflow, drainage",
+    "layout": "imgcol",
+    "image_topic": "technician",
+    "img_side": "left",
+    "paras": [
+     "Combustion is half the appointment. The parts that actually strand people on cold mornings get measured too — not just cleaned. A flame sensor should be read in microamps after cleaning: most boards want to see a signal in the two-to-six range, and a sensor limping along under one microamp is a lockout waiting for the coldest night to happen. A hot surface ignitor gets an ohm reading, because resistance drifting outside spec predicts a no-heat call weeks before the part actually quits.",
+     "Temperature rise — supply air minus return air — gets checked against the nameplate range, commonly somewhere between 35 and 65 degrees. A rise running high means airflow is starved: a loaded filter, a matted blower wheel, supply registers closed off in unused rooms. Starved airflow makes the heat exchanger run hotter than its design, and chronic overheating is precisely how exchangers crack. This one measurement connects the maintenance visit to the furnace's lifespan.",
+     "On 90-plus furnaces, the condensate side gets equal attention: trap pulled and flushed, drain flow verified, pressure-switch tubing checked for water. In our experience more midwinter shutdowns on condensing equipment trace back to a plugged condensate trap than to anything combustion-related — and it is a five-minute fix in October that becomes a cold Saturday in February."
+    ]
+   },
+   {
+    "title": "The Altoona particulars: rail-era chimneys and the orphaned water heater",
+    "layout": "text",
+    "paras": [
+     "A large share of Altoona's housing went up for Pennsylvania Railroad families between the 1880s and the 1920s — the two-story frame houses that fill Juniata, Fairview, and Llyswen — and those homes carry masonry chimneys built for coal. Here is the pattern we watch for: the furnace gets upgraded to a sidewall-vented condensing model, and the gas water heater is left behind as the only appliance on a chimney sized for two. Venting pros call it an orphaned water heater. The oversized flue lets exhaust cool and condense inside the masonry, the liner deteriorates, draft weakens, and the risk of spilling combustion gases into the basement grows each season. A thorough visit checks the water heater's draft and the chimney's condition, not just the furnace's.",
+     "The other local fact is simple arithmetic. Blair County's heating season runs weeks longer on both ends than southeastern Pennsylvania's, so a furnace here logs far more firing hours per calendar year — and wear parts age on hours, not birthdays. That is also why the schedule fills fast once the first Allegheny Front cold snap arrives. September and early October appointments get the calm version of this visit; November gets the triage version."
+    ]
+   }
+  ],
+  "local": {
+   "title": "Where this matters most across the city",
+   "paras": [
+    "The highest-value candidates for a measured tune-up are consistent: the older frame housing near the railroad core with original masonry chimneys, any home where the furnace was replaced but the water heater kept the old flue, and any 80 percent furnace past its tenth season. Out in Logan Township and the newer plan developments toward the Horseshoe Curve side of the valley, the housing is younger but the same rule applies — a condensing furnace's condensate and venting need annual eyes just as much as an old chimney does. If nobody has ever handed you a printed set of combustion readings for your house, you have not had this visit yet."
+   ]
+  },
+  "faq_heading": "Tune-up questions Altoona homeowners ask",
+  "faq": [
+   {
+    "q": "When should I book, and does timing really matter?",
+    "a": "September through mid-October is the window. The furnace can be test-fired and corrected before you depend on it nightly, parts that measure marginal can be ordered without urgency, and you are ahead of the first-cold-snap rush that compresses everyone's schedule at once."
+   },
+   {
+    "q": "My furnace is only a few years old. Is this necessary?",
+    "a": "Yes, for two reasons. Condensing furnaces have a drainage system that clogs regardless of age, and most manufacturer warranties expect documented annual maintenance. A young furnace also deserves a baseline: readings recorded now make drift obvious in year six instead of mysterious in year twelve."
+   },
+   {
+    "q": "I have CO alarms. Doesn't that cover the safety side?",
+    "a": "Alarms are the last line, not the first. Consumer CO alarms are designed to tolerate low concentrations for hours before sounding, because they exist to prevent acute poisoning — not to flag a furnace drifting out of tune. An analyzer reads the problem at its source, at levels an alarm will never mention. Keep the alarms; add the measurement."
+   }
+  ],
+  "closing": {
+   "title": "Put this winter's numbers on the record",
+   "para": "A combustion tune-up visit takes about an hour and ends with your furnace's readings in writing — oxygen, CO, stack temperature, draft, flame signal, temperature rise — plus a baseline to compare against next fall. A furnace that measures healthy is worth paying to know about too: it is the difference between assuming and knowing when the valley turns cold. Book while the calendar still has October in it.",
+   "cta": "Reserve the Combustion Test"
+  },
+  "meta_description": "What a measured pre-winter furnace tune-up in Altoona, PA actually checks — O2, CO, stack temp, draft, flame signal — and the failures those numbers catch.",
+  "nearby": [
+   "Hollidaysburg, PA",
+   "State College, PA",
+   "Johnstown, PA"
+  ]
+ }
+]

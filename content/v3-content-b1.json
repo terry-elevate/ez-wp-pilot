@@ -1,0 +1,428 @@
+[
+ {
+  "city": "Lancaster, PA",
+  "hero_topic": "rowhouse",
+  "hook": "Brick that has held heat since McKinley was president deserves better than a space heater on the third floor and a window unit sweating onto the sill.",
+  "intro": [
+   "Lancaster's housing stock is a masonry time capsule. The rowhouses between Penn Square and the west end, the twins off Chestnut, the farmhouses at the county edges — most of them predate not just central air but the very idea that a house should hold one temperature. Thick brick walls buffer the weather beautifully for two seasons and fight you for the other two.",
+   "Working on these houses is a different trade than working on a 2005 subdivision colonial. The systems are older and stranger: steam risers that were converted to hot water in the sixties, gravity furnaces replaced twice over, radiators painted into place decades ago. What follows is how we approach them — and what a Lancaster owner should expect from anyone who claims to."
+  ],
+  "sections": [
+   {
+    "title": "Radiators and boilers: maintain the system you already own",
+    "layout": "imgcol",
+    "image_topic": "radiator",
+    "img_side": "left",
+    "paras": [
+     "A cast-iron radiator system in decent repair will outlive every forced-air furnace on the market, and it delivers a quality of heat — steady, silent, dust-free — that duct systems struggle to imitate. The mistake owners make is treating radiator quirks as death sentences. Cold sections, banging pipes, and a boiler that short-cycles are almost always maintenance findings, not replacement verdicts.",
+     "Our service sequence on a hydronic system runs: pressure and expansion-tank check, circulator inspection, venting and bleed at every radiator starting from the top floor, and a combustion analysis on the boiler itself. The whole visit produces numbers, and the numbers produce a recommendation. Sometimes that recommendation is a new boiler — modern condensing units genuinely earn their efficiency ratings when they're matched to radiator water temperatures correctly. More often it's a few hundred dollars of valves, vents, and balancing."
+    ]
+   },
+   {
+    "title": "Adding cooling without wrecking plaster",
+    "layout": "imgcol",
+    "image_topic": "minisplit",
+    "img_side": "right",
+    "paras": [
+     "The reason half of Lancaster's old blocks still cool with window units is that nobody wants a contractor cutting duct chases through horsehair plaster and chestnut framing. Fair enough — we don't want that either.",
+     "Two approaches avoid it. Ductless heads mounted high on exterior walls need only a three-inch penetration for the line set, which routes down the rear facade or through a closet chase; a three-bedroom rowhouse typically needs two to three heads. High-velocity systems take the other path: flexible two-inch supply tubing snaked through existing wall cavities and closet corners, feeding unobtrusive round outlets. High-velocity costs more and does more — real central air with genuine dehumidification, invisible from every room. Which one fits depends on your floor plan, your electrical panel, and how you feel about compressors in the side yard. That's a measurement conversation, not a brochure conversation."
+    ]
+   },
+   {
+    "title": "The basement tells the truth",
+    "layout": "text",
+    "paras": [
+     "Every assessment we run in Lancaster starts below grade, because the basement is where the house's mechanical history is written. Limestone foundations breathe moisture into the air all summer — which is why the third floor feels muggy even when the AC runs — and why a dehumidification plan belongs in any cooling conversation here. Knob-and-tube remnants tell us what the electrical panel can actually support before anyone promises you a heat pump. And the duct trunk, where one exists, usually reveals two generations of patches that explain exactly why the back bedroom never gets warm.",
+     "Ninety minutes down there with a manometer and a flashlight prevents every expensive surprise that phone quotes produce. We photograph what we find and walk you through it — it's your house; you should know what it's doing."
+    ]
+   },
+   {
+    "title": "What Lancaster owners should demand from any HVAC quote",
+    "layout": "textlist",
+    "paras": [
+     "Whether you call us or anyone else, an estimate for work on a pre-war Lancaster house should include all of the following. If it doesn't, you're buying a template with your address typed on it:"
+    ],
+    "list": [
+     "A room-by-room heat-loss calculation that accounts for masonry walls — brick changes the math substantially versus frame construction",
+     "Static pressure readings if any ductwork is involved, taken at the equipment, written on the quote",
+     "An explicit dehumidification strategy for summer, not just a tonnage number",
+     "Line-set and penetration routing described in words and photos before anything is drilled",
+     "The electrical panel's measured spare capacity, not an assumption about it"
+    ]
+   }
+  ],
+  "local": {
+   "title": "A note on the county's farmhouses",
+   "paras": [
+    "Outside the city, the calculus shifts: stone farmhouses with two-foot walls, additions from three different centuries, and oil tanks nearing retirement. The same measurement-first approach applies, but the answers trend toward dual-fuel — a cold-climate heat pump carrying spring and fall, with the existing furnace or a propane unit taking the deep-winter handoff. Every farmhouse is its own project; we quote them only after walking them."
+   ]
+  },
+  "faq_heading": "Asked often in Lancaster",
+  "faq": [
+   {
+    "q": "Can you get parts for a forty-year-old boiler?",
+    "a": "Usually, yes — circulators, aquastats, and gas valves interchange more than people expect. The honest constraint isn't parts; it's heat-exchanger condition, which we assess by inspection rather than by age."
+   },
+   {
+    "q": "Will ductless heads look wrong in a historic interior?",
+    "a": "High-wall heads are visible, no way around it. Where that's a dealbreaker we quote high-velocity instead, which hides completely, or floor-mounted units that read more like radiator cabinets. There's a right answer for most rooms."
+   },
+   {
+    "q": "Why is the third floor so much hotter every summer?",
+    "a": "Heat gain collects upward, the roof radiates down, and masonry releases the day's heat all evening. A head or dedicated duct run serving the top floor directly — plus attic air-sealing — addresses the cause; a bigger central unit mostly doesn't."
+   }
+  ],
+  "closing": {
+   "title": "Start with ninety minutes and a flashlight",
+   "para": "The measurement visit covers all three floors and the basement, produces written readings, and ends with options priced against your house's actual numbers. If the right answer is three radiator vents and an afternoon of balancing, that's the quote you'll get.",
+   "cta": "Book the Lancaster Assessment"
+  },
+  "meta_description": "Radiators, plaster-safe cooling, and moisture control for Lancaster's pre-war rowhouses and county farmhouses — maintenance-first, measured before quoted.",
+  "nearby": [
+   "Lititz, PA",
+   "Ephrata, PA",
+   "Columbia, PA"
+  ]
+ },
+ {
+  "city": "York, PA",
+  "hero_topic": "hero_street",
+  "hook": "The furnace never dies at two in the afternoon in April. It dies the first hard night of January, and what happens next depends on decisions you can make right now.",
+  "intro": [
+   "York's heating emergencies follow a schedule everyone in this trade knows: the first single-digit night of the winter, the phones light up from Continental Square to the townships, and every one of those calls traces back to a warning sign that was visible in October. This page is about both halves of that story — what a real emergency response should look like, and the unglamorous preparation that keeps you off the emergency list entirely.",
+   "We'll be specific about the machinery, because vague reassurance is what got half these furnaces into trouble in the first place."
+  ],
+  "sections": [
+   {
+    "title": "What actually fails, and what it costs to ignore",
+    "layout": "imgcol",
+    "image_topic": "furnace",
+    "img_side": "right",
+    "paras": [
+     "Three components account for the large majority of no-heat calls on forced-air furnaces: the hot-surface ignitor, the flame sensor, and the inducer motor. All three telegraph their decline — ignitors crack and cause intermittent startups, flame sensors oxidize and produce short-cycling, inducers whine before they seize. Caught at a fall tune-up, each is a modest, planned repair. Discovered at midnight in January, the same part costs more in urgency and costs you a cold night regardless.",
+     "The heat exchanger is the component that changes the conversation. A cracked exchanger isn't a repair decision — it's a carbon-monoxide safety issue and, on most equipment past its mid-teens, the economic end of the unit. This is why combustion analysis belongs in every tune-up: it catches exchanger trouble by measurement before a crack becomes a hazard."
+    ]
+   },
+   {
+    "title": "An honest anatomy of the emergency call",
+    "layout": "text",
+    "paras": [
+     "When you call any contractor with no heat, three things determine how your night goes: whether a human answers, whether the technician arrives with the right parts, and whether the diagnosis is done with instruments or guesswork. Ask about all three before you're cold — put the answers in your phone contacts now.",
+     "On the parts question, the practical detail that matters is van stock. The failure profile of York County's installed base is knowable — a shop that services this area daily should be carrying ignitors, sensors, capacitors, and control boards matched to the equipment brands that dominate local basements. One-trip resolution isn't a slogan; it's an inventory decision.",
+     "And a candid note on triage: a meaningful share of no-heat calls resolve over the phone — a tripped float switch, a clogged filter starving the burner into overheat lockout, a thermostat with dead batteries. A dispatcher who walks you through those checks before rolling a van respects both your night and your wallet."
+    ]
+   },
+   {
+    "title": "The October list that empties the January calendar",
+    "layout": "textlist",
+    "paras": [
+     "Every item below is something we find broken in January that was checkable in October. Do the homeowner half yourself; book the instrument half once a year:"
+    ],
+    "list": [
+     "Replace the filter and date it — a starved furnace overheats and locks out on the coldest nights, exactly when it runs longest",
+     "Run the heat for fifteen minutes on the first cool October day and investigate any new smell or sound then, not in December",
+     "Vacuum the return grilles and confirm no furniture migrated over supply vents during the year",
+     "Test the CO detector near the mechanicals and replace it if it's past seven years",
+     "Book the professional tune-up: combustion analysis, exchanger inspection, static pressure, gas pressure, and safety-switch verification — measured and written down"
+    ]
+   },
+   {
+    "title": "When repair stops making sense",
+    "layout": "imgcol",
+    "image_topic": "technician",
+    "img_side": "left",
+    "paras": [
+     "The arithmetic we quote is simple: multiply the repair estimate by the furnace's age in years, and when the product clears five thousand, replacement deserves a serious look. It's a screening rule, not scripture — a nine-hundred-dollar inducer on a seven-year-old unit is a repair; the same part on a nineteen-year-old unit with a rusting cabinet is a down payment on the next failure.",
+     "What we won't do is use a midnight emergency to sell you a system. Emergency visits end with heat restored and, where the unit's condition warrants it, a follow-up appointment to run the replacement numbers in daylight, unhurried, with the measurements in front of both of us."
+    ]
+   }
+  ],
+  "local": {
+   "title": "York County particulars",
+   "paras": [
+    "The county's housing spread — borough rowhomes, mid-century ranches, and newer township builds — means the emergency profile spreads too. Rowhomes fail on aging boilers and gravity-conversion quirks; the ranches on original-equipment furnaces now deep into overtime; the newer builds on builder-grade units that were sized by square footage tables instead of load calculations. The preparation is the same everywhere: one measured tune-up before the cold, and a shop's number in your phone that you chose before you needed it."
+   ]
+  },
+  "faq_heading": "York's no-heat questions",
+  "faq": [
+   {
+    "q": "Is it safe to run space heaters until someone arrives?",
+    "a": "A modern heater with tip-over shutoff, plugged directly into the wall, on the floor, three feet from anything soft — yes, for a night. Never through an extension cord or power strip, and never unattended with the door closed."
+   },
+   {
+    "q": "My furnace runs but blows lukewarm air — emergency or not?",
+    "a": "Call it in, but it's usually a same-day rather than middle-of-the-night issue: often a failing ignit sequence causing short burner runs, or a duct leak dumping your heat into the attic. If CO detectors are quiet and the house holds fifty-five degrees or better, you can safely wait for morning."
+   },
+   {
+    "q": "Do you honor manufacturer warranties on equipment someone else installed?",
+    "a": "Parts warranties follow the equipment, not the installer, and we process them routinely. Labor coverage varies by the original contract — bring your paperwork and we'll tell you exactly what's covered before work starts."
+   }
+  ],
+  "closing": {
+   "title": "Choose your emergency contractor in daylight",
+   "para": "The worst time to vet an HVAC company is at midnight with the house at fifty degrees. Book the fall tune-up, put the measured results in a drawer, and put the number in your phone — the January version of you will be grateful.",
+   "cta": "Book the Fall Tune-Up"
+  },
+  "meta_description": "What fails on York furnaces, what a real emergency response looks like, and the October checklist that keeps you off the January no-heat list.",
+  "nearby": [
+   "Hanover, PA",
+   "Lancaster, PA",
+   "Gettysburg, PA"
+  ]
+ },
+ {
+  "city": "Reading, PA",
+  "hero_topic": "hero_house",
+  "hook": "Your air conditioner's biggest expense isn't the repair bill. It's the fifteen summers of electricity it burns doing a job it was never sized to do.",
+  "intro": [
+   "Berks County summers park humid air against Mount Penn and hold it there, and Reading's cooling equipment grinds through that load for four months a year. The bills that result aren't fate. In house after house we open up, the same three engineering problems are quietly running the meter: equipment sized by guesswork, ducts leaking into spaces nobody conditions on purpose, and systems that cool the air without ever drying it.",
+   "Fixing those three, in the right order, routinely cuts summer consumption by a quarter to a third without replacing anything you'd notice from the living room. Here's how each one works."
+  ],
+  "sections": [
+   {
+    "title": "Oversizing: the expensive way to be uncomfortable",
+    "layout": "text",
+    "paras": [
+     "It sounds backwards, but a too-big air conditioner delivers worse comfort at higher cost. An oversized unit blasts the thermostat to its setpoint in minutes and shuts off — before it has run long enough to pull meaningful moisture out of the air. The result is a house that's cold and clammy at the same time, cycling dozens of times a day, wearing its compressor with every restart.",
+     "Correct sizing comes from a load calculation: window areas and orientations, insulation levels, infiltration, occupancy. On paper it's tedious; in practice it's an hour of measuring that determines the next fifteen years of bills. When we replace equipment in Reading, the new unit is frequently smaller than the one it replaces — and the house is drier, quieter, and cheaper to run."
+    ]
+   },
+   {
+    "title": "Duct leakage: paying to cool the attic",
+    "layout": "imgcol",
+    "image_topic": "ductwork",
+    "img_side": "left",
+    "paras": [
+     "Typical duct systems in this housing stock lose fifteen to twenty-five percent of their airflow to leaks — and the leaks are on both sides of the fan. Supply leaks dump air you paid to cool into attics and wall cavities. Return leaks are sneakier: they pull hot, dusty attic air into the system, which the equipment then has to cool on your dime.",
+     "Duct sealing is unglamorous work with measurable results: mastic on accessible joints, aerosolized sealant for the buried runs, and a before-and-after leakage test that puts a number on the improvement. Of everything on this page, it's usually the highest return per dollar — and it also explains mysteries like the bedroom that never cools, which is often a disconnected boot rather than an equipment problem."
+    ]
+   },
+   {
+    "title": "Humidity is half the job",
+    "layout": "imgcol",
+    "image_topic": "condenser",
+    "img_side": "right",
+    "paras": [
+     "A Reading July afternoon at 88 degrees carries dew points that make 76 degrees indoors feel oppressive if the air is wet. Comfort here is a two-number problem — temperature and humidity — and equipment that only manages the first number loses the summer.",
+     "Variable-speed systems win this fight by running long, slow cycles that wring water out of the air continuously. Where the existing equipment is single-stage and healthy, a dedicated whole-home dehumidifier tied into the return accomplishes the same thing for less than a replacement. Either way, the target is measurable: 45 to 50 percent relative humidity, which lets most households raise the thermostat two or three degrees without noticing — and every degree raised is roughly three percent off the cooling bill."
+    ]
+   },
+   {
+    "title": "The efficiency sequence, in order of payback",
+    "layout": "textlist",
+    "paras": [
+     "When the goal is a smaller bill, spend in this order. Each step makes the next one cheaper, and the last one — equipment — sometimes stops being necessary at all:"
+    ],
+    "list": [
+     "Seal the two worst duct leaks and insulate any supply run crossing unconditioned space",
+     "Set a real thermostat schedule — eight degrees of setback for eight unoccupied hours is worth nearly ten percent by itself",
+     "Shade or clear the outdoor condenser: direct afternoon sun and crowding shrubs both tax the compressor",
+     "Add return-side filtration sized for airflow, because a choked filter erases every other gain on this list",
+     "Only then price equipment — with a load calculation in hand, so the new unit is sized for the house rather than for the fear of callbacks"
+    ]
+   }
+  ],
+  "local": {
+   "title": "The Mount Penn effect",
+   "paras": [
+    "Houses on the mountain's flanks live in a different microclimate than the flats along the Schuylkill — more shade and breeze on the slopes, more trapped heat and river humidity below. It shows up in the load math and in where the dehumidification budget belongs. A quote that doesn't ask where in Reading you live hasn't done the arithmetic yet."
+   ]
+  },
+  "faq_heading": "Cooling-cost questions from Berks County",
+  "faq": [
+   {
+    "q": "Does closing vents in unused rooms lower the bill?",
+    "a": "No — it raises duct pressure and pushes more air out through the leaks, while making the blower work harder. Balancing dampers at the trunk, set once, do what closed registers can't."
+   },
+   {
+    "q": "How much does going from an old unit to a modern one actually save?",
+    "a": "Moving from a 10-SEER-era unit to current equipment typically cuts cooling consumption by a third, sometimes more with variable speed. We project it from your actual utility history rather than the sticker, so the estimate survives contact with reality."
+   },
+   {
+    "q": "Is a heat pump worth considering at replacement time?",
+    "a": "In this climate, strongly yes — the same equipment then replaces a slice of your winter heating cost too, and current rebates favor it. The house's electrical panel and backup-heat plan are the two things we verify first."
+   }
+  ],
+  "closing": {
+   "title": "Get the two numbers that decide everything",
+   "para": "A cooling assessment measures your duct leakage and your equipment's real delivered capacity — the two numbers no phone quote can know. From there, the options rank themselves, and the first ones on the list are usually the cheapest.",
+   "cta": "Measure My Cooling Costs"
+  },
+  "meta_description": "Cut Reading cooling bills a quarter or more: right-sizing, duct sealing, and humidity control explained with the numbers that decide everything.",
+  "nearby": [
+   "Pottstown, PA",
+   "Lebanon, PA",
+   "Allentown, PA"
+  ]
+ },
+ {
+  "city": "Harrisburg, PA",
+  "hero_topic": "hero_winter",
+  "hook": "Everyone in a river city talks about the temperature. The number that actually runs your comfort — and quietly wrecks basements — is the one on a hygrometer.",
+  "intro": [
+   "Harrisburg lives with the Susquehanna the way beach towns live with salt: it's in everything. The blocks between Riverfront Park and Allison Hill sit on damp ground under humid summer air, and the houses show it — musty basements, sticky Julys, cupped floorboards, windows that weep in January. None of that is a temperature problem. All of it is a moisture problem, and moisture problems have specific, measurable fixes.",
+   "This page is the humidity playbook we run in Harrisburg houses, from the cellar up."
+  ],
+  "sections": [
+   {
+    "title": "First, get the number",
+    "layout": "text",
+    "paras": [
+     "Every moisture conversation starts with a ten-dollar hygrometer, or with the calibrated one on our meter. The targets: 45 to 50 percent relative humidity in living space year-round, and below 55 in the basement in summer. Above those lines, dust mites multiply, mold finds every cold surface, and the air feels warmer than it is — pushing the AC to run colder than it should.",
+     "Below about 35 percent in winter, the opposite problems arrive: static, cracked trim, nosebleeds, and that peculiar chill of dry air. Harrisburg houses regularly manage to be too wet in July and too dry in January, which is why the answer is a system, not a gadget."
+    ]
+   },
+   {
+    "title": "Summer: drying is a design job",
+    "layout": "imgcol",
+    "image_topic": "basement",
+    "img_side": "left",
+    "paras": [
+     "Portable dehumidifiers in river-town basements are a subscription to emptying buckets. A whole-home dehumidifier plumbed into the return duct treats the entire envelope, drains itself to a standpipe or condensate pump, and holds a setpoint without supervision. Sizing is the make-or-break detail — basements are dried by surface area and infiltration, not square footage, and an undersized unit runs constantly while losing ground.",
+     "Upstairs, the air conditioner itself is the primary dehumidifier, and how it runs matters more than what it says on the box. Long, low-speed cycles remove far more water than short blasts — one of several reasons correct sizing and variable-speed equipment keep appearing on this page. When we tune a Harrisburg cooling system, latent performance — the drying half of the job — gets measured alongside temperature drop, every time."
+    ]
+   },
+   {
+    "title": "Winter: humidity in the right amount, in the right places",
+    "layout": "imgcol",
+    "image_topic": "thermostat",
+    "img_side": "right",
+    "paras": [
+     "Winter dryness invites the opposite intervention, and the same discipline. A furnace-mounted humidifier — evaporative, plumbed, controlled by an outdoor-temperature-compensating humidistat — adds moisture in proportion to what the weather allows. That compensation matters: hold 45 percent indoors on a ten-degree night and the excess condenses inside your window frames and wall cavities, trading comfort for rot.",
+     "The controller does the thinking: colder outside means a lower indoor target, automatically. Set-and-forget, serviced once a year when the water panel gets changed at the fall tune-up."
+    ]
+   },
+   {
+    "title": "The building-side moves that make equipment's job possible",
+    "layout": "textlist",
+    "paras": [
+     "Mechanical drying fights a losing battle against a house that imports water. These envelope fixes come first or alongside — most are one-weekend projects:"
+    ],
+    "list": [
+     "Extend downspouts ten feet from the foundation; most basement humidity walks in from the first six feet of soil outside the wall",
+     "Seal the rim joist with foam — it's the basement's biggest air leak and its moisture superhighway",
+     "Put cold-water pipes in foam sleeves so they stop raining into floor cavities all summer",
+     "Vent the dryer and every bathroom fan actually outdoors — attic terminations count as indoors",
+     "Run the AC fan on auto, not on: continuous fan re-evaporates the water the coil just removed and sends it back into the house"
+    ]
+   }
+  ],
+  "local": {
+   "title": "From Shipoke to the Hill: reading your block",
+   "paras": [
+    "Elevation and construction era predict the moisture profile here better than any brochure. The low blocks near the river fight groundwater and summer air with equal energy — those houses justify a drainage conversation before a dehumidifier. Uphill, the brick foursquares and twins mostly fight air infiltration and attic bypasses. The measurement visit sorts your house into the right column before any equipment gets named."
+   ]
+  },
+  "faq_heading": "Humidity questions we hear along the river",
+  "faq": [
+   {
+    "q": "The basement smells musty but looks dry — is that a problem?",
+    "a": "Smell is data. Mustiness means the average humidity lives above 60 percent even if you never see water, and mold is finding the cool surfaces. A hygrometer for a week will confirm it; a properly sized dehumidifier and rim-joist sealing usually end it."
+   },
+   {
+    "q": "Will a bigger AC dry the house better?",
+    "a": "The opposite — bigger units run shorter cycles and remove less water. If summers feel clammy with the AC running, the fixes are longer runtimes, a latent-capacity check, or dedicated dehumidification. More tonnage makes it worse."
+   },
+   {
+    "q": "Are crawlspace vents supposed to be open or closed?",
+    "a": "In this climate, summer venting imports humid air into the coolest part of the house — exactly backwards. Modern practice is sealing and conditioning the crawlspace, or at minimum a humidistat-controlled fan rather than passive vents."
+   }
+  ],
+  "closing": {
+   "title": "One visit, every moisture number your house produces",
+   "para": "The assessment logs humidity in the basement and on each floor, checks the AC's latent performance, and inspects the envelope items above — then prices fixes in payback order. River-city comfort is entirely achievable; it just starts with measurement instead of tonnage.",
+   "cta": "Get the Humidity Audit"
+  },
+  "meta_description": "The Harrisburg humidity playbook: hygrometer targets, whole-home dehumidification, winter humidification, and the envelope fixes that make them work.",
+  "nearby": [
+   "Mechanicsburg, PA",
+   "Carlisle, PA",
+   "Hershey, PA"
+  ]
+ },
+ {
+  "city": "Allentown, PA",
+  "hero_topic": "condenser",
+  "hook": "The heat pump question in the Lehigh Valley isn't whether the technology works in winter anymore. It's whether your house — its ducts, its panel, its backup plan — is ready to let it.",
+  "intro": [
+   "Electric rates and rebate programs keep pushing Allentown homeowners toward heat pumps, and the current generation of cold-climate equipment has genuinely closed the winter-performance gap that gave the technology its old reputation. What hasn't changed is physics at the house level: a heat pump moves more air at lower temperatures than the furnace it replaces, and the house around it has to cooperate.",
+   "This is the full pre-flight checklist we run before recommending the switch — the six items that separate the conversions people brag about from the ones that end up on neighborhood forums."
+  ],
+  "sections": [
+   {
+    "title": "The spec line that matters: capacity at 5°F",
+    "layout": "imgcol",
+    "image_topic": "minisplit",
+    "img_side": "right",
+    "paras": [
+     "Every heat pump has a rated capacity, and most marketing quotes it at 47 degrees — weather that barely counts as winter here. The line that predicts your January is capacity at 5°F. True cold-climate units hold 80 to 100 percent of rated output at that mark; bargain units fall off a cliff below freezing and lean on expensive electric-resistance backup for the season's whole second act.",
+     "The Lehigh Valley's design temperature sits in the single digits, and valley inversions hold cold snaps for days. Spec for that reality: we put the 5°F number, from the manufacturer's expanded performance tables, in writing on every heat-pump proposal. Ask anyone quoting you to do the same."
+    ]
+   },
+   {
+    "title": "Your ductwork has opinions",
+    "layout": "imgcol",
+    "image_topic": "ductwork",
+    "img_side": "left",
+    "paras": [
+     "Furnaces deliver scorching air through ducts sized for it; heat pumps deliver larger volumes of warm-not-hot air, and duct systems built for the old regime can choke the new one. The symptom is a unit that runs constantly while the far rooms never quite arrive — and the fix belongs in the proposal, not in the callback.",
+     "Before we size equipment, we measure static pressure and inspect the return paths. Allentown's mid-century housing typically needs return upgrades — bigger grilles, an added return run, jump ducts to bedrooms — and sometimes a trunk modification. It's unglamorous money, but it's the difference between a heat pump that delights and one that disappoints. Skipping it to make a quote look lean is how the technology gets bad reviews it didn't earn."
+    ]
+   },
+   {
+    "title": "Backup heat is a design decision, not an accessory",
+    "layout": "text",
+    "paras": [
+     "Below some outdoor temperature, every heat pump needs help. What form that help takes should be chosen on purpose. Electric strip heat is cheap to install and brutal to run — fine as a rarely-used floor, bad as a plan. Keeping your existing gas furnace as the backup — dual fuel — lets the system switch fuels automatically at the outdoor temperature where gas becomes the cheaper BTU, which our controls set from your actual utility rates.",
+     "For houses leaving oil or propane entirely, full electrification with generously sized cold-climate equipment and strip backup is legitimate — but it deserves a panel-capacity check and a candid conversation about outage behavior first. There's a right answer for every house; there's no right answer for all of them."
+    ]
+   },
+   {
+    "title": "Money: what the rebates actually cover",
+    "layout": "textlist",
+    "paras": [
+     "Current incentives materially change the math, and they stack. The paperwork is part of our scope — you shouldn't need a tax attorney to buy a heat pump. As of this writing, an Allentown conversion can draw on:"
+    ],
+    "list": [
+     "The federal 25C tax credit — thirty percent of installed cost up to its annual cap for qualifying cold-climate equipment",
+     "PPL's residential rebates for high-efficiency heat pumps, filed per unit",
+     "Whole-home electrification incentives where income-qualified, which can be substantial",
+     "Off-peak and time-of-use rate plans that reward the heat pump's steady draw — worth enrolling in at switchover",
+     "Manufacturer promotions that surface seasonally; we track them so quotes reflect the current stack, not last spring's"
+    ]
+   }
+  ],
+  "local": {
+   "title": "West End rowhomes versus township colonials",
+   "paras": [
+    "The conversion looks different across the city. West End rowhomes with radiator heat often skip ducts entirely — multi-zone ductless with heads per floor, boiler retained or retired case by case. The postwar ranches and township colonials usually have workable ducts that need return-side surgery. And the new construction east of the city mostly needs nothing but correctly sized equipment. Same technology, three different projects — which is the argument for measuring before quoting, one more time."
+   ]
+  },
+  "faq_heading": "Heat-pump questions from the Valley",
+  "faq": [
+   {
+    "q": "Will it really keep up in a cold snap?",
+    "a": "Sized to the load and specced at 5°F, yes — through precisely the weather that built the old reputation. The failures people cite are almost always sizing or duct failures wearing the technology's name."
+   },
+   {
+    "q": "What happens to my bill?",
+    "a": "Versus oil, propane, or electric resistance: down, usually dramatically. Versus cheap natural gas: roughly a wash on heating with dual fuel doing the arbitrage, plus a more efficient summer. We model it from twelve months of your actual bills before you commit."
+   },
+   {
+    "q": "How loud is the outdoor unit?",
+    "a": "Modern variable-speed condensers run in the fifties of decibels at low speed — conversation volume — and they idle along at low speed most of the time. Placement still matters near bedroom windows and property lines, so it's part of the site plan."
+   }
+  ],
+  "closing": {
+   "title": "Run your house through the checklist",
+   "para": "The heat-pump assessment measures the load, the ducts, and the panel, then prices the conversion paths — dual fuel and full-electric — against your real utility rates with every rebate in the stack applied. If your house isn't a good candidate yet, we'll say so and tell you what would change the answer.",
+   "cta": "Price My Conversion"
+  },
+  "meta_description": "Heat pumps in the Lehigh Valley: the 5°F capacity spec, duct readiness, backup-heat design, and the full rebate stack — checked before you commit.",
+  "nearby": [
+   "Bethlehem, PA",
+   "Easton, PA",
+   "Quakertown, PA"
+  ]
+ }
+]

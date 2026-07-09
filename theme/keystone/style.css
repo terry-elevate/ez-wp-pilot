@@ -1,0 +1,31 @@
+/*
+Theme Name: Keystone Comfort
+Template: twentytwentyfive
+Description: Demo brand theme for the EZ Solutions pilot — editorial serif display over a warm paper ground, built as a Twenty Twenty-Five child block theme. Keystone Comfort Co. is a fictional brand.
+Version: 1.0
+Requires at least: 6.6
+*/
+
+/* CTA band used inside page content */
+.cta-band {
+	border-left: 4px solid var(--wp--preset--color--accent);
+}
+
+/* hero title balance */
+.wp-block-cover .wp-block-post-title,
+.wp-block-cover h1 {
+	text-wrap: balance;
+	max-width: 22ch;
+}
+
+/* image captions read as credits, keep them quiet */
+figcaption.wp-element-caption {
+	color: var(--wp--preset--color--muted);
+	font-size: 0.78rem;
+	letter-spacing: 0.01em;
+}
+
+/* header row keeps its feet on small screens */
+@media (max-width: 600px) {
+	.ks-header-row { flex-wrap: wrap; gap: 12px; }
+}

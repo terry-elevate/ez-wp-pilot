@@ -1,0 +1,98 @@
+[
+ {
+  "city": "Bethlehem, PA",
+  "hero_topic": "rowhouse",
+  "hook": "Seal a hundred-year-old house well enough and it stops breathing — the drafts you paid to eliminate were also the only fresh-air system it ever had.",
+  "intro": [
+   "Bethlehem's historic blocks have been quietly weatherized one house at a time for two decades now. Cellulose blown into balloon-framed walls north of the Lehigh, spray foam under South Side rowhome roofs, storm windows and door sweeps on the stone buildings near the Monocacy Creek. Every one of those projects did what it promised: lower fuel bills, fewer drafts, a heating system that cycles less. And nearly every one of them changed something nobody discussed at the estimate stage — where the house gets its air.",
+   "An old house was built to leak. Its occupants got fresh air through gaps around window sash, rim joists, and chimney chases, and household moisture escaped by the same routes. Close those paths and the leftovers stay indoors: cooking odors that survive until breakfast, glass that sweats every January morning, closets on exterior walls developing a musty edge, and carbon dioxide levels in closed bedrooms that would genuinely surprise you. None of this means the insulation was a mistake. It means the house now needs a deliberate ventilation plan instead of an accidental one."
+  ],
+  "sections": [
+   {
+    "title": "The air math that changes when a house gets tight",
+    "layout": "text",
+    "paras": [
+     "Air leakage is measured with a blower door, in air changes per hour at a standard test pressure. An untouched circa-1900 Bethlehem house might test at twelve or fifteen; a thorough air-sealing and insulation job can bring the same house down to five or six — below the point where random leakage reliably delivers the fresh-air rate building science standards call for. Infiltration is weather-driven: a tightened house still gets outside air on a windy January night and almost none on a calm fifty-five-degree afternoon, which is exactly when the stuffiness complaints show up.",
+     "Moisture follows the same logic. A household of four releases roughly two to three gallons of water vapor a day through cooking, showering, laundry, and breathing. That vapor used to ride the leaks out of the building. Now it accumulates until it finds the coldest surface available: single-pane glass behind a storm window, the uninsulated corner of a stone wall, the back of a closet. Window condensation is the visible symptom; condensation inside a wall assembly is the expensive one.",
+     "The tempting shortcut — run the bath fans more — helps less than expected and carries a risk specific to older housing. Exhaust-only ventilation depressurizes the house, and many radiator-heated homes here still have an atmospherically vented boiler or water heater whose flue depends on gentle upward buoyancy. Sustained negative pressure can pull combustion gases backward down that flue, and it also draws more soil gas, including radon, through the basement floor. Balanced ventilation, where air in equals air out, sidesteps both problems."
+    ]
+   },
+   {
+    "title": "What an ERV does that an open window can't",
+    "layout": "imgcol",
+    "image_topic": "attic",
+    "img_side": "right",
+    "paras": [
+     "An energy recovery ventilator is a small cabinet — attic or basement mounted, about the size of a carry-on suitcase — with two fans and a heat-exchange core. One fan pushes stale indoor air out; the other draws fresh outdoor air in; the core lets the two streams trade heat and a portion of their moisture without mixing. In winter, incoming air arrives already warmed by seventy to eighty percent of the temperature difference, so the ventilation you need no longer feels like a leak you fought to remove.",
+     "The moisture transfer is the reason an ERV, rather than its heat-only cousin the HRV, is the usual choice in the Lehigh Valley's mixed-humid climate. On a muggy July day the core hands part of the incoming air's moisture back to the outgoing stream, so your air conditioning is not asked to wring out every cubic foot of ventilation air. In winter the transfer runs the other way, keeping a tight house from drying to static-shock levels while it exhausts stale air.",
+     "The quantities involved are smaller than people imagine. The standard sizing formula works out to roughly sixty to ninety cubic feet per minute of continuous exchange for a typical three-bedroom house — a gentle, silent trickle, not a gale. Fan power draw is comparable to a couple of LED fixtures. The point is not volume; it is that the exchange happens every hour of every day, regardless of wind and weather."
+    ]
+   },
+   {
+    "title": "Filtration that old ductwork can actually tolerate",
+    "layout": "imgcol",
+    "image_topic": "filter",
+    "img_side": "left",
+    "paras": [
+     "Owners of tightened houses often reach for a high-MERV one-inch filter next, and it frequently backfires. A one-inch MERV 13 pleat packs fine filtration into very little surface area, so it resists airflow hard — and duct systems retrofitted into old Bethlehem houses were usually marginal on airflow to begin with. The results show up as longer run times, a whistling return grille, and in cooling season sometimes an iced-over coil.",
+     "The better instrument is a media cabinet: a four- or five-inch-deep pleated filter installed at the return, delivering MERV 11 to 13 capture with several times the surface area and a fraction of the resistance. It changes on a twice-a-year schedule instead of monthly, and it protects the blower and coil instead of starving them. In a house with an ERV, the division of labor is worth understanding — the ERV filters outdoor air on its way in, catching pollen and street dust at the intake, while the media filter cleans the air recirculating inside. The pair covers both directions; neither alone does.",
+     "One prerequisite matters more than the filter's rating: sealed return ducts. A leaky return trunk running through a rubble-stone cellar pulls cellar air — dust, damp, and soil gas — straight into the supply stream, bypassing the filter entirely. Filtration only treats the air that actually passes through it, so return-side sealing is part of any serious air-quality upgrade in this housing stock."
+    ]
+   },
+   {
+    "title": "Signals a tightened house sends when it needs ventilation",
+    "layout": "textlist",
+    "paras": [
+     "Houses announce this problem before test equipment ever arrives. If two or more of the following describe your place since the insulation work, the ventilation question is already answered and the remaining work is sizing:"
+    ],
+    "list": [
+     "Condensation or frost on window glass most winter mornings, heaviest in bedrooms",
+     "Cooking, pet, or smoke odors that persist into the next day instead of clearing overnight",
+     "A musty smell in closets or corner rooms along exterior walls",
+     "Stuffy bedrooms and groggy mornings when doors are kept closed overnight — the classic carbon dioxide signature",
+     "Mildew spotting on bathroom ceilings despite a working exhaust fan",
+     "A radon retest that came back higher after the air-sealing work than before it"
+    ]
+   },
+   {
+    "title": "Routing fresh air through houses that never had ducts",
+    "layout": "text",
+    "paras": [
+     "Plenty of Bethlehem's historic homes heat with radiators and have no ductwork at all, and that is not a disqualifier. A dedicated ERV system uses its own small-diameter duct runs — typically three to four inches — that thread through closets, pantry corners, and floor cavities far more easily than heating trunk ever could. Fresh air supplies land in bedrooms and living spaces; exhaust pulls from kitchens and baths; the two exterior terminations are modest hoods that belong on a rear or side wall, painted to match, well away from the streetscape that historic-district review cares about.",
+     "Where even slim ducting cannot be routed — thick stone party walls, plaster ceilings nobody should open — paired through-wall room ventilators offer a fallback: individual units in the rooms that need them most, working together to approximate balanced exchange. And in houses that do have forced-air systems, an ERV can often tie into the existing return with an interlock so the air handler distributes the fresh air. Each path has real trade-offs in cost, performance, and disruption, which is precisely what a room-by-room survey is for."
+    ]
+   }
+  ],
+  "local": {
+   "title": "From the Moravian district to the South Side rows",
+   "paras": [
+    "Northampton County's oldest housing concentrates the problem in different ways. The colonial-era stone buildings of the Moravian district along the Monocacy Creek have massive walls that buffer temperature swings but hold moisture stubbornly once it gets in. The brick rowhomes built on the South Side during the steel era share party walls, leaving only two exposed faces — so when those faces get sealed, total leakage drops fast and indoor air quality turns quickly. The tall Victorians and twins near Lehigh University and along the city's older avenues sit in between, with finished attics that were foamed tight during conversion to bedrooms. Different construction, same trajectory: efficiency work done right, ventilation work not yet started. The river valley's humid summers make the moisture half of the equation impossible to ignore in any of them."
+   ]
+  },
+  "faq_heading": "What Bethlehem owners ask about ERVs and air quality",
+  "faq": [
+   {
+    "q": "I run my bathroom fans and a kitchen hood. Isn't that ventilation?",
+    "a": "It is spot exhaust, and it stays valuable — moisture and cooking byproducts should be removed at the source. But it runs only intermittently, supplies no filtered replacement air, and pulls the house negative while it operates. An ERV works continuously and in balance. The two are complements, not substitutes."
+   },
+   {
+    "q": "Will running a ventilator around the clock undo my insulation savings?",
+    "a": "The recovery core returns most of the heat in the outgoing air to the incoming stream, so the energy cost of ERV ventilation is a small fraction of what the same airflow cost when it arrived as uncontrolled leakage. A tight house with an ERV uses meaningfully less energy than the leaky house did — and has better air."
+   },
+   {
+    "q": "My basement is damp all summer. Is an ERV the fix or do I need a dehumidifier?",
+    "a": "They do different jobs. An ERV exchanges air and moderates the moisture it brings in; it does not actively dry the house. If summer readings show sustained high humidity, a dedicated dehumidifier handles that directly, and some houses justify both. A week of logged humidity data settles which problem you actually have before money moves."
+   }
+  ],
+  "closing": {
+   "title": "Put numbers on the air before buying equipment",
+   "para": "The ventilation workup starts with a blower-door test to establish how tight the house actually is, adds several days of logged carbon dioxide and humidity readings from the rooms you live in, checks combustion safety on any atmospherically vented boiler or water heater, and surveys realistic duct routes. You end up with a target fresh-air rate for your specific house and the ERV, filtration, and sealing options that reach it — ranked by what the data says, not by what happens to be on the truck.",
+   "cta": "Book the Ventilation Workup"
+  },
+  "meta_description": "Air-sealed a historic Bethlehem, PA home? Tight houses need deliberate ventilation. ERVs, filtration, and moisture control for old-house air quality.",
+  "nearby": [
+   "Allentown, PA",
+   "Reading, PA"
+  ]
+ }
+]

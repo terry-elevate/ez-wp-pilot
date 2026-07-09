@@ -1,0 +1,98 @@
+[
+ {
+  "city": "State College, PA",
+  "hero_topic": "hero_street",
+  "hook": "Every lease in this town turns over in the same two weeks of August, and the equipment inside those units keeps the score.",
+  "intro": [
+   "State College runs on an academic clock, and so does its rental stock. Between the converted houses off Beaver and College Avenues, the apartment blocks south of campus, and the townhouse clusters out in Ferguson and Patton Townships, thousands of units flip tenants every August. Each turnover is a fresh start for the people. For the furnace, the air conditioner, and the thermostat that stay behind, it is one more year on an odometer nobody is watching.",
+   "Owners managing a duplex themselves and property managers running whole buildings tend to hit the same three walls here: tenants who run equipment hard and report trouble late, thermostats that invite abuse, and a maintenance schedule copied from owner-occupied housing that ignores the calendar actually governing this market — Penn State's. What follows is a working playbook for all three, written for Centre County landlords who would rather manage HVAC on purpose than by surprise."
+  ],
+  "sections": [
+   {
+    "title": "How tenant occupancy ages equipment faster than the calendar says",
+    "layout": "text",
+    "paras": [
+     "A four-bedroom unit rented to four unrelated adults does not behave like a family home. Four schedules means somebody is nearly always in the unit, so the setback hours that give an owner-occupied furnace its rest simply never arrive. Add the habits that come with paying flat-rate or split utilities — heat running with a window cracked, air conditioning set to sixty-six because it is not their compressor — and seasonal runtime can land well above what the same equipment would see two miles away in a single-family neighborhood.",
+     "Late reporting compounds the wear. A homeowner hears a new rattle from the blower and calls someone that week. A tenant hears it, decides it is not their problem, and mentions it at move-out — after the loose blower wheel has chewed through a bearing. Small, cheap symptoms in rentals routinely age into large repairs purely because nobody with a financial stake in the equipment lives with it.",
+     "Then there is the physical layer: couches parked over return grilles, storage bins stacked against baseboard fins, bath fans that never get switched on, and basement mechanical rooms doubling as bike storage. None of it is malicious. All of it restricts airflow or traps moisture, and both of those shorten equipment life in ways a lease inspection can catch early if you know to look."
+    ]
+   },
+   {
+    "title": "The filter is the cheapest part in the building — treat it like a lease clause",
+    "layout": "imgcol",
+    "image_topic": "filter",
+    "img_side": "right",
+    "paras": [
+     "Most rental HVAC failures we see trace back to airflow, and most airflow problems trace back to a one-inch filter that has not been touched since the previous tenants moved in. A loaded filter starves the blower. In cooling season that drops coil temperature until the evaporator ices into a solid block; in heating season it pushes furnace temperatures high enough to trip the limit switch over and over, a cycle that fatigues heat exchangers and kills ignitors. A part that costs less than a pizza quietly takes out components that cost more than a semester's rent.",
+     "Leases usually assign filter changes to the tenant, and in practice that means they do not happen. The fix is structural, not motivational. Either the owner supplies dated filters at turnover and mid-lease with a photo confirming the swap, or the unit gets converted to a four-or-five-inch media cabinet that genuinely lasts a full lease cycle on one element. The media cabinet costs more once and then removes the human factor entirely — which, in student housing, is the entire game.",
+     "While you are standardizing, inventory the sizes. A portfolio running six different filter dimensions guarantees the odd sizes get skipped. Consolidating during equipment replacements pays back every single year afterward."
+    ]
+   },
+   {
+    "title": "Thermostat strategy: set limits without a habitability fight",
+    "layout": "imgcol",
+    "image_topic": "thermostat",
+    "img_side": "left",
+    "paras": [
+     "A basic dial thermostat in a rental is an open invitation: eighty-five in January, sixty in July, and no record of any of it. Modern rental practice replaces it with a thermostat whose range can be locked in software — generous enough that no reasonable tenant ever feels the ceiling, tight enough that the equipment is protected from the extremes. Pennsylvania landlords still owe tenants adequate heat under their leases and local housing codes, and State College's rental permitting program inspects for it, so the right posture is a wide, comfortable heating range with hard stops only at the silly ends.",
+     "The quieter benefit is visibility. A connected thermostat reports runtime, and runtime is diagnosis at a distance: a compressor that has been calling continuously since Tuesday means an open window, a failed capacitor, or a refrigerant problem — and you find out in July, not from a utility bill in September. Low-temperature alerts do the same job in winter, flagging a furnace lockout in an empty unit before the pipes ever get involved.",
+     "One caution: choose hardware that works without the tenant's phone. Thermostats tied to a departing tenant's personal account become bricks at turnover. Landlord-account models with per-unit access keep control where the equipment ownership sits."
+    ]
+   },
+   {
+    "title": "A semester-aware service calendar",
+    "layout": "textlist",
+    "paras": [
+     "Owner-occupied maintenance advice says spring and fall. In this market the real service windows are set by the university calendar, and working with it instead of against it makes access easier and catches problems when units are empty anyway:"
+    ],
+    "list": [
+     "Late July into early August, during turnover: per-unit walkthrough — fresh filter, condensate line flushed, outdoor coil rinsed, thermostat range and account reset, dated photos of the mechanicals for the file",
+     "September, once tenants settle: heating inspection and combustion check before the first Nittany Valley frost, scheduled while evenings are still easy to book",
+     "Mid-December, before winter break: vacancy protocol on every unit that will sit empty — holding temperature verified on each thermostat, low-temperature alerts armed, and a plan for who physically checks buildings over the closure",
+     "March or April: cooling start-up check so window units and central systems are proven out before the first warm stretch, not during it",
+     "May move-out: condition photos of grilles, thermostats, and mechanical spaces shot against August's set, while damage is still attributable"
+    ]
+   },
+   {
+    "title": "Documentation: the unglamorous file that wins every later argument",
+    "layout": "text",
+    "paras": [
+     "Every unit deserves a one-page equipment record: make, model, serial, install year, filter size, refrigerant type, and a dated line for every service visit. It sounds like clerical fuss until the first time you need it. Manufacturer warranty claims on compressors and heat exchangers routinely ask for proof of maintenance; a stack of dated service entries is the difference between a covered part and a full-price one.",
+     "The same file settles smaller disputes before they start. Security-deposit conversations about a bent fin grille or a thermostat pried off the wall go quickly when there is an August photo and a May photo. Repair-versus-replace decisions stop being guesswork when the record shows this is the third ignitor in four heating seasons. And when a property sells — as State College rentals constantly do — a documented mechanical history reads as an asset instead of a question mark.",
+     "If you run more than a couple of units, put the records where your service company can write to them too. A shared log means the technician who shows up in February already knows what the technician in August found."
+    ]
+   }
+  ],
+  "local": {
+   "title": "Centre County's rental geography, unit by unit",
+   "paras": [
+    "The playbook flexes by housing type. Downtown, the older borough houses carved into three or four apartments are the tricky ones: some still run a single boiler serving multiple leases, which turns thermostat control and utility splitting into a design question worth solving deliberately rather than inheriting. The townhouse and garden-apartment stock in Ferguson, Patton, and College Townships mostly gives each unit its own furnace or heat pump, which simplifies control but multiplies the number of filters, condensate lines, and outdoor coils on your calendar. Out in Bellefonte and Boalsburg, tenants skew year-round rather than academic, so the August rhythm softens — but Nittany Valley winters do not, and the vacant-unit freeze protocol matters everywhere the thermometer spends January in the teens."
+   ]
+  },
+  "faq_heading": "What State College landlords ask us",
+  "faq": [
+   {
+    "q": "Am I allowed to limit the thermostat range in my rental?",
+    "a": "Setting software limits on a thermostat you own is generally fine, provided the unit still receives adequate heat under your lease and the housing codes your rental permit is inspected against. Keep the heating range generous — the goal is blocking the extremes that damage equipment, not rationing comfort — and put the policy in the lease so nobody discovers it by surprise."
+   },
+   {
+    "q": "Should the lease make tenants responsible for filters?",
+    "a": "Write it in if you like, but budget as though the answer is you. Filter neglect damages your equipment, not theirs, and no lease clause repairs a cracked heat exchanger. Supplying dated filters at turnover and mid-lease, or installing a media cabinet sized to last the lease, protects the asset regardless of who technically owed the chore."
+   },
+   {
+    "q": "What temperature should an empty unit hold over winter break?",
+    "a": "A common holding point is fifty-five degrees, warm enough to protect plumbing in most layouts while trimming fuel use. The number matters less than the verification: pipes on exterior walls may need more margin, low-temperature alerts should be armed before the unit empties, and someone should physically walk the building at least once during the closure."
+   }
+  ],
+  "closing": {
+   "title": "Put the whole portfolio on one baseline",
+   "para": "A baseline visit walks every unit you own, records each system's age, condition, filter size, and measured heating or cooling performance, flags the equipment likely to fail within a lease term, and hands you the per-unit file this page keeps talking about — ready for warranty claims, deposit disputes, and turnover planning. One visit converts a scattered set of mystery furnaces into a portfolio you can actually schedule around.",
+   "cta": "Book the Portfolio Baseline"
+  },
+  "meta_description": "Rental HVAC in State College, PA: tenant wear, thermostat limits, a semester-aware service calendar, and per-unit documentation for landlords.",
+  "nearby": [
+   "Harrisburg, PA",
+   "Carlisle, PA"
+  ]
+ }
+]

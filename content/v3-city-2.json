@@ -1,0 +1,100 @@
+[
+ {
+  "city": "Pittsburgh, PA",
+  "hero_topic": "rowhouse",
+  "hook": "A rowhouse built into a hillside has a front door on one floor and a back yard two floors down — and its comfort problems are just as vertical.",
+  "intro": [
+   "Stand at the bottom of any stairway street on the South Side Slopes or in Troy Hill and look up: brick rowhouses sixteen to twenty feet wide, three living levels tall, sharing party walls with the neighbors and meeting the hill at whatever angle the hill demanded. Many have a street-level front door and a basement that walks out into the yard a full story below. Almost none of them were built with duct chases, and a century of remodels hasn't added any.",
+   "Ductless heat pumps were practically designed for this housing stock, but the version of ductless that works in a suburban ranch — one wall head, one condenser on a flat pad beside the driveway — translates poorly to a narrow vertical house on a slope. The details that make or break the job here are specific: how many indoor heads, which floors get them, where the refrigerant lines run on a brick facade, and where the outdoor unit lives when there is no flat ground to put it on. This page works through each of those decisions the way we work through them on site."
+  ],
+  "sections": [
+   {
+    "title": "Why ducts lose the argument in a sixteen-foot-wide house",
+    "layout": "text",
+    "paras": [
+     "Retrofitting central air into a Pittsburgh rowhouse means finding vertical paths for supply and return trunks through a house that has none. The party walls on both sides are structural masonry — off limits. The interior walls are plaster over wood lath, usually load-bearing along the stair, and rarely deep enough to hide a duct. What's left is closet space and soffits, and by the time a trunk line reaches the third floor through them, you've surrendered a closet on every level and the top-floor registers still whisper compared to the ones downstairs.",
+     "The physics of a tall narrow house compounds the construction problem. Three stacked floors over a walk-out basement behave like a chimney: in winter, heated air migrates up and out through the top level while cold air is drawn in below; in summer, the third floor collects the heat of the whole building plus the roof. A single air handler in the basement, pushing through improvised ductwork, fights that vertical gradient from the worst possible position.",
+     "Ductless sidesteps all of it. Refrigerant lines are under an inch in diameter insulated, they route through a single small penetration per head, and each head conditions the floor it sits on instead of relying on air pushed up from below. In a house shaped like this one, that isn't a compromise option — it's the design that matches the building."
+    ]
+   },
+   {
+    "title": "Zoning by floor: one head per level, sized for that level only",
+    "layout": "imgcol",
+    "image_topic": "minisplit",
+    "img_side": "right",
+    "paras": [
+     "The load on each floor of a rowhouse is genuinely different, and the difference is worth designing around rather than averaging away. The first floor carries the front and rear exposures plus the leaky original door; the middle floor is the most protected space in the building, insulated on both sides by the neighbors' heated homes; the top floor takes the roof load and the stack effect. A proper design runs the heat-loss math per floor and often lands on three differently sized heads — commonly a larger unit downstairs, a modest one in the middle, and a bedroom-sized head up top.",
+     "That per-floor zoning is also how the comfort complaints actually get solved. Bedrooms on the third floor can hold sixty-seven degrees for sleeping while the first floor sits at seventy for the evening, with no dampers, no shared thermostat, and no arguing with a system that only knows one number. Each head reads and serves its own floor.",
+     "One design caution: multi-zone outdoor units have a minimum output, and if only one small head is calling on a mild day, an oversized outdoor unit will cycle instead of modulating. Matching the condenser's turndown range to the smallest zone is quiet, unglamorous-sounding engineering that decides whether the system sips or gulps — and it's the first thing we check on any multi-zone proposal, ours included."
+    ]
+   },
+   {
+    "title": "Line sets on brick: routing that respects the facade",
+    "layout": "text",
+    "paras": [
+     "The refrigerant lines, condensate drain, and control wire between each indoor head and the outdoor unit have to travel down the outside of the building, and on a brick rowhouse that run is the most visible decision in the whole project. The default should be the rear elevation — the yard-facing wall almost nobody sees — with lines dropping in a straight vertical run inside painted line-hide channel. Sloppy installs loop line sets diagonally across brick because it saved twenty feet of copper; the house wears that shortcut for decades.",
+     "Penetrations deserve the same care. Drilling through a mortar joint rather than the brick face makes the hole repairable if the equipment ever comes out — mortar is meant to be repointed, brick is not. On older triple-wythe solid masonry the wall can be a foot thick, which changes the drilling approach and the sleeve length, so knowing the wall construction before quoting matters. Every penetration gets sleeved, sealed, and pitched slightly downward toward the exterior so water can never track along the lines into the wall.",
+     "Condensate has its own gravity problem on a slope. A head on the downhill side of the house may have an easy drain path to daylight, while the same head on the uphill side sits below grade relative to its wall and needs a small condensate pump. Neither is a defect; both need to be in the plan, because a pump that nobody accounted for becomes the noisy afterthought bolted on during install week."
+    ]
+   },
+   {
+    "title": "Where the condenser lives when the ground won't cooperate",
+    "layout": "imgcol",
+    "image_topic": "condenser",
+    "img_side": "left",
+    "paras": [
+     "Flat ground is the scarcest resource on a hillside lot. The three workable answers, roughly in order of preference: a rear yard pad on a leveled gravel-and-composite base where the grade allows it; a wall-mounted bracket bolted into the masonry with vibration isolators between bracket and unit; or, on some streets, a flat porch roof or rear addition roof with an engineered stand. Wall mounting is common in this city for good reason, but it transmits compressor vibration into the structure if the isolators are skipped, and on a shared party wall your neighbor hears it too.",
+     "Winter placement rules matter more here than people expect. A heat pump in defrost mode sheds meltwater that refreezes on whatever is below it, so a wall-mounted unit should never hang above a walkway, steps, or the neighbor's path. Ground units need to sit above expected snow depth and clear of the roof's drip line — a condenser buried by an avalanche off a slate roof stops heating exactly when you need it most.",
+     "Cold-climate models have made all of this worth doing. Current units rated for low-ambient operation hold a large share of their heating capacity at five degrees Fahrenheit, which covers the overwhelming majority of Pittsburgh winter hours. Whether your house keeps a gas boiler as backup for the coldest snaps or goes all-electric is a real fork in the design, and the right answer depends on your existing heating plant's age and your electrical service — both of which get inspected, not assumed."
+    ]
+   },
+   {
+    "title": "Six numbers to settle before anyone drills brick",
+    "layout": "textlist",
+    "paras": [
+     "Rowhouse ductless jobs go wrong in the planning, not the installation. These are the measurements and verifications a design visit should produce in writing — if a proposal arrives without them, it was written for a generic house, not yours:"
+    ],
+    "list": [
+     "Per-floor heat loss and gain, calculated from wall construction and window count rather than square footage alone",
+     "Wall composition at each proposed penetration — solid multi-wythe brick, brick veneer over frame, or infill block — since it dictates drilling method and sleeve length",
+     "Total line-set length and vertical rise per zone, checked against the manufacturer's limits, which vertical houses approach faster than wide ones",
+     "Electrical panel capacity and the gauge of the feed, with the actual breaker space for a dedicated circuit confirmed",
+     "A condensate path for every head, marked as gravity drain or pump before the quote is priced",
+     "Outdoor unit placement sketched on the actual elevation, with clearances, snow height, and the neighbor's stake in the party wall considered"
+    ]
+   }
+  ],
+  "local": {
+   "title": "Reading the hillside neighborhoods block by block",
+   "paras": [
+    "Allegheny County's river valleys built vertically because the terrain gave them no choice, and the pattern repeats from the South Side Slopes to Polish Hill to Spring Hill to the streets above the West End. Lawrenceville and Bloomfield add a flatter variant — long, deep rowhouses where the vertical problem is milder but the no-ductwork problem is identical. Houses in the city's designated historic districts may need approval for equipment visible from the street, which is one more argument for the rear-elevation routing this page keeps recommending. And the rivers themselves contribute muggy summer air: a ductless head running long, low-speed cooling cycles wrings moisture out far better than a window unit slamming on and off, which is the upgrade most third-floor bedrooms in this city are actually waiting for."
+   ]
+  },
+  "faq_heading": "Rowhouse ductless questions we hear in Pittsburgh",
+  "faq": [
+   {
+    "q": "One multi-zone condenser or separate outdoor units per floor?",
+    "a": "Usually one multi-zone outdoor unit, because hillside lots rarely have room for two or three. Separate units win when floors have wildly different schedules — a rented ground floor, say — or when a single unit's minimum output is too high for the smallest head. The load math decides it, not a default."
+   },
+   {
+    "q": "Will the wall penetrations hurt the brick or the house's value?",
+    "a": "A correctly sleeved three-inch hole through a mortar joint is a repairable, reversible modification — repointing restores the joint if equipment is ever removed. What damages masonry is careless drilling through brick faces and unsealed penetrations that let water in. The method is the whole difference."
+   },
+   {
+    "q": "Can ductless really carry a Pittsburgh January without the boiler?",
+    "a": "Cold-climate models hold strong output at five degrees and keep operating well below zero, which covers nearly all local winter hours. Plenty of owners keep an existing boiler as backup for the deepest cold and for resale flexibility; houses with aging boilers often retire them entirely. Both are legitimate designs when sized honestly."
+   }
+  ],
+  "closing": {
+   "title": "Start with the walkthrough, not the brochure",
+   "para": "A rowhouse ductless design visit walks every floor, checks the wall construction, sketches the line-set run on your actual rear elevation, and confirms the panel can carry the load — then puts the six numbers above in writing alongside the equipment options that fit them. You end up with a plan drawn for your house on your hill, and a document any contractor's bid can be checked against.",
+   "cta": "Book the Rowhouse Walkthrough"
+  },
+  "meta_description": "Ductless design for Pittsburgh's hillside rowhouses: zoning by floor, line-set routing on brick, and condenser placement when the lot has no flat ground.",
+  "nearby": [
+   "Butler, PA",
+   "Greensburg, PA",
+   "Beaver Falls, PA"
+  ]
+ }
+]
