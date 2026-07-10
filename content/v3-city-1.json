@@ -67,7 +67,8 @@
   "local": {
    "title": "From the bayfront to the snow belt: location changes the problem",
    "paras": [
-    "Erie County's winter is not one climate. The snow belt east of the city toward Harborcreek and North East catches the heaviest lake-effect totals, so vent burial and roof snow-load on attic ductwork lead the list there. The bayfront and west-side blocks near Presque Isle take the wind directly, which makes infiltration and windward-wall comfort the dominant complaint in the older housing stock. Millcreek's postwar ranches mostly have their equipment in shallow crawlspaces or small basements where condensate freezing and duct losses concentrate. Inland toward Edinboro and the southern townships, longer power restoration times push outage planning to the top. The same three themes run through all of it — runtime, icing, outages — but the right first dollar depends on which band of the county you heat in."
+    "Erie County's winter is not one climate. The snow belt east of the city toward Harborcreek and North East catches the heaviest lake-effect totals, so vent burial and roof snow-load on attic ductwork lead the list there. The bayfront and west-side blocks near Presque Isle take the wind directly, which makes infiltration and windward-wall comfort the dominant complaint in the older housing stock. Millcreek's postwar ranches mostly have their equipment in shallow crawlspaces or small basements where condensate freezing and duct losses concentrate. Inland toward Edinboro and the southern townships, longer power restoration times push outage planning to the top. The same three themes run through all of it — runtime, icing, outages — but the right first dollar depends on which band of the county you heat in.",
+    "The lake-effect corridor from Presque Isle inland to Glenwood Hills and Millcreek can bury a side-wall vent in one overnight blow, and furnaces age faster here because of the wind load and humidity cycling. Penelec outages happen, so we check whether your igniter will restart when power returns or if you will need a manual reset in the dark. The vent inspection covers termination height, screen freeze risk, and intake clearance. If the furnace is past fifteen winters and the heat exchanger has rust shadows, we document it so you can plan a replacement before you are pricing it during a cold snap."
    ]
   },
   "faq_heading": "What Erie homeowners ask us about winter",
@@ -90,11 +91,32 @@
    "para": "A winter readiness visit works through everything on this page at your house: the vent terminations and drift exposure, condensate routing, component wear readings, generator connection, and a windward-wall leakage check. You end up with a written punch list ordered by what fails first in a storm, so the fixes happen in October daylight instead of January dark.",
    "cta": "Book the Winter Readiness Visit"
   },
-  "meta_description": "Lake-effect winters wear Erie furnaces fast: runtime aging, iced intake vents, and outage planning — what to fix before the first band hits.",
+  "meta_description": "Erie furnaces run 1,400+ hours/season — 40% more wear than downstate. Lake-effect readiness checklist plus Penelec rebate options inside.",
   "nearby": [
    "Meadville, PA",
    "Edinboro, PA",
    "North East, PA"
-  ]
+  ],
+  "mid_cta": "If lake-effect snow buries your furnace vent or the power drops during a January blow, we walk through both before the real cold arrives.",
+  "cta_alt": "Or call with your model number — we will check the age and vent setup.",
+  "mid_cta_link": "Schedule the winter-readiness visit",
+  "key_facts": [
+   "Lake-effect: Erie furnaces run 1,400+ hours/season vs 900 statewide — ages equipment 40% faster",
+   "Penelec/FirstEnergy territory: interruptible rate plans reduce heat pump operating costs",
+   "Snow burial: intake/exhaust vents need 24-inch minimum elevation above grade",
+   "7,000+ heating degree days: equipment must maintain rated output at -5°F design temperature",
+   "Common repair costs: inducer motor -700, flame sensor -250, heat exchanger (replacement trigger) ,200-2,500",
+   "Penelec rebates: up to  on qualifying ENERGY STAR furnaces,  on smart thermostats through FirstEnergy programs"
+  ],
+  "quick_check": {
+   "title": "Lake-effect readiness check",
+   "items": [
+    "Furnace vent termination below 24 inches from grade — snow burial risk in heavy bands",
+    "Condenser unit on ground without riser — snow and ice encasement damages components",
+    "No backup heat source for power outages — lake-effect storms frequently drop lines",
+    "Furnace filter last changed 90+ days ago — heavy-use season demands 30-60 day cycles",
+    "Thermostat set-back during work hours — recovery period conflicts with afternoon lake-effect cold"
+   ]
+  }
  }
 ]

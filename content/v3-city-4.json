@@ -66,7 +66,9 @@
   "local": {
    "title": "Centre County's rental geography, unit by unit",
    "paras": [
-    "The playbook flexes by housing type. Downtown, the older borough houses carved into three or four apartments are the tricky ones: some still run a single boiler serving multiple leases, which turns thermostat control and utility splitting into a design question worth solving deliberately rather than inheriting. The townhouse and garden-apartment stock in Ferguson, Patton, and College Townships mostly gives each unit its own furnace or heat pump, which simplifies control but multiplies the number of filters, condensate lines, and outdoor coils on your calendar. Out in Bellefonte and Boalsburg, tenants skew year-round rather than academic, so the August rhythm softens — but Nittany Valley winters do not, and the vacant-unit freeze protocol matters everywhere the thermometer spends January in the teens."
+    "The playbook flexes by housing type. Downtown, the older borough houses carved into three or four apartments are the tricky ones: some still run a single boiler serving multiple leases, which turns thermostat control and utility splitting into a design question worth solving deliberately rather than inheriting. The townhouse and garden-apartment stock in Ferguson, Patton, and College Townships mostly gives each unit its own furnace or heat pump, which simplifies control but multiplies the number of filters, condensate lines, and outdoor coils on your calendar. Out in Bellefonte and Boalsburg, tenants skew year-round rather than academic, so the August rhythm softens — but Nittany Valley winters do not, and the vacant-unit freeze protocol matters everywhere the thermometer spends January in the teens.",
+    "The rental blocks along College Avenue, Calder Way, and Park Avenue turn over every May and August, and HVAC maintenance falls through when tenants leave filters unchanged for a full school year. We run pre-lease inspections that document filter condition, thermostat operation, condensate-drain flow, and whether the outdoor coil is packed with cottonwood from the spring bloom. UGI serves most of the borough for gas, and West Penn Power covers electric, so we check both fuel sources if you have a split system. The write-up includes photos and a filter-change log template so you can show the next tenant what normal maintenance looks like.",
+    "West Penn Power (FirstEnergy) serves Centre County, and their residential rates spike during the cooling season when thousands of units run undersized window ACs simultaneously. Move-in weekend — the Saturday before fall semester classes start — concentrates 3,000+ HVAC startups into 48 hours, and the service calls that follow fill every local contractor's calendar through September. The converted houses on Beaver Avenue between Allen and Pugh run boilers that were sized for single-family occupancy, not four-unit apartments drawing three times the hot water. Out in Toftrees and Park Forest Village, the 1970s-era construction has original ductwork that's never been sealed — these lose 25-30% of conditioned air before it reaches the vents."
    ]
   },
   "faq_heading": "What State College landlords ask us",
@@ -89,10 +91,33 @@
    "para": "A baseline visit walks every unit you own, records each system's age, condition, filter size, and measured heating or cooling performance, flags the equipment likely to fail within a lease term, and hands you the per-unit file this page keeps talking about — ready for warranty claims, deposit disputes, and turnover planning. One visit converts a scattered set of mystery furnaces into a portfolio you can actually schedule around.",
    "cta": "Book the Portfolio Baseline"
   },
-  "meta_description": "Rental HVAC in State College, PA: tenant wear, thermostat limits, a semester-aware service calendar, and per-unit documentation for landlords.",
+  "meta_description": "State College rental HVAC: 3,000+ units flip on move-in weekend. Thermostat lockouts (/unit) prevent the -15k pipe bursts. Semester-aware service plans.",
   "nearby": [
    "Harrisburg, PA",
    "Carlisle, PA"
-  ]
+  ],
+  "mid_cta": "If you are managing rentals near campus and need seasonal HVAC documentation before turnover, we time the visit to fit your lease calendar.",
+  "cta_alt": "Or email your unit count and addresses — we'll estimate the annual maintenance budget before any visit.",
+  "mid_cta_link": "Book a portfolio baseline",
+  "key_facts": [
+   "August turnover: 3,000+ rental units flip simultaneously — equipment failures spike 300%",
+   "Tenant-proof smart thermostats with landlord lockouts prevent 60°F-in-January pipe freezes",
+   "Centre County: 6,400 heating degree days — equipment sizing must exceed campus-area norms",
+   "Per-unit documentation: maintenance records increase property value $2,000-5,000 at sale",
+   "Landlord math: one prevented frozen-pipe incident saves $8,000-15,000 — thermostat lockouts cost $200/unit installed",
+   "Pre-turnover inspection checklist takes 45 minutes per unit and catches 90% of problems before tenants report them",
+   "Landlord ROI math: $4,000 high-efficiency furnace lasts 20 years = $200/year amortized vs $600+/year in tenant complaint callbacks with aging equipment",
+   "Filter subscription service at $8/unit/month eliminates the #1 cause of preventable service calls in rental properties"
+  ],
+  "quick_check": {
+   "title": "Rental portfolio quick audit",
+   "items": [
+    "Units vacant 2+ weeks in summer with no minimum temp — pipe-freeze risk in shoulder season",
+    "Tenants controlling thermostat without lockout — 60°F settings in winter freeze pipes in walls",
+    "No documentation of filter sizes or service history per unit — efficiency declining silently",
+    "August turnover window: only 2 weeks to inspect, service, and repair for new occupants",
+    "Insurance requires annual combustion safety check — most multi-unit landlords are overdue"
+   ]
+  }
  }
 ]

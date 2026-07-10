@@ -65,7 +65,8 @@
   "local": {
    "title": "Which houses this applies to beyond the foursquare",
    "paras": [
-    "The same physics governs Carlisle's three-story colonials, the tall twins along the borough's north side, and most of the Victorian stock with finished attics. If your house has three habitable levels and one thermostat, the pattern holds: the control system is outnumbered. The specific fix varies — zoning suits houses with sound ducts, ductless suits houses without them, and some houses justify both — but the diagnosis is nearly universal."
+    "The same physics governs Carlisle's three-story colonials, the tall twins along the borough's north side, and most of the Victorian stock with finished attics. If your house has three habitable levels and one thermostat, the pattern holds: the control system is outnumbered. The specific fix varies — zoning suits houses with sound ducts, ductless suits houses without them, and some houses justify both — but the diagnosis is nearly universal.",
+    "The foursquares along West High Street and South Hanover near Dickinson College have tall ceilings and open stairwells, and a single thermostat on the first floor will never satisfy the second-floor bedrooms. Zoning splits the ductwork with motorized dampers and adds a second thermostat upstairs, or in some cases a separate air handler in the attic makes more sense if the trunk line is too small. UGI supplies gas and Met-Ed covers electric for most of the borough. We measure the existing duct sizes, check the blower capacity, then model whether dampers will balance the system or if you need a supplemental unit to avoid starving the first floor when the second floor calls for heat."
    ]
   },
   "faq_heading": "What Carlisle owners ask about zoning",
@@ -93,6 +94,25 @@
    "Mechanicsburg, PA",
    "Shippensburg, PA",
    "Harrisburg, PA"
-  ]
+  ],
+  "mid_cta": "If your foursquare near Dickinson has a second floor that will not hold temperature, the zoning consult shows whether you need dampers or a second thermostat.",
+  "cta_alt": "Or call — we walk through zoning options before quoting anything.",
+  "mid_cta_link": "Schedule the assessment",
+  "key_facts": [
+   "Dickinson-area foursquares: second-floor heat stratification solvable with return-air pathways",
+   "Cumberland County: moderate 5,600 heating degree days — heat pumps viable as primary heat source",
+   "Historic district: equipment screening requirements affect condenser placement on visible facades",
+   "Limestone construction: interior moisture management required before any envelope air-sealing"
+  ],
+  "quick_check": {
+   "title": "Foursquare comfort indicators",
+   "items": [
+    "Second floor always trails first floor temperature by 4-6°F — return air pathway missing",
+    "Limestone foundation damp to touch year-round — moisture management needed before air sealing",
+    "Original radiators cold at top — air lock in system, bleeding restores circulation",
+    "Furnace in original coal cellar location — combustion air starved by modern weatherization",
+    "Dickinson-area homes: street noise from equipment — setback requirements affect placement"
+   ]
+  }
  }
 ]

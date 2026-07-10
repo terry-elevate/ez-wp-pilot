@@ -67,7 +67,9 @@
   "local": {
    "title": "Reading the hillside neighborhoods block by block",
    "paras": [
-    "Allegheny County's river valleys built vertically because the terrain gave them no choice, and the pattern repeats from the South Side Slopes to Polish Hill to Spring Hill to the streets above the West End. Lawrenceville and Bloomfield add a flatter variant — long, deep rowhouses where the vertical problem is milder but the no-ductwork problem is identical. Houses in the city's designated historic districts may need approval for equipment visible from the street, which is one more argument for the rear-elevation routing this page keeps recommending. And the rivers themselves contribute muggy summer air: a ductless head running long, low-speed cooling cycles wrings moisture out far better than a window unit slamming on and off, which is the upgrade most third-floor bedrooms in this city are actually waiting for."
+    "Allegheny County's river valleys built vertically because the terrain gave them no choice, and the pattern repeats from the South Side Slopes to Polish Hill to Spring Hill to the streets above the West End. Lawrenceville and Bloomfield add a flatter variant — long, deep rowhouses where the vertical problem is milder but the no-ductwork problem is identical. Houses in the city's designated historic districts may need approval for equipment visible from the street, which is one more argument for the rear-elevation routing this page keeps recommending. And the rivers themselves contribute muggy summer air: a ductless head running long, low-speed cooling cycles wrings moisture out far better than a window unit slamming on and off, which is the upgrade most third-floor bedrooms in this city are actually waiting for.",
+    "The steep rowhouse blocks in Lawrenceville, South Side Slopes, and Troy Hill were built before forced air, and retrofitting ductwork through those balloon frames is expensive and invasive. A ductless mini-split gives you zone control without tearing into plaster, and the outdoor condenser mounts on the alley side or a rear deck. Columbia Gas serves most of these neighborhoods, but the electric-only setup means no combustion venting to chase through tight joist bays. We check your panel capacity, run the line set through an existing chase or soffit, mount the wall head, then pull a vacuum and charge the refrigerant.",
+    "Duquesne Light serves the entire city grid, and their demand-response programs offer credits for homes with smart thermostats that allow brief setbacks during summer peaks. Peoples Gas delivers natural gas through these narrow hillside streets, and their rebate program covers qualifying high-efficiency furnace installations. On the South Side Slopes between 18th and 21st Streets, condenser placement often requires wall-mounted brackets because the yards slope too steeply for ground pads. In Troy Hill along Lowrie Street, the brick rowhouses share party walls but each has a unique rear elevation — cookie-cutter HVAC plans fail here because no two mechanical pathways are alike."
    ]
   },
   "faq_heading": "Rowhouse ductless questions we hear in Pittsburgh",
@@ -90,11 +92,32 @@
    "para": "A rowhouse ductless design visit walks every floor, checks the wall construction, sketches the line-set run on your actual rear elevation, and confirms the panel can carry the load — then puts the six numbers above in writing alongside the equipment options that fit them. You end up with a plan drawn for your house on your hill, and a document any contractor's bid can be checked against.",
    "cta": "Book the Rowhouse Walkthrough"
   },
-  "meta_description": "Ductless design for Pittsburgh's hillside rowhouses: zoning by floor, line-set routing on brick, and condenser placement when the lot has no flat ground.",
+  "meta_description": "Pittsburgh hillside rowhouses need floor-by-floor zoning and custom condenser mounts. 5-point diagnostic checklist plus Duquesne Light rebate options.",
   "nearby": [
    "Butler, PA",
    "Greensburg, PA",
    "Beaver Falls, PA"
-  ]
+  ],
+  "mid_cta": "If your Lawrenceville or South Side Slopes rowhouse has upstairs bedrooms that bake in summer and freeze in winter, a ductless head solves both.",
+  "cta_alt": "Or text us a photo of your electrical panel — we will confirm capacity.",
+  "mid_cta_link": "Request a rowhouse walkthrough",
+  "key_facts": [
+   "Hillside rowhouses: floor-by-floor zoning solves the 10-15°F vertical temperature split",
+   "Line-set routing on brick: painted conduit matches mortar for minimal visual impact",
+   "Condenser placement: hillside lots often have no flat ground — wall-mount brackets or terraced pads",
+   "Party-wall construction: interior units lose 40% less heat — right-sizing prevents short-cycling",
+   "DIY test: hold a tissue at your stairwell — if it moves upward, stack effect is stealing your conditioned air",
+   "Save $400-600/year by zoning floors independently instead of heating/cooling unused levels"
+  ],
+  "quick_check": {
+   "title": "Hillside rowhouse comfort diagnosis",
+   "items": [
+    "Top floor 10+ degrees warmer than basement level — vertical zoning needed",
+    "Condensers sitting on hillside grade shifting position — mounting pad or bracket required",
+    "Line-set routing visible on front facade — aesthetic routing through rear or interior preferred",
+    "Party-wall side comfortable, exterior side cold — directional heat loss confirms where to insulate",
+    "Stairwell acts as chimney in winter — stack effect pulling heated air upward and out"
+   ]
+  }
  }
 ]

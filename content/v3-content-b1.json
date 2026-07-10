@@ -54,7 +54,8 @@
   "local": {
    "title": "A note on the county's farmhouses",
    "paras": [
-    "Outside the city, the calculus shifts: stone farmhouses with two-foot walls, additions from three different centuries, and oil tanks nearing retirement. The same measurement-first approach applies, but the answers trend toward dual-fuel — a cold-climate heat pump carrying spring and fall, with the existing furnace or a propane unit taking the deep-winter handoff. Every farmhouse is its own project; we quote them only after walking them."
+    "Outside the city, the calculus shifts: stone farmhouses with two-foot walls, additions from three different centuries, and oil tanks nearing retirement. The same measurement-first approach applies, but the answers trend toward dual-fuel — a cold-climate heat pump carrying spring and fall, with the existing furnace or a propane unit taking the deep-winter handoff. Every farmhouse is its own project; we quote them only after walking them.",
+    "The brick rowhouses along Duke Street and up through Cabbage Hill were built with coal heat and zero ductwork planning. We run Manual J calculations in these homes weekly and the results always surprise owners — PPL bills climbing because oversized units short-cycle against tight floor plans. From College Hill down to the blocks behind Central Market, the pattern repeats: original plaster walls, single-pane storms, and equipment shoved into closets that starve for return air."
    ]
   },
   "faq_heading": "Asked often in Lancaster",
@@ -77,12 +78,33 @@
    "para": "The measurement visit covers all three floors and the basement, produces written readings, and ends with options priced against your house's actual numbers. If the right answer is three radiator vents and an afternoon of balancing, that's the quote you'll get.",
    "cta": "Book the Lancaster Assessment"
   },
-  "meta_description": "Radiators, plaster-safe cooling, and moisture control for Lancaster's pre-war rowhouses and county farmhouses — maintenance-first, measured before quoted.",
+  "meta_description": "Lancaster radiators last 50+ years with proper maintenance. DIY bleed restores 30-50% output. Plaster-safe cooling and moisture control — measured first.",
   "nearby": [
    "Lititz, PA",
    "Ephrata, PA",
    "Columbia, PA"
-  ]
+  ],
+  "mid_cta": "If your Cabbage Hill rowhouse stays muggy no matter how low you set the thermostat, a load calculation will show exactly where the problem starts.",
+  "cta_alt": "Or text us a photo of your equipment labels — we will tell you what we are looking at.",
+  "mid_cta_link": "Request a load calculation",
+  "key_facts": [
+   "Radiator systems last 50+ years with proper valve maintenance and annual bleeding",
+   "Ductless mini-splits need only a 3-inch wall penetration — no plaster demolition",
+   "Basement humidity above 60% degrades ductwork within 8 years in limestone-foundation homes",
+   "PPL rate: ~$0.12/kWh — heat pump payback typically 6-8 years in masonry rowhouses",
+   "DIY radiator bleed: open valve at top until water flows steadily — air trapped inside reduces output by 30-50%",
+   "Whole-house dehumidifier ($1,800-2,500 installed) prevents the basement moisture that destroys ductwork in 8 years"
+  ],
+  "quick_check": {
+   "title": "Signs your Lancaster system needs attention",
+   "items": [
+    "Radiators warm at the bottom but cold at the top — air trapped in the system needs bleeding",
+    "Third floor stays 8+ degrees warmer than first in summer — attic radiant heat gain unaddressed",
+    "Boiler cycles on and off every few minutes — oversized for the actual load",
+    "Basement humidity above 60% by June — foundation moisture migrating into ductwork",
+    "Energy bill climbed 20%+ with no rate change — equipment efficiency degrading"
+   ]
+  }
  },
  {
   "city": "York, PA",
@@ -140,7 +162,8 @@
   "local": {
    "title": "York County particulars",
    "paras": [
-    "The county's housing spread — borough rowhomes, mid-century ranches, and newer township builds — means the emergency profile spreads too. Rowhomes fail on aging boilers and gravity-conversion quirks; the ranches on original-equipment furnaces now deep into overtime; the newer builds on builder-grade units that were sized by square footage tables instead of load calculations. The preparation is the same everywhere: one measured tune-up before the cold, and a shop's number in your phone that you chose before you needed it."
+    "The county's housing spread — borough rowhomes, mid-century ranches, and newer township builds — means the emergency profile spreads too. Rowhomes fail on aging boilers and gravity-conversion quirks; the ranches on original-equipment furnaces now deep into overtime; the newer builds on builder-grade units that were sized by square footage tables instead of load calculations. The preparation is the same everywhere: one measured tune-up before the cold, and a shop's number in your phone that you chose before you needed it.",
+    "York's housing stock around the Avenues and east along Market Street toward Continental Square is mostly early 1900s construction with gravity furnace conversions. We see it every week — oversized equipment fighting undersized ductwork in homes where Met-Ed bills spike December through February. Out in Springettsbury Township the split-levels from the sixties have their own issues, but downtown the original steam-to-forced-air retrofits create pressure imbalances no thermostat can fix."
    ]
   },
   "faq_heading": "York's no-heat questions",
@@ -168,14 +191,33 @@
    "Hanover, PA",
    "Lancaster, PA",
    "Gettysburg, PA"
-  ]
+  ],
+  "mid_cta": "If your Avenues-area home heats unevenly between floors every winter, a system evaluation will pinpoint exactly why.",
+  "cta_alt": "Or call — we answer sizing and airflow questions before scheduling anything.",
+  "mid_cta_link": "Book the fall inspection",
+  "key_facts": [
+   "Three components cause 80% of no-heat calls: ignitor, flame sensor, inducer motor",
+   "A cracked heat exchanger is a CO safety issue — combustion analysis catches it early",
+   "Met-Ed emergency rates spike December through February in the borough",
+   "Rule of thumb: repair cost × furnace age > $5,000 = replacement conversation"
+  ],
+  "quick_check": {
+   "title": "Warning signs you can check tonight",
+   "items": [
+    "Furnace ignites on the third or fourth try instead of the first — ignitor cracking",
+    "Burner lights then shuts off within 10 seconds — flame sensor oxidized",
+    "Inducer motor whines at startup — bearings wearing, seizure coming",
+    "Metallic smell when the heat first kicks on — possible heat exchanger issue",
+    "Thermostat satisfied but rooms feel cold — distribution problem, not equipment"
+   ]
+  }
  },
  {
   "city": "Reading, PA",
   "hero_topic": "hero_house",
   "hook": "Your air conditioner's biggest expense isn't the repair bill. It's the fifteen summers of electricity it burns doing a job it was never sized to do.",
   "intro": [
-   "Berks County summers park humid air against Mount Penn and hold it there, and Reading's cooling equipment grinds through that load for four months a year. The bills that result aren't fate. In house after house we open up, the same three engineering problems are quietly running the meter: equipment sized by guesswork, ducts leaking into spaces nobody conditions on purpose, and systems that cool the air without ever drying it.",
+   "Mount Penn traps humid air against Reading's valley floor four months a year, and your air conditioner grinds through that load on a meter that never stops spinning. The biggest expense isn't the repair bill — it's the fifteen summers of electricity an oversized unit burns doing a job it was never sized to do.",
    "Fixing those three, in the right order, routinely cuts summer consumption by a quarter to a third without replacing anything you'd notice from the living room. Here's how each one works."
   ],
   "sections": [
@@ -185,7 +227,9 @@
     "paras": [
      "It sounds backwards, but a too-big air conditioner delivers worse comfort at higher cost. An oversized unit blasts the thermostat to its setpoint in minutes and shuts off — before it has run long enough to pull meaningful moisture out of the air. The result is a house that's cold and clammy at the same time, cycling dozens of times a day, wearing its compressor with every restart.",
      "Correct sizing comes from a load calculation: window areas and orientations, insulation levels, infiltration, occupancy. On paper it's tedious; in practice it's an hour of measuring that determines the next fifteen years of bills. When we replace equipment in Reading, the new unit is frequently smaller than the one it replaces — and the house is drier, quieter, and cheaper to run.",
-     "Reading's rowhouse stock complicates the calculation in specific ways. Party walls cut heat gain versus detached homes, but west-facing brick soaks afternoon sun and radiates it inward for hours after sunset. Attics in these houses frequently hold original insulation from the fifties — which means they hold almost none. The load math accounts for all of it, or the equipment guess fails for fifteen summers."
+     "Reading's rowhouse stock complicates the calculation in specific ways. Party walls cut heat gain versus detached homes, but west-facing brick soaks afternoon sun and radiates it inward for hours after sunset. Attics in these houses frequently hold original insulation from the fifties — which means they hold almost none. The load math accounts for all of it, or the equipment guess fails for fifteen summers.",
+     "Met-Ed delivers power across Berks County, and their summer peak rates punish oversized equipment that short-cycles. A three-ton unit in a house that needs two tons draws peak current every start and barely dehumidifies before shutting off — your Met-Ed bill shows the damage every August. FirstEnergy's rebate programs through Met-Ed cover qualifying high-efficiency replacements, and we file the paperwork as part of every installation. The savings show up in the first billing cycle.",
+     "The Manual J load calculation for climate zone 4A accounts for Reading's specific design conditions: 92°F cooling design temperature, 5°F heating, and a moisture load that averages 20% higher than the rest of Berks County due to the Schuylkill River valley effect. Equipment sized without these inputs — which is most equipment in this market — runs either oversized or undersized depending on which season exposes the error first. We measure static pressure at the air handler (target: 0.5 inches water column or below) and total external static across the duct system to quantify exactly how much capacity the ducts are stealing before a single BTU reaches the rooms."
     ]
    },
    {
@@ -228,7 +272,8 @@
    "title": "The Mount Penn effect",
    "paras": [
     "Houses on the mountain's flanks live in a different microclimate than the flats along the Schuylkill — more shade and breeze on the slopes, more trapped heat and river humidity below. It shows up in the load math and in where the dehumidification budget belongs. A quote that doesn't ask where in Reading you live hasn't done the arithmetic yet.",
-    "The rowhouse blocks between Fifth and Thirteenth carry their own thermal personality: dense masonry construction with minimal setbacks, narrow side yards that trap still air, and rear yards that rarely see morning sun. Cooling these homes efficiently requires accounting for thermal mass and urban-heat retention that suburban load tables ignore entirely. The equipment that works in Wyomissing often underperforms in the center city for reasons the manual calculation catches and the app guess misses."
+    "The rowhouse blocks between Fifth and Thirteenth carry their own thermal personality: dense masonry construction with minimal setbacks, narrow side yards that trap still air, and rear yards that rarely see morning sun. Cooling these homes efficiently requires accounting for thermal mass and urban-heat retention that suburban load tables ignore entirely. The equipment that works in Wyomissing often underperforms in the center city for reasons the manual calculation catches and the app guess misses.",
+    "The twins and rowhouses along Penn Street and through Centre Park Historic District share a common problem — ductwork routed through uninsulated walls facing Mount Penn's winter winds. Met-Ed rates hit these homes hard when oversized equipment short-cycles all season. Up along Hampden Boulevard the housing opens up but the basements stay damp, and we find return plenums rusting out within eight years. Below the Pagoda the elevation change means every block faces slightly different load conditions."
    ]
   },
   "faq_heading": "Cooling-cost questions from Berks County",
@@ -255,12 +300,33 @@
    "para": "A cooling assessment measures your duct leakage and your equipment's real delivered capacity — the two numbers no phone quote can know. From there, the options rank themselves, and the first ones on the list are usually the cheapest.",
    "cta": "Measure My Cooling Costs"
   },
-  "meta_description": "Cut Reading cooling bills a quarter or more: right-sizing, duct sealing, and humidity control explained with the numbers that decide everything.",
+  "meta_description": "Your Reading AC wastes 25-30% of output through leaky ducts before cooling a single room. Duct test + right-sizing saves $300-400/year on Met-Ed bills.",
   "nearby": [
    "Pottstown, PA",
    "Lebanon, PA",
    "Allentown, PA"
-  ]
+  ],
+  "mid_cta": "If your Centre Park home runs the blower constantly but never reaches temperature, there is a measurable reason we can identify.",
+  "cta_alt": "Or send us your last Met-Ed bill — we can usually spot the problem from usage patterns alone.",
+  "mid_cta_link": "Get a duct leakage test",
+  "key_facts": [
+   "Typical Berks County home loses 25-30% of conditioned air through unsealed ductwork",
+   "Right-sizing from 3-ton to 2-ton saves $300-400/year on Met-Ed summer bills",
+   "Climate zone 4A: Manual J calculations must account for Mount Penn's humidity retention",
+   "Dehumidification to 50% RH reduces perceived temperature by 3-4°F without extra cooling",
+   "DIY check: hold your hand 6 inches from a supply vent — if you can't feel strong airflow, static pressure is too high and ducts need inspection",
+   "SEER 14 vs SEER 18: saves $180-240/year on a typical Reading home — payback in 4-6 years on the efficiency premium"
+  ],
+  "quick_check": {
+   "title": "Quick check: is your AC wasting money?",
+   "items": [
+    "System runs continuously on 90°F days but house stays 78°F — right-sizing problem",
+    "Humidity inside above 55% even with AC running — oversized unit short-cycling",
+    "Certain rooms 4+ degrees off thermostat setting — duct leakage or imbalance",
+    "Energy bill spikes in July/August beyond rate increases — efficiency degradation",
+    "Condensate drain overflows frequently — coil not dehumidifying properly"
+   ]
+  }
  },
  {
   "city": "Harrisburg, PA",
@@ -320,7 +386,8 @@
    "title": "From Shipoke to the Hill: reading your block",
    "paras": [
     "Elevation and construction era predict the moisture profile here better than any brochure. The low blocks near the river fight groundwater and summer air with equal energy — those houses justify a drainage conversation before a dehumidifier. Uphill, the brick foursquares and twins mostly fight air infiltration and attic bypasses. The measurement visit sorts your house into the right column before any equipment gets named.",
-    "Midtown's dense Victorian blocks present their own moisture signature: attached construction limits drying, mature tree canopy holds humidity against facades, and alley-access rear yards trap still summer air. The Capitol Heights and Bellevue Park neighborhoods share thick masonry walls that buffer temperature beautifully but slow moisture migration in both directions — which means dehumidification strategies need patience and continuous operation rather than aggressive short bursts. Location dictates approach; the equipment follows from that."
+    "Midtown's dense Victorian blocks present their own moisture signature: attached construction limits drying, mature tree canopy holds humidity against facades, and alley-access rear yards trap still summer air. The Capitol Heights and Bellevue Park neighborhoods share thick masonry walls that buffer temperature beautifully but slow moisture migration in both directions — which means dehumidification strategies need patience and continuous operation rather than aggressive short bursts. Location dictates approach; the equipment follows from that.",
+    "Harrisburg's Midtown blocks between the Capitol and Broad Street Market are packed with 1920s brick homes still running original steam or hot water systems converted to forced air. UGI gas bills in Allison Hill run thirty percent above average because those conversions were rarely sized correctly. Along Front Street the river humidity loads in summer push equipment harder than the square footage suggests, and we measure latent loads that standard rules of thumb completely miss."
    ]
   },
   "faq_heading": "Humidity questions we hear along the river",
@@ -352,7 +419,26 @@
    "Mechanicsburg, PA",
    "Carlisle, PA",
    "Hershey, PA"
-  ]
+  ],
+  "mid_cta": "If your Midtown radiators clang all winter while upstairs bedrooms stay cold, there is a balance fix that does not require full replacement.",
+  "cta_alt": "Or text us — describe the problem and we will tell you if it needs a visit or just an adjustment.",
+  "mid_cta_link": "Schedule the humidity audit",
+  "key_facts": [
+   "River humidity pushes indoor RH above 65% in basements May through September",
+   "Steam-to-hot-water conversions reduce fuel waste by 20-30% in Midtown radiator homes",
+   "PPL rebates cover up to $800 on qualifying dehumidification equipment",
+   "Midtown rowhouse Manual J loads average 15% higher than suburban equivalents"
+  ],
+  "quick_check": {
+   "title": "Humidity red flags in your Harrisburg home",
+   "items": [
+    "Condensation on windows in winter — excess indoor moisture from basement infiltration",
+    "Musty smell in basement May through September — RH above 65%, mold risk",
+    "Wood floors cupping or gaps appearing seasonally — moisture cycling damaging the envelope",
+    "AC runs but house feels clammy — system removing heat but not moisture",
+    "Wallpaper peeling near exterior walls — condensation forming inside the wall assembly"
+   ]
+  }
  },
  {
   "city": "Allentown, PA",
@@ -371,7 +457,8 @@
     "paras": [
      "Every heat pump has a rated capacity, and most marketing quotes it at 47 degrees — weather that barely counts as winter here. The line that predicts your January is capacity at 5°F. True cold-climate units hold 80 to 100 percent of rated output at that mark; bargain units fall off a cliff below freezing and lean on expensive electric-resistance backup for the season's whole second act.",
      "The Lehigh Valley's design temperature sits in the single digits, and valley inversions hold cold snaps for days. Spec for that reality: we put the 5°F number, from the manufacturer's expanded performance tables, in writing on every heat-pump proposal. Ask anyone quoting you to do the same.",
-     "Allentown's housing geography spans three thermal realities: older homes near downtown with marginal insulation and air sealing, postwar developments with adequate envelopes, and newer construction east of the city built to modern codes. A heat pump correctly sized for the third category will struggle in the first, not because the technology fails but because the building demands more capacity than the equipment was asked to provide. Load calculation precedes equipment selection, always — and the calculation must account for the house you own, not the one the salesperson wishes you owned."
+     "Allentown's housing geography spans three thermal realities: older homes near downtown with marginal insulation and air sealing, postwar developments with adequate envelopes, and newer construction east of the city built to modern codes. A heat pump correctly sized for the third category will struggle in the first, not because the technology fails but because the building demands more capacity than the equipment was asked to provide. Load calculation precedes equipment selection, always — and the calculation must account for the house you own, not the one the salesperson wishes you owned.",
+     "PPL Electric Utilities serves the entire Lehigh Valley, and their rate structure matters here: time-of-use plans can cut heat-pump operating costs by twenty percent if the system runs its defrost cycles off-peak. The IRA federal tax credit stacks with Pennsylvania's Act 129 rebates through PPL's program — up to $8,000 combined on qualifying cold-climate equipment. We calculate payback against your actual PPL bill history, not a regional average."
     ]
    },
    {
@@ -412,7 +499,9 @@
    "title": "West End rowhomes versus township colonials",
    "paras": [
     "The conversion looks different across the city. West End rowhomes with radiator heat often skip ducts entirely — multi-zone ductless with heads per floor, boiler retained or retired case by case. The postwar ranches and township colonials usually have workable ducts that need return-side surgery. And the new construction east of the city mostly needs nothing but correctly sized equipment. Same technology, three different projects — which is the argument for measuring before quoting, one more time.",
-    "Allentown's older neighborhoods near Hamilton and Seventh present the densest concentration of heat-pump conversion candidates in the Valley: homes built for coal or oil heat, electrical services upgraded decades ago to marginal adequacy, and insulation that reflects whatever decade the last owner tackled the attic. These houses benefit enormously from heat-pump efficiency but require the most careful system design. We walk them floor to floor, measure the panel, check the envelope, and price paths — because a template quote applied to a 1920s twin will produce either an underperforming system or a budget-breaking one."
+    "Allentown's older neighborhoods near Hamilton and Seventh present the densest concentration of heat-pump conversion candidates in the Valley: homes built for coal or oil heat, electrical services upgraded decades ago to marginal adequacy, and insulation that reflects whatever decade the last owner tackled the attic. These houses benefit enormously from heat-pump efficiency but require the most careful system design. We walk them floor to floor, measure the panel, check the envelope, and price paths — because a template quote applied to a 1920s twin will produce either an underperforming system or a budget-breaking one.",
+    "The double-block homes through Old Allentown and along Hamilton Street were built with one chimney and no plan for ductwork. We work these blocks constantly and PPL Electric bills tell the story — equipment runs nonstop because supply trunks make ninety-degree bends into second-floor bedrooms. Up along Tilghman Street the mid-century ranches are easier to duct but their original systems are aging out fast. Within a few blocks of PPL Center, building density means condenser clearance is always tight and airflow suffers.",
+    "Between Cedar Crest and Nineteenth, the postwar ranches sit on slabs with original R-0 edges — heat pump economics change completely once you insulate that slab perimeter. The three-story doubles on Turner Street and through the Sixth Ward have shared chimneys that complicate any venting change. And the PPL substation neighborhoods near the Lehigh River see voltage sags during summer peak that affect compressor startup — a hard-start kit costs forty dollars and prevents a five-hundred-dollar compressor failure."
    ]
   },
   "faq_heading": "Heat-pump questions from the Valley",
@@ -439,11 +528,30 @@
    "para": "The heat-pump assessment measures the load, the ducts, and the panel, then prices the conversion paths — dual fuel and full-electric — against your real utility rates with every rebate in the stack applied. If your house isn't a good candidate yet, we'll say so and tell you what would change the answer.",
    "cta": "Price My Conversion"
   },
-  "meta_description": "Heat pumps in the Lehigh Valley: the 5°F capacity spec, duct readiness, backup-heat design, and the full rebate stack — checked before you commit.",
+  "meta_description": "Allentown heat pump conversion: ,000 in stacked rebates, 5°F cold-climate rating, and a 5-point house readiness checklist — before you commit.",
   "nearby": [
    "Bethlehem, PA",
    "Easton, PA",
    "Quakertown, PA"
-  ]
+  ],
+  "mid_cta": "If your Old Allentown double-block stays ten degrees hotter upstairs every summer, a duct diagnostic will show exactly where you are losing capacity.",
+  "cta_alt": "Or call with your model number — we will tell you if your system matches your square footage.",
+  "mid_cta_link": "Request a panel and duct check",
+  "key_facts": [
+   "PPL time-of-use rates can cut heat pump operating costs 20% with off-peak defrost scheduling",
+   "IRA tax credit + PA Act 129 rebates stack up to $8,000 on cold-climate heat pumps",
+   "Cold-climate units maintain rated capacity down to 5°F — adequate for Lehigh Valley winters",
+   "Panel upgrade from 100A to 200A costs $2,000-3,500 but unlocks full electrification"
+  ],
+  "quick_check": {
+   "title": "Is your house ready for a heat pump?",
+   "items": [
+    "Electrical panel has 40+ amps of unused breaker space — sufficient for heat pump circuit",
+    "Existing ductwork reaches all rooms without major leaks — airflow adequate for heat pump",
+    "Attic and walls insulated to R-30/R-13 minimum — envelope tight enough for heat pump efficiency",
+    "Current heating costs above $2,500/year — savings justify the investment timeline",
+    "No gas appliances besides furnace — full electrification feasible in one project"
+   ]
+  }
  }
 ]

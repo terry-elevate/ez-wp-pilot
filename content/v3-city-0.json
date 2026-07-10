@@ -66,7 +66,9 @@
   "local": {
    "title": "From the Moravian district to the South Side rows",
    "paras": [
-    "Northampton County's oldest housing concentrates the problem in different ways. The colonial-era stone buildings of the Moravian district along the Monocacy Creek have massive walls that buffer temperature swings but hold moisture stubbornly once it gets in. The brick rowhomes built on the South Side during the steel era share party walls, leaving only two exposed faces — so when those faces get sealed, total leakage drops fast and indoor air quality turns quickly. The tall Victorians and twins near Lehigh University and along the city's older avenues sit in between, with finished attics that were foamed tight during conversion to bedrooms. Different construction, same trajectory: efficiency work done right, ventilation work not yet started. The river valley's humid summers make the moisture half of the equation impossible to ignore in any of them."
+    "Northampton County's oldest housing concentrates the problem in different ways. The colonial-era stone buildings of the Moravian district along the Monocacy Creek have massive walls that buffer temperature swings but hold moisture stubbornly once it gets in. The brick rowhomes built on the South Side during the steel era share party walls, leaving only two exposed faces — so when those faces get sealed, total leakage drops fast and indoor air quality turns quickly. The tall Victorians and twins near Lehigh University and along the city's older avenues sit in between, with finished attics that were foamed tight during conversion to bedrooms. Different construction, same trajectory: efficiency work done right, ventilation work not yet started. The river valley's humid summers make the moisture half of the equation impossible to ignore in any of them.",
+    "The thick-wall Moravian homes along Main Street and the South Side rows were built tight, and modern weatherization makes them tighter still. When PPL bills drop but indoor air turns stale, that is the signal. An ERV pulls in lake-wind fresh air without losing your heat, and the sizing matters because a too-small unit will not keep up when you have a full house in January. We log existing CFM, count occupants, check the combustion-appliance zone, then spec the exchanger that matches your envelope.",
+    "The South Side rowhomes between Third and Fourth streets are the tightest we test — spray foam under shared rooflines drops ACH50 below 2.0, which is too tight without mechanical ventilation. North of the Lehigh, the colonials along Center Street and up through Fountain Hill have balloon framing that leaks enough to stay habitable but not enough to stay comfortable. Each block has its own air-sealing story, and the ventilation prescription follows from the blower-door number, not from the construction era."
    ]
   },
   "faq_heading": "What Bethlehem owners ask about ERVs and air quality",
@@ -89,10 +91,31 @@
    "para": "The ventilation workup starts with a blower-door test to establish how tight the house actually is, adds several days of logged carbon dioxide and humidity readings from the rooms you live in, checks combustion safety on any atmospherically vented boiler or water heater, and surveys realistic duct routes. You end up with a target fresh-air rate for your specific house and the ERV, filtration, and sealing options that reach it — ranked by what the data says, not by what happens to be on the truck.",
    "cta": "Book the Ventilation Workup"
   },
-  "meta_description": "Air-sealed a historic Bethlehem, PA home? Tight houses need deliberate ventilation. ERVs, filtration, and moisture control for old-house air quality.",
+  "meta_description": "Sealed your Bethlehem home too tight? ERVs, blower-door targets (3-5 ACH50), and filtration strategies for Moravian-district houses that stopped breathing.",
   "nearby": [
    "Allentown, PA",
    "Reading, PA"
-  ]
+  ],
+  "mid_cta": "If your sealed Moravian-district home gets stuffy by February, the ERV sizing visit will show exactly how much fresh air you need.",
+  "cta_alt": "Or call — we answer ventilation questions before scheduling anything.",
+  "mid_cta_link": "Book the ventilation assessment",
+  "key_facts": [
+   "Blower-door test target: 3-5 ACH50 for sealed historic homes — tighter needs mechanical ventilation",
+   "ERV systems recover 70-80% of outgoing heat while providing code-required fresh air",
+   "Moravian district construction: 200+ year old masonry needs vapor-open insulation strategies",
+   "South Side rowhouses: spray foam under roof creates conditioned attic — solves ice dams and comfort",
+   "DIY test: close all windows, run kitchen exhaust on high — if front door pulls inward, house is tight enough to need mechanical ventilation",
+   "ERV installation costs $3,000-5,000 but eliminates the stale-air problem permanently while recovering 70-80% of heating energy"
+  ],
+  "quick_check": {
+   "title": "Sealed-home ventilation indicators",
+   "items": [
+    "Bathroom exhaust fan pulls front door closed — house tighter than ventilation can handle",
+    "Cooking odors linger for hours — inadequate fresh air dilution",
+    "Windows fog on inside during winter — excess moisture trapped without exhaust pathway",
+    "CO2 above 1000 ppm in occupied rooms — insufficient outdoor air exchange",
+    "Stuffy feeling despite comfortable temperature — low fresh air rate per occupant"
+   ]
+  }
  }
 ]

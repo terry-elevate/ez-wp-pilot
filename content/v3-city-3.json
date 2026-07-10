@@ -66,7 +66,8 @@
   "local": {
    "title": "Where this matters most across the city",
    "paras": [
-    "The highest-value candidates for a measured tune-up are consistent: the older frame housing near the railroad core with original masonry chimneys, any home where the furnace was replaced but the water heater kept the old flue, and any 80 percent furnace past its tenth season. Out in Logan Township and the newer plan developments toward the Horseshoe Curve side of the valley, the housing is younger but the same rule applies — a condensing furnace's condensate and venting need annual eyes just as much as an old chimney does. If nobody has ever handed you a printed set of combustion readings for your house, you have not had this visit yet."
+    "The highest-value candidates for a measured tune-up are consistent: the older frame housing near the railroad core with original masonry chimneys, any home where the furnace was replaced but the water heater kept the old flue, and any 80 percent furnace past its tenth season. Out in Logan Township and the newer plan developments toward the Horseshoe Curve side of the valley, the housing is younger but the same rule applies — a condensing furnace's condensate and venting need annual eyes just as much as an old chimney does. If nobody has ever handed you a printed set of combustion readings for your house, you have not had this visit yet.",
+    "The brick homes along Chestnut Avenue and 17th Street near the old rail yards still carry original chimneys, and many have been relined or connected to newer furnaces without proper draft testing. During the pre-winter tune-up we pull the burner assembly, photograph the heat exchanger with a scope, check the flue draft with a manometer, and verify the fresh-air supply if the basement was sealed up later. Penelec rates are low enough that electric ignition is common now, but the draft safety still matters because a blocked or deteriorated flue will spill combustion gas. We leave a combustion-analysis printout so you have a baseline for next year."
    ]
   },
   "faq_heading": "Tune-up questions Altoona homeowners ask",
@@ -94,6 +95,25 @@
    "Hollidaysburg, PA",
    "State College, PA",
    "Johnstown, PA"
-  ]
+  ],
+  "mid_cta": "If your brick home still has the original chimney from the railroad era, the pre-winter tune-up includes a flue safety check you will not get from a flat-rate coupon.",
+  "cta_alt": "Or call — we answer flue and chimney questions honestly.",
+  "mid_cta_link": "Reserve the combustion test",
+  "key_facts": [
+   "Blair County: 6,500 heating degree days — furnaces run 25% longer than state average",
+   "Horseshoe Curve corridor: wind channeling increases infiltration in exposed hilltop homes",
+   "Original coal-conversion homes: combustion testing required before any efficiency rating is meaningful",
+   "Dual-fuel systems: electric to 25°F, gas backup below — optimal for Altoona's climate profile"
+  ],
+  "quick_check": {
+   "title": "Mountain-corridor furnace assessment",
+   "items": [
+    "Furnace runs near-continuous on windy days — wind-driven infiltration exceeding envelope capacity",
+    "Chimney from coal-conversion era — flue likely unlined, direct-vent replacement needed",
+    "Ignitor fails every 2-3 years — hard starts from cold-start cycling wearing components fast",
+    "Combustion air from outdoors feels like a draft — intake location needs relocation or tempering",
+    "Equipment age 15+ years in Altoona climate = 20+ years of equivalent runtime elsewhere"
+   ]
+  }
  }
 ]
