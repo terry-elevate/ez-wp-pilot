@@ -184,7 +184,8 @@
     "layout": "text",
     "paras": [
      "It sounds backwards, but a too-big air conditioner delivers worse comfort at higher cost. An oversized unit blasts the thermostat to its setpoint in minutes and shuts off — before it has run long enough to pull meaningful moisture out of the air. The result is a house that's cold and clammy at the same time, cycling dozens of times a day, wearing its compressor with every restart.",
-     "Correct sizing comes from a load calculation: window areas and orientations, insulation levels, infiltration, occupancy. On paper it's tedious; in practice it's an hour of measuring that determines the next fifteen years of bills. When we replace equipment in Reading, the new unit is frequently smaller than the one it replaces — and the house is drier, quieter, and cheaper to run."
+     "Correct sizing comes from a load calculation: window areas and orientations, insulation levels, infiltration, occupancy. On paper it's tedious; in practice it's an hour of measuring that determines the next fifteen years of bills. When we replace equipment in Reading, the new unit is frequently smaller than the one it replaces — and the house is drier, quieter, and cheaper to run.",
+     "Reading's rowhouse stock complicates the calculation in specific ways. Party walls cut heat gain versus detached homes, but west-facing brick soaks afternoon sun and radiates it inward for hours after sunset. Attics in these houses frequently hold original insulation from the fifties — which means they hold almost none. The load math accounts for all of it, or the equipment guess fails for fifteen summers."
     ]
    },
    {
@@ -204,7 +205,8 @@
     "img_side": "right",
     "paras": [
      "A Reading July afternoon at 88 degrees carries dew points that make 76 degrees indoors feel oppressive if the air is wet. Comfort here is a two-number problem — temperature and humidity — and equipment that only manages the first number loses the summer.",
-     "Variable-speed systems win this fight by running long, slow cycles that wring water out of the air continuously. Where the existing equipment is single-stage and healthy, a dedicated whole-home dehumidifier tied into the return accomplishes the same thing for less than a replacement. Either way, the target is measurable: 45 to 50 percent relative humidity, which lets most households raise the thermostat two or three degrees without noticing — and every degree raised is roughly three percent off the cooling bill."
+     "Variable-speed systems win this fight by running long, slow cycles that wring water out of the air continuously. Where the existing equipment is single-stage and healthy, a dedicated whole-home dehumidifier tied into the return accomplishes the same thing for less than a replacement. Either way, the target is measurable: 45 to 50 percent relative humidity, which lets most households raise the thermostat two or three degrees without noticing — and every degree raised is roughly three percent off the cooling bill.",
+     "Berks County humidity doesn't quit at sundown the way dry-heat climates do. Evening air stays loaded with moisture through midnight, which is why undersized or short-cycling equipment never catches up. The system has to be designed for sustained latent load, not just peak temperature — a distinction that separates real cooling proposals from square-footage guesses."
     ]
    },
    {
@@ -225,7 +227,8 @@
   "local": {
    "title": "The Mount Penn effect",
    "paras": [
-    "Houses on the mountain's flanks live in a different microclimate than the flats along the Schuylkill — more shade and breeze on the slopes, more trapped heat and river humidity below. It shows up in the load math and in where the dehumidification budget belongs. A quote that doesn't ask where in Reading you live hasn't done the arithmetic yet."
+    "Houses on the mountain's flanks live in a different microclimate than the flats along the Schuylkill — more shade and breeze on the slopes, more trapped heat and river humidity below. It shows up in the load math and in where the dehumidification budget belongs. A quote that doesn't ask where in Reading you live hasn't done the arithmetic yet.",
+    "The rowhouse blocks between Fifth and Thirteenth carry their own thermal personality: dense masonry construction with minimal setbacks, narrow side yards that trap still air, and rear yards that rarely see morning sun. Cooling these homes efficiently requires accounting for thermal mass and urban-heat retention that suburban load tables ignore entirely. The equipment that works in Wyomissing often underperforms in the center city for reasons the manual calculation catches and the app guess misses."
    ]
   },
   "faq_heading": "Cooling-cost questions from Berks County",
@@ -241,6 +244,10 @@
    {
     "q": "Is a heat pump worth considering at replacement time?",
     "a": "In this climate, strongly yes — the same equipment then replaces a slice of your winter heating cost too, and current rebates favor it. The house's electrical panel and backup-heat plan are the two things we verify first."
+   },
+   {
+    "q": "What's the lifespan of a well-maintained AC system in this climate?",
+    "a": "Fifteen to eighteen years is typical for quality equipment with annual service. Berks summers are demanding — sustained heat and humidity tax compressors harder than mild climates — but proper refrigerant charge, clean coils, and correct airflow let systems reach their design life. We date every condenser we inspect and track service history to forecast replacement timing honestly."
    }
   ],
   "closing": {
@@ -269,7 +276,8 @@
     "layout": "text",
     "paras": [
      "Every moisture conversation starts with a ten-dollar hygrometer, or with the calibrated one on our meter. The targets: 45 to 50 percent relative humidity in living space year-round, and below 55 in the basement in summer. Above those lines, dust mites multiply, mold finds every cold surface, and the air feels warmer than it is — pushing the AC to run colder than it should.",
-     "Below about 35 percent in winter, the opposite problems arrive: static, cracked trim, nosebleeds, and that peculiar chill of dry air. Harrisburg houses regularly manage to be too wet in July and too dry in January, which is why the answer is a system, not a gadget."
+     "Below about 35 percent in winter, the opposite problems arrive: static, cracked trim, nosebleeds, and that peculiar chill of dry air. Harrisburg houses regularly manage to be too wet in July and too dry in January, which is why the answer is a system, not a gadget.",
+     "The Susquehanna's influence reaches blocks inland — not just the obvious riverfront addresses but the whole bowl from the capitol complex through Midtown. Ground moisture migrates through foundation walls that predate waterproofing membranes, and summer air masses stall against the ridges. Measuring humidity in multiple zones of the house, basement to attic, maps where the problems originate and where the solutions belong."
     ]
    },
    {
@@ -289,7 +297,8 @@
     "img_side": "right",
     "paras": [
      "Winter dryness invites the opposite intervention, and the same discipline. A furnace-mounted humidifier — evaporative, plumbed, controlled by an outdoor-temperature-compensating humidistat — adds moisture in proportion to what the weather allows. That compensation matters: hold 45 percent indoors on a ten-degree night and the excess condenses inside your window frames and wall cavities, trading comfort for rot.",
-     "The controller does the thinking: colder outside means a lower indoor target, automatically. Set-and-forget, serviced once a year when the water panel gets changed at the fall tune-up."
+     "The controller does the thinking: colder outside means a lower indoor target, automatically. Set-and-forget, serviced once a year when the water panel gets changed at the fall tune-up.",
+     "Harrisburg's Victorian and early-twentieth-century housing stock presents a humidification challenge that newer homes avoid: single-pane windows, balloon framing with minimal air barriers, and chimneys that function as humidity exhausts even when capped. Adding moisture to these envelopes without creating condensation problems requires both the right equipment and realistic expectations about what indoor humidity the house can safely hold. We size and control humidifiers for the building, not for an abstract comfort target."
     ]
    },
    {
@@ -310,7 +319,8 @@
   "local": {
    "title": "From Shipoke to the Hill: reading your block",
    "paras": [
-    "Elevation and construction era predict the moisture profile here better than any brochure. The low blocks near the river fight groundwater and summer air with equal energy — those houses justify a drainage conversation before a dehumidifier. Uphill, the brick foursquares and twins mostly fight air infiltration and attic bypasses. The measurement visit sorts your house into the right column before any equipment gets named."
+    "Elevation and construction era predict the moisture profile here better than any brochure. The low blocks near the river fight groundwater and summer air with equal energy — those houses justify a drainage conversation before a dehumidifier. Uphill, the brick foursquares and twins mostly fight air infiltration and attic bypasses. The measurement visit sorts your house into the right column before any equipment gets named.",
+    "Midtown's dense Victorian blocks present their own moisture signature: attached construction limits drying, mature tree canopy holds humidity against facades, and alley-access rear yards trap still summer air. The Capitol Heights and Bellevue Park neighborhoods share thick masonry walls that buffer temperature beautifully but slow moisture migration in both directions — which means dehumidification strategies need patience and continuous operation rather than aggressive short bursts. Location dictates approach; the equipment follows from that."
    ]
   },
   "faq_heading": "Humidity questions we hear along the river",
@@ -326,6 +336,10 @@
    {
     "q": "Are crawlspace vents supposed to be open or closed?",
     "a": "In this climate, summer venting imports humid air into the coolest part of the house — exactly backwards. Modern practice is sealing and conditioning the crawlspace, or at minimum a humidistat-controlled fan rather than passive vents."
+   },
+   {
+    "q": "Can I just run a portable dehumidifier in the basement year-round?",
+    "a": "Portables work as stopgaps but make poor permanent solutions in river-town basements — they're sized for bedrooms, not the infiltration load these foundations carry, and the bucket-emptying becomes a chore that eventually gets skipped. A ducted whole-home unit with automatic drainage and a humidistat solves it once. We quote both; the annual operating-cost difference usually pays for the better unit within three summers."
    }
   ],
   "closing": {
@@ -356,7 +370,8 @@
     "img_side": "right",
     "paras": [
      "Every heat pump has a rated capacity, and most marketing quotes it at 47 degrees — weather that barely counts as winter here. The line that predicts your January is capacity at 5°F. True cold-climate units hold 80 to 100 percent of rated output at that mark; bargain units fall off a cliff below freezing and lean on expensive electric-resistance backup for the season's whole second act.",
-     "The Lehigh Valley's design temperature sits in the single digits, and valley inversions hold cold snaps for days. Spec for that reality: we put the 5°F number, from the manufacturer's expanded performance tables, in writing on every heat-pump proposal. Ask anyone quoting you to do the same."
+     "The Lehigh Valley's design temperature sits in the single digits, and valley inversions hold cold snaps for days. Spec for that reality: we put the 5°F number, from the manufacturer's expanded performance tables, in writing on every heat-pump proposal. Ask anyone quoting you to do the same.",
+     "Allentown's housing geography spans three thermal realities: older homes near downtown with marginal insulation and air sealing, postwar developments with adequate envelopes, and newer construction east of the city built to modern codes. A heat pump correctly sized for the third category will struggle in the first, not because the technology fails but because the building demands more capacity than the equipment was asked to provide. Load calculation precedes equipment selection, always — and the calculation must account for the house you own, not the one the salesperson wishes you owned."
     ]
    },
    {
@@ -374,7 +389,8 @@
     "layout": "text",
     "paras": [
      "Below some outdoor temperature, every heat pump needs help. What form that help takes should be chosen on purpose. Electric strip heat is cheap to install and brutal to run — fine as a rarely-used floor, bad as a plan. Keeping your existing gas furnace as the backup — dual fuel — lets the system switch fuels automatically at the outdoor temperature where gas becomes the cheaper BTU, which our controls set from your actual utility rates.",
-     "For houses leaving oil or propane entirely, full electrification with generously sized cold-climate equipment and strip backup is legitimate — but it deserves a panel-capacity check and a candid conversation about outage behavior first. There's a right answer for every house; there's no right answer for all of them."
+     "For houses leaving oil or propane entirely, full electrification with generously sized cold-climate equipment and strip backup is legitimate — but it deserves a panel-capacity check and a candid conversation about outage behavior first. There's a right answer for every house; there's no right answer for all of them.",
+     "The Lehigh Valley sees enough sub-twenty-degree weather that backup-heat design carries real stakes. A poorly planned system will either burn strip heat for weeks of the winter at ruinous cost, or leave occupants underwhelmed with heat-pump performance and nostalgic for the old furnace. The controls architecture — what triggers backup, at what outdoor temperature, with what lockout logic — matters as much as the equipment nameplate. We model fuel cost under your actual rate structure and historical weather, then program switchover points that optimize for economy without sacrificing comfort."
     ]
    },
    {
@@ -395,7 +411,8 @@
   "local": {
    "title": "West End rowhomes versus township colonials",
    "paras": [
-    "The conversion looks different across the city. West End rowhomes with radiator heat often skip ducts entirely — multi-zone ductless with heads per floor, boiler retained or retired case by case. The postwar ranches and township colonials usually have workable ducts that need return-side surgery. And the new construction east of the city mostly needs nothing but correctly sized equipment. Same technology, three different projects — which is the argument for measuring before quoting, one more time."
+    "The conversion looks different across the city. West End rowhomes with radiator heat often skip ducts entirely — multi-zone ductless with heads per floor, boiler retained or retired case by case. The postwar ranches and township colonials usually have workable ducts that need return-side surgery. And the new construction east of the city mostly needs nothing but correctly sized equipment. Same technology, three different projects — which is the argument for measuring before quoting, one more time.",
+    "Allentown's older neighborhoods near Hamilton and Seventh present the densest concentration of heat-pump conversion candidates in the Valley: homes built for coal or oil heat, electrical services upgraded decades ago to marginal adequacy, and insulation that reflects whatever decade the last owner tackled the attic. These houses benefit enormously from heat-pump efficiency but require the most careful system design. We walk them floor to floor, measure the panel, check the envelope, and price paths — because a template quote applied to a 1920s twin will produce either an underperforming system or a budget-breaking one."
    ]
   },
   "faq_heading": "Heat-pump questions from the Valley",
@@ -411,6 +428,10 @@
    {
     "q": "How loud is the outdoor unit?",
     "a": "Modern variable-speed condensers run in the fifties of decibels at low speed — conversation volume — and they idle along at low speed most of the time. Placement still matters near bedroom windows and property lines, so it's part of the site plan."
+   },
+   {
+    "q": "My electrical panel is full — does that kill the conversion?",
+    "a": "Not necessarily. Many panels can support a heat pump through load management: moving circuits, combining runs, or installing a load-sharing controller that sequences high-draw equipment. A panel inspection tells us whether you have spare capacity hiding behind a full breaker directory, or whether an upgrade belongs in the scope. Either way, we price the real path forward, not the imaginary one that ignores electrons."
    }
   ],
   "closing": {

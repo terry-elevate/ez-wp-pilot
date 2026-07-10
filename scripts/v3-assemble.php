@@ -13,6 +13,9 @@ $img_use_counter = array();
 function v3_esc( $v ) { return esc_html( trim( (string) $v ) ); }
 
 function v3_pick_image( $topic, &$counter, $pool ) {
+    $fallbacks = array( 'ductwork' => 'basement', 'condenser' => 'minisplit',
+                        'thermostat' => 'furnace', 'filter' => 'technician' );
+    if ( empty( $pool[ $topic ] ) && isset( $fallbacks[ $topic ] ) ) { $topic = $fallbacks[ $topic ]; }
     if ( empty( $pool[ $topic ] ) ) { return null; }
     $i = $counter[ $topic ] ?? 0;
     $counter[ $topic ] = $i + 1;
@@ -33,10 +36,44 @@ function v3_img_block( $img, $caption = '' ) {
          . "<figure class=\"wp-block-image size-large\"><img src=\"" . esc_url( $img['url'] ) . "\" alt=\"" . esc_attr( $img['alt'] ) . "\" class=\"wp-image-{$img['id']}\"/>{$cap}</figure>\n<!-- /wp:image -->";
 }
 
+function v3_split_long( $text ) {
+    if ( str_word_count( $text ) <= 100 ) { return array( $text ); }
+    // Split on sentence boundaries, targeting ~80 words per chunk
+    $sentences = preg_split( '/(?<=[.!?;])\s+/', trim( $text ) );
+    $chunks = array(); $buf = '';
+    foreach ( $sentences as $s ) {
+        $test = $buf ? $buf . ' ' . $s : $s;
+        if ( str_word_count( $test ) > 90 && $buf !== '' ) {
+            $chunks[] = $buf;
+            $buf = $s;
+        } else {
+            $buf = $test;
+        }
+    }
+    if ( $buf ) { $chunks[] = $buf; }
+    // Safety: force-split any chunk that still exceeds 100 words (uses str_word_count to match gate)
+    $final = array();
+    foreach ( $chunks as $c ) {
+        while ( str_word_count( $c ) > 100 ) {
+            $cw = preg_split( '/\s+/', trim( $c ) );
+            $split_at = 90;
+            for ( $i = min( 99, count($cw) - 1 ); $i >= 70; $i-- ) {
+                if ( preg_match( '/[,;:\x{2014}.!?]$/u', $cw[$i] ) ) { $split_at = $i + 1; break; }
+            }
+            $final[] = implode( ' ', array_slice( $cw, 0, $split_at ) );
+            $c = implode( ' ', array_slice( $cw, $split_at ) );
+        }
+        if ( trim( $c ) ) { $final[] = $c; }
+    }
+    return $final;
+}
+
 function v3_paras( $paras ) {
     $out = array();
     foreach ( (array) $paras as $p ) {
-        $out[] = "<!-- wp:paragraph -->\n<p>" . v3_esc( $p ) . "</p>\n<!-- /wp:paragraph -->";
+        foreach ( v3_split_long( $p ) as $chunk ) {
+            $out[] = "<!-- wp:paragraph -->\n<p>" . v3_esc( $chunk ) . "</p>\n<!-- /wp:paragraph -->";
+        }
     }
     return implode( "\n\n", $out );
 }
@@ -75,7 +112,17 @@ foreach ( $entries as $en ) {
                 $imgcol = v3_img_block( $img );
                 $left  = ( $s['img_side'] ?? 'left' ) === 'left' ? $imgcol : $textcol;
                 $right = ( $s['img_side'] ?? 'left' ) === 'left' ? $textcol : $imgcol;
-                $b[] = "<!-- wp:columns -->\n<div class=\"wp-block-columns\"><!-- wp:column -->\n<div class=\"wp-block-column\">{$left}</div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\">{$right}</div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->";
+                $img_left = ( $s['img_side'] ?? 'left' ) === 'left';
+                $lw = $img_left ? '38%' : '60%';
+                $rw = $img_left ? '60%' : '38%';
+                $lv = $img_left ? ' is-vertically-aligned-center' : '';
+                $rv = $img_left ? '' : ' is-vertically-aligned-center';
+                $la = $img_left ? ',\"verticalAlignment\":\"center\"' : '';
+                $ra = $img_left ? '' : ',\"verticalAlignment\":\"center\"';
+                $b[] = "<!-- wp:columns {\"style\":{\"spacing\":{\"blockGap\":{\"left\":\"2rem\"}}}} -->\n<div class=\"wp-block-columns\">\n\n"
+                     . "<!-- wp:column {\"width\":\"{$lw}\"{$la}} -->\n<div class=\"wp-block-column{$lv}\" style=\"flex-basis:{$lw}\">\n{$left}\n</div>\n<!-- /wp:column -->\n\n"
+                     . "<!-- wp:column {\"width\":\"{$rw}\"{$ra}} -->\n<div class=\"wp-block-column{$rv}\" style=\"flex-basis:{$rw}\">\n{$right}\n</div>\n<!-- /wp:column -->\n\n"
+                     . "</div>\n<!-- /wp:columns -->";
             } else {
                 $b[] = $textcol;
             }
@@ -84,7 +131,9 @@ foreach ( $entries as $en ) {
             if ( ! empty( $s['list'] ) ) {
                 $items = '';
                 foreach ( $s['list'] as $it ) {
-                    $items .= "<!-- wp:list-item -->\n<li>" . v3_esc( $it ) . "</li>\n<!-- /wp:list-item -->\n\n";
+                    foreach ( v3_split_long( $it ) as $chunk ) {
+                        $items .= "<!-- wp:list-item -->\n<li>" . v3_esc( $chunk ) . "</li>\n<!-- /wp:list-item -->\n\n";
+                    }
                 }
                 $b[] = "<!-- wp:list -->\n<ul class=\"wp-block-list\">" . rtrim( $items ) . "</ul>\n<!-- /wp:list -->";
             }
