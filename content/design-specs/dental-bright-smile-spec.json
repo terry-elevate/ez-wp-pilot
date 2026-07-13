@@ -1,0 +1,286 @@
+{
+  "business_name": "Bright Smile Family Dentistry",
+  "industry": "Dental Practice",
+  "design_rationale": "The design balances clinical professionalism with spa-like warmth through a soft, nature-inspired palette and generous whitespace. Typography and spacing create a calming, unhurried experience while subtle accents and clean imagery build trust and approachability. Every visual element reinforces that dental care can be comfortable, welcoming, and even enjoyable.",
+  "color_palette": {
+    "primary": "#2B8A8A",
+    "primary_dark": "#1F5F5F",
+    "primary_light": "#7BCCCF",
+    "secondary": "#F5F9F9",
+    "accent": "#E8B4A8",
+    "background": "#FAFBFB",
+    "surface": "#FFFFFF",
+    "text_primary": "#2C3E50",
+    "text_secondary": "#6B7A88",
+    "text_on_primary": "#FFFFFF",
+    "border": "#E1E8EB",
+    "success": "#4CAF7A",
+    "warning": "#F4A460"
+  },
+  "typography": {
+    "font_heading": "'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "font_body": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "font_accent": "'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "scale": {
+      "h1": {
+        "size": "3.5rem",
+        "weight": 700,
+        "line_height": 1.2,
+        "letter_spacing": "-0.02em"
+      },
+      "h2": {
+        "size": "2.75rem",
+        "weight": 700,
+        "line_height": 1.25,
+        "letter_spacing": "-0.01em"
+      },
+      "h3": {
+        "size": "2rem",
+        "weight": 600,
+        "line_height": 1.35,
+        "letter_spacing": "normal"
+      },
+      "h4": {
+        "size": "1.375rem",
+        "weight": 600,
+        "line_height": 1.4,
+        "letter_spacing": "normal"
+      },
+      "body": {
+        "size": "1rem",
+        "weight": 400,
+        "line_height": 1.6
+      },
+      "small": {
+        "size": "0.875rem",
+        "weight": 400,
+        "line_height": 1.5
+      },
+      "caption": {
+        "size": "0.75rem",
+        "weight": 500,
+        "line_height": 1.4
+      }
+    }
+  },
+  "spacing": {
+    "section_padding_y": "5rem",
+    "section_padding_x": "2rem",
+    "container_max_width": 1200,
+    "grid_gap": "2rem",
+    "component_gap": "1.5rem",
+    "card_padding": "2.5rem"
+  },
+  "sections": [
+    {
+      "name": "hero",
+      "layout": "Full-width hero with split composition: left-aligned text content (60%) and background imagery (40%). Content and image interact via subtle parallax on desktop.",
+      "height": "90vh",
+      "background": "Gradient overlay from rgba(43, 138, 138, 0.15) to rgba(232, 180, 168, 0.1) over soft-focus dental office ambiance image (warm natural lighting, modern comfortable waiting area with plants and soothing colors)",
+      "image_style": "Warm, naturally-lit modern dental office interior or peaceful patient moment (smile, relaxation). Soft focus, natural color grading. Avoid clinical sterility; aim for spa-like serenity.",
+      "overlay": "linear-gradient(135deg, rgba(43, 138, 138, 0.15) 0%, rgba(232, 180, 168, 0.1) 100%)",
+      "text_position": "left center, 5% margin from left edge",
+      "text_max_width": "550px",
+      "cta_style": "Primary button (see components) with arrow icon on the right, followed by secondary text link below; both have subtle hover animations"
+    },
+    {
+      "name": "hero_content",
+      "headline": "h1 text color #2C3E50, line height 1.2, letter spacing -0.02em",
+      "subheading": "h4 text color #6B7A88, weight 400, margin-top 1rem, max-width 480px",
+      "buttons": "Hero has two CTAs: primary 'Schedule Your Visit' (padding 1rem 2.5rem) and secondary 'Learn About Our Services' (border-bottom only, text-decoration underline on hover)"
+    },
+    {
+      "name": "services",
+      "layout": "3-column grid on desktop, 2-column on tablet, 1-column on mobile. Equal-height cards with icon-text-link layout. Gap 2rem between cards and rows.",
+      "card_style": {
+        "border_radius": "16px",
+        "shadow": "0 2px 8px rgba(43, 138, 138, 0.08)",
+        "padding": "2.5rem",
+        "background": "#FFFFFF",
+        "border": "1px solid #E1E8EB",
+        "hover_effect": "Shadow lifts to 0 12px 24px rgba(43, 138, 138, 0.12), border color shifts to #7BCCCF, transform translateY(-4px), transition 300ms cubic-bezier(0.4, 0, 0.2, 1)",
+        "icon_style": "Circular 80px background using primary_light (#7BCCCF) with 20% opacity, centered SVG icon in primary (#2B8A8A), 40px size, rounded 50%"
+      },
+      "card_content": "h4 heading (1.375rem, 600 weight, #2C3E50), descriptive paragraph (1rem body text, #6B7A88, margin-top 1rem), 'Learn More' link with arrow (primary color, weight 600, hover underline)"
+    },
+    {
+      "name": "about_trust",
+      "layout": "Two-column layout (desktop): left column 45% image, right column 55% content with staggered list items. Tablet: stacked full-width. Mobile: stacked with image above text.",
+      "image_section": "Large rounded image (border-radius 20px, shadow 0 8px 32px rgba(43, 138, 138, 0.1)) of diverse family in dental office or dentist with patient, warm and trustworthy moment",
+      "content_section": "h2 heading, descriptive paragraph (body text, margin-bottom 2rem), followed by four trust markers displayed as a staggered list with left-aligned icons (40px circular backgrounds in accent color #E8B4A8 with 15% opacity, checkmark or relevant icon in primary_dark). Each list item 1rem spacing below previous, left padding 60px with icon positioned absolutely left of text.",
+      "trust_items": [
+        "Experienced family dentistry team with 15+ years combined expertise",
+        "Gentle, anxiety-reducing techniques and modern pain management",
+        "State-of-the-art equipment for accurate, efficient care",
+        "Welcoming environment designed for patient comfort and relaxation"
+      ]
+    },
+    {
+      "name": "treatments",
+      "layout": "Section heading centered (h2). Below: 4-column grid on desktop, 2-column on tablet, 1-column mobile. Cards simpler than services cards: just icon + label + brief description.",
+      "card_style": {
+        "border_radius": "12px",
+        "shadow": "0 1px 4px rgba(43, 138, 138, 0.06)",
+        "padding": "2rem",
+        "background": "#F5F9F9",
+        "border": "none",
+        "hover_effect": "Background shifts to #E8F5F7, shadow to 0 4px 12px rgba(43, 138, 138, 0.1), no transform"
+      },
+      "icon_style": "60px circular backgrounds in primary_light with 25% opacity, centered SVG in primary, 28px size"
+    },
+    {
+      "name": "testimonials",
+      "layout": "Section heading centered (h2), followed by 3-column grid on desktop, 2-column on tablet, 1-column mobile. Testimonial cards with quote, author, rating.",
+      "card_style": {
+        "border_radius": "12px",
+        "shadow": "0 2px 8px rgba(43, 138, 138, 0.06)",
+        "padding": "2rem",
+        "background": "#FFFFFF",
+        "border": "1px solid #E1E8EB",
+        "quote_style": "Opening with 5-star rating (use \u2605 unicode, color #2B8A8A, margin-bottom 1rem), quotation marks or quotes element in accent color (#E8B4A8) at 3rem font size, letter-spacing 0.1em, positioned above body text",
+        "hover_effect": "Subtle border color shift to primary_light (#7BCCCF), shadow to 0 6px 16px rgba(43, 138, 138, 0.08)"
+      },
+      "quote_content": "Italic testimonial body text (1rem, weight 400, #2C3E50, line-height 1.8, margin-bottom 1.5rem), author name (h4, 600 weight, #2C3E50), title (small text, #6B7A88, margin-top 0.5rem)"
+    },
+    {
+      "name": "cta_banner",
+      "layout": "Full-width banner section with vertical centering. Text left-aligned (60% width), large h2 heading in text_on_primary, body text below in text_on_primary at 80% opacity. Button on same row aligned right.",
+      "background": "Gradient from primary (#2B8A8A) at 0% to primary_dark (#1F5F5F) at 100%, angle 135deg. Subtle diagonal stripe pattern overlay (SVG or CSS repeating pattern, 30px diagonal stripes in rgba(255, 255, 255, 0.03))",
+      "padding": "4rem 2rem",
+      "button_style": "Primary button with inverted colors: background white, text primary color, padding 1rem 2.5rem, hover background accent color (#E8B4A8), transition 200ms"
+    },
+    {
+      "name": "faq",
+      "layout": "Section heading centered (h2), followed by accordion layout. Single column, max-width 800px, centered. Each accordion item is a button row with chevron icon, expanding to reveal answer content.",
+      "accordion_item": {
+        "padding": "1.5rem",
+        "border_bottom": "1px solid #E1E8EB",
+        "background": "#FFFFFF",
+        "heading_weight": 600,
+        "heading_color": "#2C3E50",
+        "expanded_background": "#F5F9F9",
+        "icon_rotation": "Chevron rotates 180deg on expand"
+      }
+    },
+    {
+      "name": "footer",
+      "layout": "4-column grid on desktop (Services, About, Contact, Legal), 2-column on tablet, stacked on mobile. Footer top section has columns separated by 3rem. Below columns: divider line (1px solid #E1E8EB), then footer bottom with copyright text left-aligned and social icons right-aligned.",
+      "background": "#1F5F5F",
+      "padding": "4rem 2rem 2rem",
+      "text_color": "#FFFFFF",
+      "link_style": "Text links in text_on_primary (white) with opacity 85%, hover opacity 100%. No underline by default, underline on hover.",
+      "column_heading": "h4 in text_on_primary, margin-bottom 1.5rem, weight 600",
+      "column_content": "small text size (0.875rem) in text_on_primary at 80% opacity, line-height 1.8, margin-bottom 0.75rem per list item",
+      "social_icons": "Circle backgrounds 40px, primary_light color at 20% opacity, SVG icons 20px in white, flex row gap 1rem, placed in footer-bottom right"
+    }
+  ],
+  "components": {
+    "button_primary": {
+      "padding": "1rem 2.5rem",
+      "border_radius": "8px",
+      "font_weight": 600,
+      "font_size": "1rem",
+      "text_transform": "none",
+      "background": "#2B8A8A",
+      "color": "#FFFFFF",
+      "border": "none",
+      "shadow": "0 2px 8px rgba(43, 138, 138, 0.2)",
+      "cursor": "pointer",
+      "transition": "all 200ms cubic-bezier(0.4, 0, 0.2, 1)",
+      "hover": "background #1F5F5F, shadow 0 6px 16px rgba(43, 138, 138, 0.3), transform translateY(-2px)",
+      "active": "transform translateY(0px), shadow 0 2px 4px rgba(43, 138, 138, 0.2)",
+      "focus_ring": "outline 2px solid #7BCCCF, outline-offset 2px"
+    },
+    "button_secondary": {
+      "padding": "1rem 2.5rem",
+      "border_radius": "8px",
+      "font_weight": 600,
+      "font_size": "1rem",
+      "text_transform": "none",
+      "background": "transparent",
+      "color": "#2B8A8A",
+      "border": "2px solid #2B8A8A",
+      "shadow": "none",
+      "transition": "all 200ms cubic-bezier(0.4, 0, 0.2, 1)",
+      "hover": "background #2B8A8A, color #FFFFFF, shadow 0 4px 12px rgba(43, 138, 138, 0.15)",
+      "active": "transform translateY(1px)",
+      "focus_ring": "outline 2px solid #7BCCCF, outline-offset 2px"
+    },
+    "button_text": {
+      "padding": "0.5rem 0rem",
+      "font_weight": 600,
+      "font_size": "1rem",
+      "color": "#2B8A8A",
+      "background": "transparent",
+      "border": "none",
+      "text_decoration": "none",
+      "transition": "all 150ms ease-out",
+      "hover": "text-decoration underline, color #1F5F5F",
+      "cursor": "pointer"
+    },
+    "card": {
+      "border_radius": "12px",
+      "shadow": "0 2px 8px rgba(43, 138, 138, 0.08)",
+      "padding": "2.5rem",
+      "background": "#FFFFFF",
+      "border": "1px solid #E1E8EB",
+      "transition": "all 300ms cubic-bezier(0.4, 0, 0.2, 1)",
+      "hover_shadow": "0 12px 24px rgba(43, 138, 138, 0.12)",
+      "hover_transform": "translateY(-4px)"
+    },
+    "input": {
+      "border_radius": "8px",
+      "border": "1px solid #E1E8EB",
+      "padding": "0.875rem 1rem",
+      "font_size": "1rem",
+      "font_family": "'Inter', sans-serif",
+      "background": "#FFFFFF",
+      "color": "#2C3E50",
+      "transition": "border-color 150ms, box-shadow 150ms",
+      "focus_ring": "outline none, border-color #7BCCCF, box-shadow 0 0 0 3px rgba(123, 204, 207, 0.1)",
+      "placeholder_color": "#6B7A88",
+      "placeholder_opacity": 0.7
+    },
+    "badge": {
+      "padding": "0.375rem 0.875rem",
+      "border_radius": "20px",
+      "font_size": "0.75rem",
+      "font_weight": 600,
+      "text_transform": "uppercase",
+      "letter_spacing": "0.05em",
+      "background": "#7BCCCF",
+      "color": "#FFFFFF",
+      "display": "inline-block"
+    },
+    "link": {
+      "color": "#2B8A8A",
+      "text_decoration": "none",
+      "font_weight": 500,
+      "border_bottom": "2px solid transparent",
+      "transition": "all 150ms ease-out",
+      "hover": "color #1F5F5F, border-bottom-color #2B8A8A",
+      "visited": "color #1F5F5F"
+    }
+  },
+  "responsive": {
+    "breakpoints": {
+      "mobile": 480,
+      "tablet": 768,
+      "desktop": 1024
+    },
+    "mobile_adjustments": [
+      "All h1 reduced from 3.5rem to 2.25rem, h2 from 2.75rem to 1.875rem, h3 from 2rem to 1.5rem for mobile readability",
+      "Section padding-y reduced from 5rem to 3rem on mobile, padding-x reduced from 2rem to 1.5rem",
+      "Hero section height reduced to 60vh on mobile",
+      "Services and treatments grid switches to 1 column below 768px",
+      "Testimonials grid switches to 1 column on mobile, 2 columns on tablet",
+      "Hero CTA buttons stack vertically (flex-direction column) and full-width below 768px",
+      "CTA banner text and button stack vertically with button full-width on mobile",
+      "Footer grid switches to 2-column on tablet, single column on mobile with centered text alignment",
+      "Card padding reduced from 2.5rem to 1.75rem on tablets, 1.5rem on mobile",
+      "Component gap reduced from 1.5rem to 1rem on mobile",
+      "Hero text max-width increases to 100% below 768px to utilize full available space",
+      "About section image hides on mobile (display none), text takes full width"
+    ]
+  }
+}

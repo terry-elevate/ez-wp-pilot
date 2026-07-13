@@ -1,0 +1,85 @@
+{
+  "test_run": "2026-07-13 17:34:55",
+  "model": "claude-haiku-4-5-20251001",
+  "total_time_seconds": 82.52,
+  "results": [
+    {
+      "client_id": "hvac-comfort-air",
+      "business_name": "Comfort Air Solutions",
+      "industry": "HVAC",
+      "generation_time_seconds": 25.24,
+      "input_tokens": 1488,
+      "output_tokens": 3020,
+      "spec_keys": [
+        "business_name",
+        "industry",
+        "design_rationale",
+        "color_palette",
+        "typography",
+        "spacing",
+        "sections",
+        "components",
+        "responsive"
+      ],
+      "num_sections": 6,
+      "num_colors": 13,
+      "has_typography": true,
+      "has_components": true,
+      "has_responsive": true,
+      "spec_file": "/Users/txu/Repo/wordpress/content/design-specs/hvac-comfort-air-spec.json",
+      "css_file": "/Users/txu/Repo/wordpress/content/design-specs/hvac-comfort-air-variables.css"
+    },
+    {
+      "client_id": "law-firm-sterling",
+      "business_name": "Sterling & Associates",
+      "industry": "Law Firm",
+      "generation_time_seconds": 22.1,
+      "input_tokens": 1479,
+      "output_tokens": 2709,
+      "spec_keys": [
+        "business_name",
+        "industry",
+        "design_rationale",
+        "color_palette",
+        "typography",
+        "spacing",
+        "sections",
+        "components",
+        "responsive"
+      ],
+      "num_sections": 6,
+      "num_colors": 13,
+      "has_typography": true,
+      "has_components": true,
+      "has_responsive": true,
+      "spec_file": "/Users/txu/Repo/wordpress/content/design-specs/law-firm-sterling-spec.json",
+      "css_file": "/Users/txu/Repo/wordpress/content/design-specs/law-firm-sterling-variables.css"
+    },
+    {
+      "client_id": "dental-bright-smile",
+      "business_name": "Bright Smile Family Dentistry",
+      "industry": "Dental Practice",
+      "generation_time_seconds": 35.17,
+      "input_tokens": 1494,
+      "output_tokens": 4770,
+      "spec_keys": [
+        "business_name",
+        "industry",
+        "design_rationale",
+        "color_palette",
+        "typography",
+        "spacing",
+        "sections",
+        "components",
+        "responsive"
+      ],
+      "num_sections": 9,
+      "num_colors": 13,
+      "has_typography": true,
+      "has_components": true,
+      "has_responsive": true,
+      "spec_file": "/Users/txu/Repo/wordpress/content/design-specs/dental-bright-smile-spec.json",
+      "css_file": "/Users/txu/Repo/wordpress/content/design-specs/dental-bright-smile-variables.css"
+    }
+  ]
+}

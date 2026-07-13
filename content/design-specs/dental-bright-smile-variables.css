@@ -1,0 +1,74 @@
+/* CSS Variables generated from design spec: Bright Smile Family Dentistry */
+/* Industry: Dental Practice */
+/* Generated: 2026-07-13 17:34:55 */
+
+:root {
+  /* Color Palette */
+  --color-primary: #2B8A8A;
+  --color-primary-dark: #1F5F5F;
+  --color-primary-light: #7BCCCF;
+  --color-secondary: #F5F9F9;
+  --color-accent: #E8B4A8;
+  --color-background: #FAFBFB;
+  --color-surface: #FFFFFF;
+  --color-text-primary: #2C3E50;
+  --color-text-secondary: #6B7A88;
+  --color-text-on-primary: #FFFFFF;
+  --color-border: #E1E8EB;
+  --color-success: #4CAF7A;
+  --color-warning: #F4A460;
+
+  /* Typography */
+  --font-heading: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-accent: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-size-h1: 3.5rem;
+  --font-weight-h1: 700;
+  --line-height-h1: 1.2;
+  --letter-spacing-h1: -0.02em;
+  --font-size-h2: 2.75rem;
+  --font-weight-h2: 700;
+  --line-height-h2: 1.25;
+  --letter-spacing-h2: -0.01em;
+  --font-size-h3: 2rem;
+  --font-weight-h3: 600;
+  --line-height-h3: 1.35;
+  --font-size-h4: 1.375rem;
+  --font-weight-h4: 600;
+  --line-height-h4: 1.4;
+  --font-size-body: 1rem;
+  --font-weight-body: 400;
+  --line-height-body: 1.6;
+  --font-size-small: 0.875rem;
+  --font-weight-small: 400;
+  --line-height-small: 1.5;
+  --font-size-caption: 0.75rem;
+  --font-weight-caption: 500;
+  --line-height-caption: 1.4;
+
+  /* Spacing */
+  --spacing-section-padding-y: 5rem;
+  --spacing-section-padding-x: 2rem;
+  --spacing-container-max-width: 1200;
+  --spacing-grid-gap: 2rem;
+  --spacing-component-gap: 1.5rem;
+  --spacing-card-padding: 2.5rem;
+
+  /* Components */
+  --radius-card: 12px;
+  --shadow-card: 0 2px 8px rgba(43, 138, 138, 0.08);
+  --shadow-card-hover: 0 12px 24px rgba(43, 138, 138, 0.12);
+  --padding-card: 2.5rem;
+  --radius-button: 8px;
+  --padding-button: 1rem 2.5rem;
+  --shadow-button: 0 2px 8px rgba(43, 138, 138, 0.2);
+  --radius-input: 8px;
+  --border-input: 1px solid #E1E8EB;
+  --focus-ring-input: outline none, border-color #7BCCCF, box-shadow 0 0 0 3px rgba(123, 204, 207, 0.1);
+  --radius-badge: 20px;
+
+  /* Breakpoints */
+  --breakpoint-mobile: 480;
+  --breakpoint-tablet: 768;
+  --breakpoint-desktop: 1024;
+}

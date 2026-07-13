@@ -1,74 +1,74 @@
 /* CSS Variables generated from design spec: Sterling & Associates */
 /* Industry: Law Firm - Personal Injury */
-/* Generated: 2026-07-13 17:32:37 */
+/* Generated: 2026-07-13 17:34:20 */
 
 :root {
   /* Color Palette */
   --color-primary: #1a3a52;
-  --color-primary-dark: #0f1f2e;
+  --color-primary-dark: #0f2235;
   --color-primary-light: #2d5a7b;
-  --color-secondary: #d4a574;
-  --color-accent: #e8b4a8;
-  --color-background: #f9f7f5;
+  --color-secondary: #d4af6a;
+  --color-accent: #e8725b;
+  --color-background: #f9fafb;
   --color-surface: #ffffff;
-  --color-text-primary: #2c3e50;
-  --color-text-secondary: #6b7a8a;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #666666;
   --color-text-on-primary: #ffffff;
-  --color-border: #e5ddd5;
-  --color-success: #4a9d6f;
-  --color-warning: #c97c4c;
+  --color-border: #e5e7eb;
+  --color-success: #16a34a;
+  --color-warning: #ea580c;
 
   /* Typography */
-  --font-heading: 'Lora', 'Garamond', serif;
+  --font-heading: 'Lora', 'Georgia', serif;
   --font-body: 'Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', sans-serif;
-  --font-accent: 'Poppins', 'Arial', sans-serif;
+  --font-accent: 'Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', sans-serif;
   --font-size-h1: 3.5rem;
-  --font-weight-h1: 600;
-  --line-height-h1: 1.2;
+  --font-weight-h1: 700;
+  --line-height-h1: 1.1;
   --letter-spacing-h1: -0.02em;
   --font-size-h2: 2.75rem;
-  --font-weight-h2: 600;
-  --line-height-h2: 1.25;
+  --font-weight-h2: 700;
+  --line-height-h2: 1.15;
   --letter-spacing-h2: -0.01em;
   --font-size-h3: 2rem;
   --font-weight-h3: 600;
-  --line-height-h3: 1.3;
+  --line-height-h3: 1.25;
   --font-size-h4: 1.5rem;
   --font-weight-h4: 600;
-  --line-height-h4: 1.4;
+  --line-height-h4: 1.3;
   --font-size-body: 1rem;
   --font-weight-body: 400;
   --line-height-body: 1.6;
-  --font-size-small: 0.95rem;
+  --font-size-small: 0.875rem;
   --font-weight-small: 400;
-  --line-height-small: 1.6;
-  --font-size-caption: 0.875rem;
+  --line-height-small: 1.5;
+  --font-size-caption: 0.75rem;
   --font-weight-caption: 500;
-  --line-height-caption: 1.5;
+  --line-height-caption: 1.4;
 
   /* Spacing */
   --spacing-section-padding-y: 5rem;
-  --spacing-section-padding-x: 3rem;
+  --spacing-section-padding-x: 2rem;
   --spacing-container-max-width: 1200px;
   --spacing-grid-gap: 2rem;
-  --spacing-component-gap: 1rem;
-  --spacing-card-padding: 2.5rem;
+  --spacing-component-gap: 1.5rem;
+  --spacing-card-padding: 2rem;
 
   /* Components */
-  --radius-card: 8px;
-  --shadow-card: 0 2px 8px rgba(26, 58, 82, 0.06);
-  --shadow-card-hover: 0 8px 24px rgba(26, 58, 82, 0.12);
-  --padding-card: 2.5rem;
+  --radius-card: 12px;
+  --shadow-card: 0 2px 8px rgba(26, 58, 82, 0.08);
+  --shadow-card-hover: 0 12px 24px rgba(26, 58, 82, 0.15);
+  --padding-card: 2rem;
   --radius-button: 6px;
   --padding-button: 0.875rem 2rem;
-  --shadow-button: 0 4px 12px rgba(26, 58, 82, 0.2);
+  --shadow-button: 0 2px 8px rgba(0, 0, 0, 0.12);
   --radius-input: 6px;
-  --border-input: 1px solid #e5ddd5;
-  --focus-ring-input: outline: 2px solid #d4a574, outline-offset: 2px;
-  --radius-badge: 20px;
+  --border-input: 1px solid #e5e7eb;
+  --focus-ring-input: 0 0 0 3px rgba(212, 175, 106, 0.2), border-color: #d4af6a;
+  --radius-badge: 12px;
 
   /* Breakpoints */
   --breakpoint-mobile: 480px;
   --breakpoint-tablet: 768px;
-  --breakpoint-desktop: 1200px;
+  --breakpoint-desktop: 1024px;
 }
