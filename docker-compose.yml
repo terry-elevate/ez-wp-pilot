@@ -73,6 +73,8 @@ services:
       WORDPRESS_DB_PASSWORD: wp-dev-Qm27v
     volumes:
       - wp_data:/var/www/html
+      - ./scripts:/var/www/html/scripts
+      - ./content:/var/www/html/content
     entrypoint: wp
     command: "--info"
     profiles: ["cli"]

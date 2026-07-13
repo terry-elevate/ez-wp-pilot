@@ -1,0 +1,184 @@
+{
+  "business_name": "Comfort Air Solutions",
+  "industry": "HVAC",
+  "design_rationale": "The design balances professional credibility with warm approachability through a refined color palette of deep blue and warm orange accents, paired with readable serif-and-sans serif typography that feels trustworthy yet personable. Generous spacing, soft shadows, and imagery showing real technicians and family moments reinforce the 'reliable neighbor' positioning while maintaining professional polish.",
+  "color_palette": {
+    "primary": "#1e4d7b",
+    "primary_dark": "#0f2d47",
+    "primary_light": "#3a6fa8",
+    "secondary": "#f0863d",
+    "accent": "#e8722a",
+    "background": "#fafaf9",
+    "surface": "#ffffff",
+    "text_primary": "#1a1a1a",
+    "text_secondary": "#5a5a5a",
+    "text_on_primary": "#ffffff",
+    "border": "#e0e0e0",
+    "success": "#2d8659",
+    "warning": "#d97706"
+  },
+  "typography": {
+    "font_heading": "'Merriweather', Georgia, serif",
+    "font_body": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "font_accent": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "scale": {
+      "h1": {
+        "size": "3.5rem",
+        "weight": 700,
+        "line_height": 1.1,
+        "letter_spacing": "-0.02em"
+      },
+      "h2": {
+        "size": "2.5rem",
+        "weight": 700,
+        "line_height": 1.2,
+        "letter_spacing": "-0.01em"
+      },
+      "h3": {
+        "size": "1.75rem",
+        "weight": 600,
+        "line_height": 1.3,
+        "letter_spacing": "normal"
+      },
+      "h4": {
+        "size": "1.25rem",
+        "weight": 600,
+        "line_height": 1.4,
+        "letter_spacing": "normal"
+      },
+      "body": {
+        "size": "1rem",
+        "weight": 400,
+        "line_height": 1.6
+      },
+      "small": {
+        "size": "0.875rem",
+        "weight": 400,
+        "line_height": 1.5
+      },
+      "caption": {
+        "size": "0.75rem",
+        "weight": 500,
+        "line_height": 1.4
+      }
+    }
+  },
+  "spacing": {
+    "section_padding_y": "5rem",
+    "section_padding_x": "2rem",
+    "container_max_width": "1200px",
+    "grid_gap": "2rem",
+    "component_gap": "1.5rem",
+    "card_padding": "2rem"
+  },
+  "sections": [
+    {
+      "name": "hero",
+      "layout": "Split layout with image on right, content on left; 60/40 split on desktop",
+      "height": "600px",
+      "background": "Solid background #fafaf9 with large hero image on right side occupying 45% of viewport",
+      "image_style": "Photography of a smiling male HVAC technician in company uniform working on a residential unit, natural lighting from a garage or home setting, warm and approachable, shot at eye level with homeowner visible in background",
+      "overlay": "Subtle gradient from rgba(255,255,255,0.95) on left fading to transparent at 70%",
+      "text_position": "left, vertically centered",
+      "text_max_width": "500px",
+      "cta_style": "Primary button (orange #f0863d) with secondary button below; both have generous padding and strong shadows for prominence"
+    },
+    {
+      "name": "services",
+      "layout": "3-column grid on desktop, 1 column on mobile, 2 columns on tablet; 2rem gap between cards",
+      "card_style": {
+        "border_radius": "12px",
+        "shadow": "0 2px 8px rgba(30, 77, 123, 0.08)",
+        "padding": "2rem",
+        "hover_effect": "Shadow increases to 0 8px 24px rgba(30, 77, 123, 0.15), transform translate Y by -4px, transition 300ms ease",
+        "icon_style": "100x100px SVG icons in primary blue (#1e4d7b), centered above h4 heading with 1rem margin below"
+      }
+    },
+    {
+      "name": "about/trust",
+      "layout": "Two-column layout: left column has image (50%), right column has stacked content (50%) with heading, body text, and three feature bullets below",
+      "elements": [
+        "Large photograph of company founder/owner in work environment, warm natural lighting, professional but approachable attire",
+        "H2 heading 'Local, Family-Owned Since [YEAR]'",
+        "Body paragraph about company history and values (2-3 sentences)",
+        "Three bullet points with small icons (checkmark style) in primary blue: '24/7 Emergency Service', 'Licensed & Insured Technicians', 'Same-Day Service Available'",
+        "Small customer count stat (e.g., '3,500+ Happy Homes Served') in smaller text below bullets"
+      ]
+    },
+    {
+      "name": "testimonials",
+      "layout": "Carousel or slider showing 3 testimonials visible on desktop (1 on mobile); cards side-by-side with slight overlap effect (margin-right: -1rem)",
+      "card_style": {
+        "border_radius": "12px",
+        "shadow": "0 4px 12px rgba(30, 77, 123, 0.1)",
+        "quote_style": "Opening quotation mark in accent orange (#e8722a) at 3rem size, italic serif font for quote text, 1.5rem size, 1.6 line height, testimonial owner name in bold body font below with job title in smaller gray text, small circular headshot (80px) positioned top-left overlapping border"
+      }
+    },
+    {
+      "name": "cta_banner",
+      "layout": "Full-width section with centered content; heading, subheading, and two CTA buttons stacked vertically in center",
+      "background": "Linear gradient from primary blue (#1e4d7b) at 0% to primary_light (#3a6fa8) at 100%, angled 135deg; subtle texture overlay of diagonal lines at 2px spacing, opacity 0.05",
+      "button_style": "First button: white text on transparent with white border (2px), hover inverts to white background with blue text. Second button: secondary orange (#f0863d) filled, white text, hover increases saturation. Both buttons have 1.5rem padding horizontal, 0.75rem padding vertical"
+    },
+    {
+      "name": "footer",
+      "layout": "4-column grid layout: Company Info, Services, Quick Links, Contact; stacks to 2 columns on tablet, 1 column on mobile; 3rem gap between columns",
+      "background": "Dark blue primary_dark (#0f2d47) full width, 3rem padding top/bottom"
+    }
+  ],
+  "components": {
+    "button_primary": {
+      "padding": "0.875rem 2rem",
+      "border_radius": "8px",
+      "font_weight": 600,
+      "text_transform": "none",
+      "shadow": "0 4px 12px rgba(240, 134, 61, 0.3)",
+      "hover": "Background shifts to accent (#e8722a), shadow increases to 0 6px 20px rgba(240, 134, 61, 0.4), transform translateY(-2px), transition 200ms ease"
+    },
+    "button_secondary": {
+      "padding": "0.875rem 2rem",
+      "border_radius": "8px",
+      "border": "2px solid #1e4d7b",
+      "hover": "Background fills with primary (#1e4d7b), text color becomes white, transition 200ms ease, shadow becomes 0 4px 12px rgba(30, 77, 123, 0.2)"
+    },
+    "card": {
+      "border_radius": "12px",
+      "shadow": "0 2px 8px rgba(30, 77, 123, 0.08)",
+      "padding": "2rem",
+      "background": "#ffffff",
+      "hover_shadow": "0 8px 24px rgba(30, 77, 123, 0.15)"
+    },
+    "input": {
+      "border_radius": "6px",
+      "border": "1px solid #e0e0e0",
+      "padding": "0.75rem 1rem",
+      "focus_ring": "outline none, box-shadow 0 0 0 3px rgba(30, 77, 123, 0.1), border-color #1e4d7b, transition 150ms ease"
+    },
+    "badge": {
+      "padding": "0.375rem 0.75rem",
+      "border_radius": "20px",
+      "font_size": "0.75rem",
+      "font_weight": 600
+    }
+  },
+  "responsive": {
+    "breakpoints": {
+      "mobile": "480px",
+      "tablet": "768px",
+      "desktop": "1024px"
+    },
+    "mobile_adjustments": [
+      "Hero section: Stack vertically with image above text (full width 100vh height), text centered, 1.5rem padding x",
+      "Services grid: 1 column layout, cards full width with 1.5rem margin x",
+      "About/trust section: Stack vertically, image full width on top, content section below with 1.5rem padding x",
+      "Testimonials: Show 1 card at a time in carousel, remove overlap effect, full width with 1.5rem padding x",
+      "CTA banner: Heading size reduces to 2rem, buttons stack vertically and expand to 90% width with 1rem padding x",
+      "Footer: 1 column layout, 2rem padding x, sections separated by 1.5rem margin y",
+      "H1 heading: Reduce to 2.25rem on mobile",
+      "H2 heading: Reduce to 1.75rem on mobile",
+      "Section padding: Reduce to 3rem y on mobile",
+      "Container max-width: Ignored on mobile (full width with side padding)",
+      "Tablet adjustments: Services 2 columns, testimonials show 2 cards, footer 2 columns"
+    ]
+  }
+}

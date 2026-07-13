@@ -2,9 +2,11 @@
 // Section renderer library — Squarespace/premium-theme caliber
 // Each function produces Gutenberg block markup with design-system CSS classes.
 
-function sec_esc( $v ) { return esc_html( trim( (string) $v ) ); }
+function sec_esc( $v ) { if ( is_array( $v ) ) { $v = implode( ' ', $v ); } return esc_html( trim( (string) $v ) ); }
 
 function sec_split_long( $text ) {
+    if ( is_array( $text ) ) { $text = implode( ' ', $text ); }
+    $text = (string) $text;
     if ( str_word_count( $text ) <= 80 ) { return array( $text ); }
     $sentences = preg_split( '/(?<=[.!?;])\s+/', trim( $text ) );
     $chunks = array(); $buf = '';
@@ -18,6 +20,7 @@ function sec_split_long( $text ) {
 }
 
 function sec_p( $text, $class = '' ) {
+    if ( is_array( $text ) ) { $text = implode( ' ', $text ); }
     $chunks = sec_split_long( $text );
     $out = array();
     $ca = $class ? " {\"className\":\"{$class}\"}" : '';
@@ -29,6 +32,7 @@ function sec_p( $text, $class = '' ) {
 }
 
 function sec_h( $text, $level = 2, $class = '' ) {
+    if ( is_array( $text ) ) { $text = implode( ' ', $text ); }
     $ca = "\"level\":{$level}";
     if ( $class ) { $ca .= ",\"className\":\"{$class}\""; }
     $cc = $class ? " class=\"wp-element-heading {$class}\"" : '';
@@ -38,7 +42,8 @@ function sec_h( $text, $level = 2, $class = '' ) {
 function sec_list( $items, $class = '' ) {
     $li = '';
     foreach ( $items as $it ) {
-        foreach ( sec_split_long( $it ) as $c ) {
+        if ( is_array( $it ) ) { $it = implode( ' — ', array_values( $it ) ); }
+        foreach ( sec_split_long( (string) $it ) as $c ) {
             $li .= "<!-- wp:list-item -->\n<li>" . sec_esc( $c ) . "</li>\n<!-- /wp:list-item -->\n";
         }
     }
