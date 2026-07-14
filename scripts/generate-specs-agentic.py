@@ -149,16 +149,50 @@ INSTRUCTIONS:
 7. Ensure at least 4 sections have heading fields (for h2 count).
 8. Include FAQ, nearby, and a final CTA.
 
+SELF-SCORE: Before outputting, score your spec 0-10 on each criterion below. Include the scorecard in your JSON output. ANY item below 7 means you must revise before outputting.
+
 OUTPUT FORMAT — respond with ONLY a JSON object (no markdown, no explanation):
 {{
   "city": "{entry['city']}",
   "meta_description": "...",
   "layout_type": "{brief['style']}",
+  "scorecard": {{
+    "storybrand_customer_hero": 0,
+    "headline_thats_me": 0,
+    "paragraph_brevity": 0,
+    "cta_quality": 0,
+    "visual_every_section": 0,
+    "color_contrast": 0,
+    "section_independence": 0,
+    "service_list_present": 0,
+    "image_variety": 0,
+    "layout_diversity": 0,
+    "no_dark_body_text": 0,
+    "word_count_target": 0,
+    "mobile_safe": 0,
+    "design_taste": 0
+  }},
   "sections": [
     {{"type": "hero_cover", "headline": "...", ...}},
     ...
   ]
-}}"""
+}}
+
+SCORECARD CRITERIA (score each 0-10):
+- storybrand_customer_hero: Is the customer framed as hero, business as guide? (10=perfect StoryBrand, 0=all about the company)
+- headline_thats_me: Does H1 make the reader say "That's me!"? (10=nails their pain, 0=generic company description)
+- paragraph_brevity: Are ALL paragraphs ≤50 words / 3 lines? (10=all short, 0=walls of text)
+- cta_quality: Are CTAs specific action words, no "click here"/"learn more"? (10=compelling specific, 0=generic)
+- visual_every_section: Does EVERY section have a design element (image, bg, cards, icons)? (10=all have visuals, 0=plain text sections)
+- color_contrast: Are band colors high-contrast and purposeful? (10=varied and readable, 0=monotone)
+- section_independence: Can each section stand alone without context? (10=fully independent, 0=depends on prior section)
+- service_list_present: Is there a clear structured service listing? (10=scannable service section, 0=services buried in prose)
+- image_variety: Multiple image topics used, not repetitive? (10=diverse imagery, 0=same topic repeated)
+- layout_diversity: Mix of section widths and types? (10=varied layout, 0=all same narrow columns)
+- no_dark_body_text: No white-on-dark for body paragraphs? (10=follows rule, 0=violates)
+- word_count_target: Will rendered page hit 750+ words? (10=comfortably above, 0=way short)
+- mobile_safe: Will layout work on 375px without breaking? (10=fully safe, 0=will break)
+- design_taste: Headlines short, CTAs clean, stats are numbers, cards scannable? (10=polished, 0=messy)"""
 
 
 async def generate_spec(client, entry, brief, semaphore, idx, attempt=1):
@@ -200,7 +234,22 @@ async def generate_spec(client, entry, brief, semaphore, idx, attempt=1):
             if len(sections) < 6:
                 print(f"    ⚠ {city}: only {len(sections)} sections (short page)")
 
-            print(f"    ✓ {city}: {len(sections)} sections, {img_count} imgs, {h2_count} h2s")
+            # Scorecard validation
+            scorecard = spec.get('scorecard', {})
+            if scorecard:
+                scores = list(scorecard.values())
+                avg_score = sum(scores) / len(scores) if scores else 0
+                low_items = [k for k, v in scorecard.items() if isinstance(v, (int, float)) and v < 7]
+                if low_items:
+                    print(f"    ⚠ {city}: low scores ({avg_score:.1f} avg) — {', '.join(low_items)}")
+                    if avg_score < 6:
+                        print(f"    ✗ {city}: REJECTED (avg score {avg_score:.1f} < 6)")
+                        return None
+                print(f"    ✓ {city}: {len(sections)} sections, {img_count} imgs, {h2_count} h2s, score {avg_score:.1f}/10")
+            else:
+                print(f"    ⚠ {city}: no scorecard returned")
+                print(f"    ✓ {city}: {len(sections)} sections, {img_count} imgs, {h2_count} h2s")
+
             return spec
 
         except json.JSONDecodeError as e:
@@ -322,6 +371,40 @@ async def main():
         print(f"\n⚠ Duplicate opening frames: {dupe_openings}")
     else:
         print(f"\n✓ All opening frames unique")
+
+    # Scorecard aggregate report
+    print(f"\n{'='*60}")
+    print("SCORECARD REPORT")
+    print(f"{'='*60}")
+
+    all_scorecards = [s.get('scorecard', {}) for s in specs if s.get('scorecard')]
+    if all_scorecards:
+        criteria = list(all_scorecards[0].keys())
+        print(f"\n{'Criterion':<30} {'Avg':>5} {'Min':>5} {'<7':>5}")
+        print("-" * 50)
+        for criterion in criteria:
+            values = [sc.get(criterion, 0) for sc in all_scorecards if isinstance(sc.get(criterion), (int, float))]
+            if values:
+                avg = sum(values) / len(values)
+                lo = min(values)
+                below7 = sum(1 for v in values if v < 7)
+                flag = " ⚠" if below7 > 0 else ""
+                print(f"  {criterion:<28} {avg:>5.1f} {lo:>5} {below7:>5}{flag}")
+
+        all_avgs = []
+        for sc in all_scorecards:
+            vals = [v for v in sc.values() if isinstance(v, (int, float))]
+            if vals:
+                all_avgs.append(sum(vals) / len(vals))
+        if all_avgs:
+            print(f"\n  Overall avg: {sum(all_avgs)/len(all_avgs):.1f}/10")
+            print(f"  Lowest page avg: {min(all_avgs):.1f}/10")
+            print(f"  Highest page avg: {max(all_avgs):.1f}/10")
+            below_threshold = sum(1 for a in all_avgs if a < 7)
+            if below_threshold:
+                print(f"  ⚠ {below_threshold} pages scored below 7.0 average")
+    else:
+        print("\n  No scorecards returned by agents")
 
 
 if __name__ == '__main__':
