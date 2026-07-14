@@ -1,0 +1,137 @@
+/* ===================================================================
+   BRAND OVERRIDE SYSTEM
+   Each layout_type gets its own color palette via body class.
+   The v3 renderer stores layout_type in _layout_type post meta;
+   functions.php adds .brand-{slug} to <body>.
+   =================================================================== */
+
+/* --- Default (Keystone Comfort / HVAC warm) --- */
+/* Already set via :root in location.css */
+
+/* --- Law Firm: Dark authoritative, gold accent --- */
+.brand-law,
+.brand-dark-authority {
+  --c-ember: #C9A84C;
+  --c-ember-light: #faf5e8;
+  --c-ember-glow: rgba(201, 168, 76, .35);
+  --c-ink: #1A2744;
+  --c-sand: #F0EEE8;
+  --c-cream: #FDFCF8;
+}
+
+/* --- Dental: Calming teal --- */
+.brand-dental,
+.brand-calming-teal {
+  --c-ember: #2B8A8A;
+  --c-ember-light: #E8F5F5;
+  --c-ember-glow: rgba(43, 138, 138, .35);
+  --c-ink: #1A3A3A;
+  --c-sand: #EFF8F6;
+  --c-cream: #F8FDFB;
+}
+
+/* --- Roofing: Bold industrial orange --- */
+.brand-roofing,
+.brand-bold-industrial {
+  --c-ember: #E65100;
+  --c-ember-light: #FFF3E0;
+  --c-ember-glow: rgba(230, 81, 0, .35);
+  --c-ink: #1A1A1A;
+  --c-sand: #F5F5F5;
+  --c-cream: #FAFAFA;
+}
+
+/* --- Restaurant: Warm Italian browns --- */
+.brand-restaurant,
+.brand-warm-italian {
+  --c-ember: #C4853B;
+  --c-ember-light: #FEF5E8;
+  --c-ember-glow: rgba(196, 133, 59, .35);
+  --c-ink: #1B0E05;
+  --c-sand: #FAF6F0;
+  --c-cream: #FFFCF5;
+}
+
+/* --- Plumbing: Professional blue --- */
+.brand-plumbing,
+.brand-clean-blue {
+  --c-ember: #0D5C8F;
+  --c-ember-light: #E8F4FC;
+  --c-ember-glow: rgba(13, 92, 143, .35);
+  --c-ink: #0D3B5C;
+  --c-sand: #F0F7FC;
+  --c-cream: #F8FBFE;
+}
+
+/* --- CPA: Corporate sage green --- */
+.brand-cpa,
+.brand-corporate-green {
+  --c-ember: #5A8A6A;
+  --c-ember-light: #EDF5EF;
+  --c-ember-glow: rgba(90, 138, 106, .35);
+  --c-ink: #1A3A4A;
+  --c-sand: #F8FAF9;
+  --c-cream: #FBFDFB;
+}
+
+/* --- Auto Shop: Gritty red/black --- */
+.brand-auto,
+.brand-gritty-red {
+  --c-ember: #E63946;
+  --c-ember-light: #FEE8EA;
+  --c-ember-glow: rgba(230, 57, 70, .35);
+  --c-ink: #1A1A1A;
+  --c-sand: #F5F5F5;
+  --c-cream: #FAFAFA;
+}
+
+/* --- Landscaping: Earthy green --- */
+.brand-landscaping,
+.brand-earthy-green {
+  --c-ember: #4A7C59;
+  --c-ember-light: #EDF5EF;
+  --c-ember-glow: rgba(74, 124, 89, .35);
+  --c-ink: #2D4A32;
+  --c-sand: #F4F8F4;
+  --c-cream: #F8FAF8;
+}
+
+/* --- Split Industrial (Bethlehem-style blue) --- */
+.brand-split-industrial {
+  --c-ember: #1E6BB8;
+  --c-ember-light: #E8F2FC;
+  --c-ember-glow: rgba(30, 107, 184, .35);
+  --c-ink: #0F2B44;
+  --c-sand: #EEF4FA;
+  --c-cream: #F5F9FD;
+}
+
+/* --- Lakefront Bold (Erie-style red) --- */
+.brand-lakefront-bold {
+  --c-ember: #C0392B;
+  --c-ember-light: #FDEDEB;
+  --c-ember-glow: rgba(192, 57, 43, .35);
+  --c-ink: #1A1A2E;
+  --c-sand: #F5F0EE;
+  --c-cream: #FDF8F7;
+}
+
+/* --- Heritage Serif (Lancaster green) --- */
+.brand-heritage-serif {
+  --c-ember: #3D7B4F;
+  --c-ember-light: #E8F5EC;
+  --c-ember-glow: rgba(61, 123, 79, .35);
+  --c-ink: #1F3A28;
+  --c-sand: #F0F5EE;
+  --c-cream: #F8FBF5;
+}
+
+/* --- Cinematic Visual --- */
+.brand-cinematic-visual {
+  --c-ember: #B57A3A;
+  --c-ember-light: #FBF3E8;
+  --c-ember-glow: rgba(181, 122, 58, .35);
+  --c-ink: #2C1810;
+  --c-sand: #F5F0E8;
+  --c-cream: #FFFDF5;
+}
