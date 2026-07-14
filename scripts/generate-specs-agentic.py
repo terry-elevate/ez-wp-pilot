@@ -85,10 +85,10 @@ IMAGE TOPICS AVAILABLE: technician, furnace, ductwork, thermostat, heatpump, min
 
 GATE_REQUIREMENTS = """
 GATE REQUIREMENTS (your spec MUST pass these):
-1. Page must render ≥1000 words total (aim for 1200+)
+1. Page must render ≥750 words total (aim for 900+)
 2. Must have ≥2 sections with image_topic (inline images)
 3. Must have ≥4 h2 headings (each content section with a "heading" counts)
-4. Paragraphs must be ≤110 words each
+4. Paragraphs must be ≤50 words each (3 lines max in full-width layout)
 5. Must include meta_description
 6. Must include nearby[] cities
 7. The FIRST paragraph on the page must start with a UNIQUE opening (first 3 words matter)
@@ -109,6 +109,18 @@ DESIGN TASTE (these are non-negotiable):
 18. Quote text should be 1-2 sentences max. Pullquotes are meant to be glanceable.
 19. Card titles should be 2-5 words. Cards are scannable.
 20. Stat numbers must be ACTUAL numbers or short values: "15+", "$2,400", "30°F", "R-38". Not words, not sentences.
+
+EZ BEST PRACTICES (from EZMarketing's official checklist — follow ALL):
+21. STORYBRAND COPY: Customer is the HERO, business is the GUIDE. Frame as: customer has problem → business provides plan → customer succeeds. NEVER lead with "we are" or "our company" — lead with the customer's pain.
+22. H1 must make the reader say "That's me!" — speak to their situation, not your features.
+23. Every section stands on its own. No section depends on another to make sense.
+24. Content focused on the CLIENT'S PROBLEM first, then the solution. Features come after pain.
+25. NO "click here" CTAs ever. Describe the action/outcome.
+26. NO email addresses in content. Use forms.
+27. Every section MUST have a visual design element — no plain-text-only sections. Each needs: image, colored background, cards/boxes, icon list, or similar.
+28. NO white text on dark background for body paragraphs (OK for hero overlays and short CTA bands only).
+29. Photos must support the message — no generic stock. People should look engaged in relevant activity.
+30. Avoid full-image darken overlays when possible — prefer floating cards/containers over images.
 """
 
 

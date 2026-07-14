@@ -1,0 +1,146 @@
+[
+  {
+    "category": "headers-simple",
+    "domain": "brandywinequarry.com",
+    "status": "fail",
+    "error": "page.goto: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://ww"
+  },
+  {
+    "category": "headers-simple",
+    "domain": "gsmindustrial.com",
+    "status": "ok",
+    "filepath": "gsmindustrial.com.png"
+  },
+  {
+    "category": "headers-simple",
+    "domain": "tlacc.org",
+    "status": "ok",
+    "filepath": "tlacc.org.png"
+  },
+  {
+    "category": "headers-simple",
+    "domain": "lombardosrestaurant.com",
+    "status": "ok",
+    "filepath": "lombardosrestaurant.com.png"
+  },
+  {
+    "category": "headers-multilevel",
+    "domain": "envairtech.com",
+    "status": "ok",
+    "filepath": "envairtech.com.png"
+  },
+  {
+    "category": "headers-multilevel",
+    "domain": "giftcpas.com",
+    "status": "ok",
+    "filepath": "giftcpas.com.png"
+  },
+  {
+    "category": "headers-multilevel",
+    "domain": "glickfire.com",
+    "status": "ok",
+    "filepath": "glickfire.com.png"
+  },
+  {
+    "category": "headers-multilevel",
+    "domain": "pearlsolves.com",
+    "status": "ok",
+    "filepath": "pearlsolves.com.png"
+  },
+  {
+    "category": "headers-multilevel",
+    "domain": "boardmaninc.com",
+    "status": "ok",
+    "filepath": "boardmaninc.com.png"
+  },
+  {
+    "category": "headers-background",
+    "domain": "westmorelandinjurylawyers.com",
+    "status": "ok",
+    "filepath": "westmorelandinjurylawyers.com.png"
+  },
+  {
+    "category": "headers-background",
+    "domain": "dsdi1776.com",
+    "status": "ok",
+    "filepath": "dsdi1776.com.png"
+  },
+  {
+    "category": "headers-background",
+    "domain": "s-k.com",
+    "status": "ok",
+    "filepath": "s-k.com.png"
+  },
+  {
+    "category": "footers-basic",
+    "domain": "tlacc.org",
+    "status": "ok",
+    "filepath": "tlacc.org.png"
+  },
+  {
+    "category": "footers-basic",
+    "domain": "sellmyhouseforcashpa.com",
+    "status": "ok",
+    "filepath": "sellmyhouseforcashpa.com.png"
+  },
+  {
+    "category": "footers-basic",
+    "domain": "deliverthoughtfulimpact.com",
+    "status": "ok",
+    "filepath": "deliverthoughtfulimpact.com.png"
+  },
+  {
+    "category": "footers-basic",
+    "domain": "brandywinevalleyfab.com",
+    "status": "ok",
+    "filepath": "brandywinevalleyfab.com.png"
+  },
+  {
+    "category": "footers-basic",
+    "domain": "dutchcountrycatering.com",
+    "status": "ok",
+    "filepath": "dutchcountrycatering.com.png"
+  },
+  {
+    "category": "footers-navigation",
+    "domain": "cfpsprinkler.com",
+    "status": "ok",
+    "filepath": "cfpsprinkler.com.png"
+  },
+  {
+    "category": "footers-navigation",
+    "domain": "sensenigsfeed.com",
+    "status": "ok",
+    "filepath": "sensenigsfeed.com.png"
+  },
+  {
+    "category": "footers-navigation",
+    "domain": "nashvillecomputer.com",
+    "status": "ok",
+    "filepath": "nashvillecomputer.com.png"
+  },
+  {
+    "category": "footers-navigation",
+    "domain": "lancasterkitchens.net",
+    "status": "ok",
+    "filepath": "lancasterkitchens.net.png"
+  },
+  {
+    "category": "footers-navigation",
+    "domain": "westmorelandinjurylawyers.com",
+    "status": "ok",
+    "filepath": "westmorelandinjurylawyers.com.png"
+  },
+  {
+    "category": "footers-navigation",
+    "domain": "giftcpas.com",
+    "status": "ok",
+    "filepath": "giftcpas.com.png"
+  },
+  {
+    "category": "footers-navigation",
+    "domain": "glickfire.com",
+    "status": "ok",
+    "filepath": "glickfire.com.png"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "name": "wordpress",
+  "version": "1.0.0",
+  "description": "Local pilot for the EZ Solutions engagement (Linear: ELVT-207 requirements, ELVT-208 market scan). Tests AI-operated WordPress across fleet management, zero-egress inference, MCP agent access, and the location-pages-at-scale workflow, against a fictional demo brand (**Keystone Comfort Co.**).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "playwright": "^1.61.1"
+  }
+}
