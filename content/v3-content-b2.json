@@ -117,7 +117,8 @@
     "Boiler rumbles or bangs during heat cycles — scale buildup or pressure control issues",
     "Carbon monoxide detector triggers near the furnace — combustion gas backdrafting through chimney cracks"
    ]
-  }
+  },
+  "layout_type": "diagnostic-first"
  },
  {
   "city": "Gettysburg, PA",
@@ -233,7 +234,8 @@
     "Window units visible from curb or dripping on siding — opportunity to upgrade aesthetics",
     "Seasonal startup delays — equipment dormant for months needs pre-season commissioning"
    ]
-  }
+  },
+  "layout_type": "story-flow"
  },
  {
   "city": "Mechanicsburg, PA",
@@ -349,7 +351,8 @@
     "Blower runs constantly but airflow feels weak at vents — static pressure too high",
     "Energy bills higher than same-size neighbors — equipment fighting the building instead of conditioning it"
    ]
-  }
+  },
+  "layout_type": "comparison"
  },
  {
   "city": "Chambersburg, PA",
@@ -465,7 +468,8 @@
     "Utility bills climb but comfort doesn't improve — equipment working against building physics",
     "Thermostat wars between family members — different zones need different setpoints"
    ]
-  }
+  },
+  "layout_type": "comparison"
  },
  {
   "city": "Hershey, PA",
@@ -581,6 +585,7 @@
     "Wood trim swelling in summer, shrinking in winter — moisture cycling from lack of humidity control",
     "Allergy symptoms worse indoors than outside — high humidity supporting dust mites and mold"
    ]
-  }
+  },
+  "layout_type": "accordion"
  }
 ]

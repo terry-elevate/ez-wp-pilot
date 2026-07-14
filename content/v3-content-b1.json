@@ -104,7 +104,8 @@
     "Basement humidity above 60% by June — foundation moisture migrating into ductwork",
     "Energy bill climbed 20%+ with no rate change — equipment efficiency degrading"
    ]
-  }
+  },
+  "layout_type": "diagnostic-first"
  },
  {
   "city": "York, PA",
@@ -210,7 +211,8 @@
     "Metallic smell when the heat first kicks on — possible heat exchanger issue",
     "Thermostat satisfied but rooms feel cold — distribution problem, not equipment"
    ]
-  }
+  },
+  "layout_type": "diagnostic-first"
  },
  {
   "city": "Reading, PA",
@@ -326,7 +328,8 @@
     "Energy bill spikes in July/August beyond rate increases — efficiency degradation",
     "Condensate drain overflows frequently — coil not dehumidifying properly"
    ]
-  }
+  },
+  "layout_type": "accordion"
  },
  {
   "city": "Harrisburg, PA",
@@ -438,7 +441,8 @@
     "AC runs but house feels clammy — system removing heat but not moisture",
     "Wallpaper peeling near exterior walls — condensation forming inside the wall assembly"
    ]
-  }
+  },
+  "layout_type": "accordion"
  },
  {
   "city": "Allentown, PA",
@@ -552,6 +556,7 @@
     "Current heating costs above $2,500/year — savings justify the investment timeline",
     "No gas appliances besides furnace — full electrification feasible in one project"
    ]
-  }
+  },
+  "layout_type": "comparison"
  }
 ]

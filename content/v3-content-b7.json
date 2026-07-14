@@ -114,7 +114,8 @@
     "Multiple fireplaces with open flues — massive air infiltration pathway even when unused",
     "Third floor noticeably colder — heat loss through uninsulated mansard or slate roof"
    ]
-  }
+  },
+  "layout_type": "hero-led"
  },
  {
   "city": "Warren, PA",
@@ -231,7 +232,8 @@
     "Pipe insulation intact in unheated spaces — prevents freeze damage during equipment failure",
     "Generator or battery backup maintains minimum thermostat — prevents whole-house freeze"
    ]
-  }
+  },
+  "layout_type": "hero-led"
  },
  {
   "city": "Bradford, PA",
@@ -348,7 +350,8 @@
     "Indoor humidity stays 30-40% in winter without a humidifier — envelope and ventilation balanced",
     "Equipment runtime never exceeds 80% of available hours — adequate capacity margin"
    ]
-  }
+  },
+  "layout_type": "data-driven"
  },
  {
   "city": "DuBois, PA",
@@ -465,7 +468,8 @@
     "System runs fine in fall but struggles in January — capacity undersized for design temp",
     "Utility bill climbs year over year with same usage — equipment efficiency degrading"
    ]
-  }
+  },
+  "layout_type": "comparison"
  },
  {
   "city": "Hazleton, PA",
@@ -582,6 +586,7 @@
     "Gas furnace exhausting into unlined masonry chimney — condensation destroying mortar",
     "Rowhouse center unit overheating while end units freeze — shared system imbalanced"
    ]
-  }
+  },
+  "layout_type": "diagnostic-first"
  }
 ]

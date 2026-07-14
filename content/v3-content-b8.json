@@ -114,7 +114,8 @@
     "Ice dams forming on north-facing roof — heat escaping, attic insulation inadequate",
     "Humidity swings between weekday vacancy and weekend occupancy — moisture management gap"
    ]
-  }
+  },
+  "layout_type": "data-driven"
  },
  {
   "city": "East Stroudsburg, PA",
@@ -232,7 +233,8 @@
     "Utility bills higher than projected — equipment sized by square footage, not actual load",
     "Tenant complaints every August — turnover timing means problems aren't caught until too late"
    ]
-  }
+  },
+  "layout_type": "data-driven"
  },
  {
   "city": "Lititz, PA",
@@ -349,7 +351,8 @@
     "Window condensation in winter — interior humidity too high for glass R-value",
     "Equipment on narrow lot: condenser clearance tight — noise and airflow concerns for neighbors"
    ]
-  }
+  },
+  "layout_type": "visual-showcase"
  },
  {
   "city": "Columbia, PA",
@@ -466,7 +469,8 @@
     "First-floor hardwood cupping or crowning — moisture migrating from below",
     "Dehumidifier draining more than 5 gallons daily — infiltration rate exceeds unit capacity"
    ]
-  }
+  },
+  "layout_type": "visual-showcase"
  },
  {
   "city": "Ephrata, PA",
@@ -583,6 +587,7 @@
     "Dust accumulates faster near ag operations — enhanced filtration extends equipment life",
     "Historic section has no duct access — ductless supplement needed for those rooms"
    ]
-  }
+  },
+  "layout_type": "accordion"
  }
 ]

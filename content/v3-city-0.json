@@ -116,6 +116,7 @@
     "CO2 above 1000 ppm in occupied rooms — insufficient outdoor air exchange",
     "Stuffy feeling despite comfortable temperature — low fresh air rate per occupant"
    ]
-  }
+  },
+  "layout_type": "hero-led"
  }
 ]

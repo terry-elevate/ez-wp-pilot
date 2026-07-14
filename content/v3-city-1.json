@@ -117,6 +117,7 @@
     "Furnace filter last changed 90+ days ago — heavy-use season demands 30-60 day cycles",
     "Thermostat set-back during work hours — recovery period conflicts with afternoon lake-effect cold"
    ]
-  }
+  },
+  "layout_type": "hero-led"
  }
 ]

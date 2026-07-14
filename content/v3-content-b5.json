@@ -114,7 +114,8 @@
     "Black residue on supply vent edges — duct leakage pulling unfiltered attic/crawlspace air",
     "Equipment running longer cycles than expected — dirty coils or restricted airflow from buildup"
    ]
-  }
+  },
+  "layout_type": "data-driven"
  },
  {
   "city": "Shippensburg, PA",
@@ -231,7 +232,8 @@
     "CO detector within 15 feet of all sleeping areas — tested and dated",
     "Emergency shutoff labeled and accessible — tenant can act before damage compounds"
    ]
-  }
+  },
+  "layout_type": "story-flow"
  },
  {
   "city": "Waynesboro, PA",
@@ -348,7 +350,8 @@
     "Rooms facing prevailing wind stay cold — directional heat loss needs targeted response",
     "Equipment runs at maximum capacity more than 10% of heating hours — undersized for exposure"
    ]
-  }
+  },
+  "layout_type": "data-driven"
  },
  {
   "city": "Greensburg, PA",
@@ -465,15 +468,18 @@
     "Addition (enclosed porch, extra room) always uncomfortable — never connected to main system",
     "Gas bill seems high for square footage — old envelope losing heat faster than equipment delivers"
    ]
-  }
+  },
+  "layout_type": "comparison"
  },
  {
   "city": "Johnstown, PA",
   "hero_topic": "basement",
   "hook": "Building codes that mandate raised foundations after devastating floods also mandate exposing ductwork to Pennsylvania winters in ways engineers never intended.",
   "intro": [
-   "Flood plain regulations adopted after the 1977 disaster require that new construction and substantial improvements elevate lowest floors above base flood elevation, and for most of Johnstown's developable residential areas that means raising structures eighteen to thirty-six inches above natural grade on crawlspace foundations or elevated slabs. The engineering logic is sound—get living spaces above potential flood waters and prevent the total losses that occurred when basements filled with water and destroyed furnaces, water heaters, and electrical panels. The unintended consequence is that forced-air ductwork now runs through vented crawlspaces where winter temperatures approach outdoor ambient, condensation forms on cool surfaces during summer, and the thermal losses gut system efficiency regardless of how expensive the furnace or air conditioner. A ninety-six-percent-efficiency furnace loses thirty to forty percent of its delivered heat when the supply ducts run through a twenty-degree crawlspace before reaching the living space above, negating the efficiency investment and leaving homeowners puzzled about why their utility bills remain high despite premium equipment.",
-   "Older Johnstown properties built before the elevation requirements have conventional basements where ductwork runs in semi-conditioned space that stays forty to fifty degrees even in winter, creating manageable heat loss. The post-flood housing stock—everything built or substantially renovated since the late 1970s—features these compromised crawlspace installations that put ductwork in what is effectively an outdoor environment for thermal purposes. Builders meet code requirements by elevating the structures and installing the minimum required duct insulation, but code minimums reflect life-safety and durability concerns rather than energy performance optimization. The result is a housing stock where thermal performance is systematically compromised by flood protection requirements, and homeowners bear the ongoing energy costs of a regulatory framework that prioritizes infrequent disaster prevention over daily operating efficiency. Keystone's service calls in the flood plain neighborhoods reveal these patterns consistently—the equipment works fine, insulation meets code, but the thermal losses to crawlspaces make achieving comfort and efficiency nearly impossible without going far beyond code minimum approaches."
+   "Flood plain regulations adopted after the 1977 disaster require that new construction and substantial improvements elevate lowest floors above base flood elevation, and for most of Johnstown's developable residential areas that means raising structures eighteen to thirty-six inches above natural grade on crawlspace foundations or elevated slabs. The engineering logic is sound—get living spaces above potential flood waters and prevent the total losses that occurred when basements filled with water and destroyed furnaces, water heaters, and electrical panels.",
+   "The unintended consequence is that forced-air ductwork now runs through vented crawlspaces where winter temperatures approach outdoor ambient, condensation forms on cool surfaces during summer, and the thermal losses gut system efficiency regardless of how expensive the furnace or air conditioner. A ninety-six-percent-efficiency furnace loses thirty to forty percent of its delivered heat when the supply ducts run through a twenty-degree crawlspace before reaching the living space above, negating the efficiency investment and leaving homeowners puzzled about why their utility bills remain high despite premium equipment.",
+   "Older Johnstown properties built before the elevation requirements have conventional basements where ductwork runs in semi-conditioned space that stays forty to fifty degrees even in winter, creating manageable heat loss. The post-flood housing stock—everything built or substantially renovated since the late 1970s—features these compromised crawlspace installations that put ductwork in what is effectively an outdoor environment for thermal purposes.",
+   "Builders meet code requirements by elevating the structures and installing the minimum required duct insulation, but code minimums reflect life-safety and durability concerns rather than energy performance optimization. The result is a housing stock where thermal performance is systematically compromised by flood protection requirements, and homeowners bear the ongoing energy costs of a regulatory framework that prioritizes infrequent disaster prevention over daily operating efficiency. Keystone's service calls in the flood plain neighborhoods reveal these patterns consistently—the equipment works fine, insulation meets code, but the thermal losses to crawlspaces make achieving comfort and efficiency nearly impossible without going far beyond code minimum approaches."
   ],
   "sections": [
    {
@@ -582,6 +588,7 @@
     "Musty smell strongest in rooms over the crawlspace — moisture infiltrating living space",
     "Insulation falling from crawlspace ceiling — moisture destroyed the adhesive, leaving ducts exposed"
    ]
-  }
+  },
+  "layout_type": "hero-led"
  }
 ]

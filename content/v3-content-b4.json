@@ -114,7 +114,8 @@
     "Monthly gas bill exceeds $300 in winter — conversion savings justify the project",
     "Wanting central air but no ductwork exists — ductless conversion serves both heating and cooling"
    ]
-  }
+  },
+  "layout_type": "visual-showcase"
  },
  {
   "city": "West Chester, PA",
@@ -231,7 +232,8 @@
     "Insulation: attic R-38+, walls R-13+ — tight envelope makes heat pump economics work",
     "Backup plan: gas line available for hybrid, or electric strip heat acceptable for below-10°F hours"
    ]
-  }
+  },
+  "layout_type": "comparison"
  },
  {
   "city": "Doylestown, PA",
@@ -348,7 +350,8 @@
     "Multiple additions at different levels — each section needs independent load calculation",
     "Wood structural elements showing signs of moisture — ventilation strategy needed before HVAC sizing"
    ]
-  }
+  },
+  "layout_type": "visual-showcase"
  },
  {
   "city": "Media, PA",
@@ -465,7 +468,8 @@
     "Basement stays damp May through October — foundation moisture affecting equipment below",
     "Electric bill jumps $80+ in summer vs spring — possible AC sizing or duct leakage issue"
    ]
-  }
+  },
+  "layout_type": "visual-showcase"
  },
  {
   "city": "Norristown, PA",
@@ -582,6 +586,7 @@
     "Individual unit bills vary 40%+ for similar sizes — insulation or equipment disparity",
     "Vacancy periods causing pipe-freeze risk — smart monitoring needed for unoccupied units"
    ]
-  }
+  },
+  "layout_type": "problem-solution"
  }
 ]

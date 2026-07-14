@@ -114,6 +114,7 @@
     "Combustion air from outdoors feels like a draft — intake location needs relocation or tempering",
     "Equipment age 15+ years in Altoona climate = 20+ years of equivalent runtime elsewhere"
    ]
-  }
+  },
+  "layout_type": "hero-led"
  }
 ]

@@ -114,7 +114,8 @@
     "Ice dams on the roof every winter — heat escaping through uninsulated attic floor",
     "Furnace runs nonstop during cold snaps but still can't keep up — undersized for ceiling height volume"
    ]
-  }
+  },
+  "layout_type": "story-flow"
  },
  {
   "city": "Wilkes-Barre, PA",
@@ -231,7 +232,8 @@
     "Uneven floor temperatures that change over months — duct damage from ongoing settlement",
     "Equipment vibration louder than before — mounting connections stressed by structural movement"
    ]
-  }
+  },
+  "layout_type": "problem-solution"
  },
  {
   "city": "Easton, PA",
@@ -348,7 +350,8 @@
     "Hot spots near windows, cold spots at interior — solar gain overwhelming the system",
     "Stale air or headaches by afternoon — tight building without mechanical fresh-air supply"
    ]
-  }
+  },
+  "layout_type": "problem-solution"
  },
  {
   "city": "Lebanon, PA",
@@ -465,7 +468,8 @@
     "Addition stays cold while original house overheats — two structures on one undersized system",
     "Propane bills exceeding $3,000/winter — dual-fuel conversion cuts 40%"
    ]
-  }
+  },
+  "layout_type": "accordion"
  },
  {
   "city": "Lewisburg, PA",
@@ -582,6 +586,7 @@
     "Basement damp year-round — stone/brick foundation moisture affecting equipment longevity",
     "Heating bills 50%+ higher than similar-size modern homes — envelope losses dominate"
    ]
-  }
+  },
+  "layout_type": "story-flow"
  }
 ]

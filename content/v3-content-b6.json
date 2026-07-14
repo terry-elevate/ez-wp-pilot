@@ -114,7 +114,8 @@
     "Pipes freeze during semester breaks — no minimum-temperature protection when vacant",
     "Building insurance requires annual inspection — combustion safety testing satisfies requirement"
    ]
-  }
+  },
+  "layout_type": "story-flow"
  },
  {
   "city": "Butler, PA",
@@ -231,7 +232,8 @@
     "Circulator pump humming or vibrating more than usual — bearing wear, failure imminent",
     "Radiators slow to heat after system starts — air lock or circulator output declining"
    ]
-  }
+  },
+  "layout_type": "diagnostic-first"
  },
  {
   "city": "Beaver Falls, PA",
@@ -348,7 +350,8 @@
     "Ductwork in basement showing surface rust — condensation from temperature differential",
     "Mold or mildew at floor level in finished basement — moisture barrier inadequate"
    ]
-  }
+  },
+  "layout_type": "problem-solution"
  },
  {
   "city": "New Castle, PA",
@@ -465,7 +468,8 @@
     "Water level glass fluctuating rapidly — system needs cleaning or water treatment",
     "Steam smell near radiators — valve or packing leaking, losing system water"
    ]
-  }
+  },
+  "layout_type": "diagnostic-first"
  },
  {
   "city": "Meadville, PA",
@@ -582,6 +586,7 @@
     "Furnace short-cycles in mild weather but can't keep up in cold — staging or modulation issue",
     "Condensate drain freezes at exterior termination — PVC needs heat trace or relocation"
    ]
-  }
+  },
+  "layout_type": "data-driven"
  }
 ]

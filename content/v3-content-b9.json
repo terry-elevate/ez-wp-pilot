@@ -114,7 +114,8 @@
     "Boiler fires every few minutes then shuts off — pressure control set incorrectly",
     "Water stains below radiator valves — packing worn, steam condensate leaking"
    ]
-  }
+  },
+  "layout_type": "diagnostic-first"
  },
  {
   "city": "Coatesville, PA",
@@ -231,7 +232,8 @@
     "Second floor hot in summer, cold in winter — duct losses in the wall cavity between floors",
     "Basement stays damp despite running dehumidifier — foundation moisture exceeding unit capacity"
    ]
-  }
+  },
+  "layout_type": "visual-showcase"
  },
  {
   "city": "Quakertown, PA",
@@ -348,7 +350,8 @@
     "Standalone dehumidifier runs nonstop — whole-house solution more efficient and comprehensive",
     "Ductwork sweating in summer — insulation missing on supply runs through humid basement"
    ]
-  }
+  },
+  "layout_type": "problem-solution"
  },
  {
   "city": "Pottstown, PA",
@@ -465,7 +468,8 @@
     "River-adjacent humidity wrecking HVAC components — corrosion on coils and connections",
     "Mixed-use building: commercial and residential loads on shared equipment — both suffer"
    ]
-  }
+  },
+  "layout_type": "problem-solution"
  },
  {
   "city": "King of Prussia, PA",
@@ -582,6 +586,7 @@
     "Smart thermostat shows 4+ cycles per hour — equipment oversized, short-cycling",
     "HVAC equipment in attic: condensate pan overflows — drain line clogged, ceiling damage risk"
    ]
-  }
+  },
+  "layout_type": "problem-solution"
  }
 ]
