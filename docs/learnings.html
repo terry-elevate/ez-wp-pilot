@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EZ Solutions WordPress Technology Exploration</title>
+<style>
+:root {
+  --ground: #fafaf7;
+  --surface: #ffffff;
+  --raised: #f3f2ed;
+  --border: #dedcd4;
+  --ink: #1c2331;
+  --ink-2: #4a5568;
+  --ink-3: #7b8491;
+  --accent: #4a7fbf;
+  --accent-wash: rgba(74, 127, 191, 0.08);
+  --warm: #9a713b;
+  --good: #39734a;
+  --good-wash: rgba(57, 115, 74, 0.09);
+  --watch: #946b2d;
+  --watch-wash: rgba(148, 107, 45, 0.1);
+  --font-display: Baskerville, Georgia, 'Times New Roman', serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --max-w: 1040px;
+  --gutter: 32px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ground: #131517;
+    --surface: #1a1d21;
+    --raised: #22262b;
+    --border: #30343a;
+    --ink: #ece9e2;
+    --ink-2: #b5bac4;
+    --ink-3: #858d9a;
+    --accent: #70a9dd;
+    --accent-wash: rgba(112, 169, 221, 0.11);
+    --warm: #d0a45f;
+    --good: #89c697;
+    --good-wash: rgba(137, 198, 151, 0.1);
+    --watch: #dbb56d;
+    --watch-wash: rgba(219, 181, 109, 0.1);
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+body {
+  background: var(--ground);
+  color: var(--ink-2);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+}
+a { color: inherit; }
+.wrap { width: min(100%, var(--max-w)); margin: 0 auto; padding: 0 var(--gutter); }
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  min-height: 50px;
+  padding: 0 var(--gutter);
+  background: color-mix(in srgb, var(--ground) 90%, transparent);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(14px);
+  font-size: 12px;
+}
+nav .brand {
+  margin-right: auto;
+  color: var(--accent);
+  font-weight: 750;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+nav a { color: var(--ink-3); text-decoration: none; }
+nav a:hover, nav a.active { color: var(--ink); }
+
+.hero { padding: 130px 0 84px; }
+.eyebrow {
+  margin-bottom: 9px;
+  color: var(--warm);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+h1, h2, h3 { color: var(--ink); }
+h1, h2 { font-family: var(--font-display); font-weight: 400; }
+h1 {
+  max-width: 810px;
+  font-size: clamp(40px, 6vw, 64px);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+h1 span { color: var(--accent); }
+h2 {
+  margin-bottom: 13px;
+  font-size: clamp(30px, 4vw, 40px);
+  line-height: 1.16;
+  letter-spacing: -0.015em;
+}
+h3 { font-size: 16px; line-height: 1.4; }
+.lead { max-width: 700px; margin-top: 22px; font-size: 18px; line-height: 1.75; }
+.section-lead { max-width: 720px; font-size: 16px; }
+
+.stat-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 52px;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.stat { padding: 23px 18px; text-align: center; border-right: 1px solid var(--border); }
+.stat:last-child { border-right: 0; }
+.stat-value { color: var(--ink); font-family: var(--font-display); font-size: 34px; line-height: 1.1; }
+.stat-label { margin-top: 4px; color: var(--ink-3); font-size: 11px; }
+
+section { padding: 96px 0; }
+.band { background: var(--raised); border-block: 1px solid var(--border); }
+.grid { display: grid; gap: 18px; margin-top: 42px; }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.card {
+  min-width: 0;
+  padding: 26px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.card-number {
+  display: inline-grid;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 17px;
+  place-items: center;
+  color: var(--accent);
+  background: var(--accent-wash);
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 750;
+}
+.card p { margin-top: 8px; font-size: 14px; }
+.card ul { margin: 13px 0 0 18px; font-size: 13px; }
+.card li + li { margin-top: 5px; }
+
+.workstream {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 28px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border);
+}
+.workstream:last-child { border-bottom: 0; }
+.workstream-label {
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.workstream h3 { margin-bottom: 6px; }
+.workstream p { max-width: 690px; }
+
+.manifest-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+.manifest-head h3 { font-family: var(--font-display); font-size: 24px; font-weight: 400; }
+.manifest-head p { color: var(--ink-3); font-size: 12px; }
+.chip-grid { display: flex; flex-wrap: wrap; gap: 9px; }
+.chip {
+  padding: 8px 12px;
+  color: var(--ink-2);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  font-size: 12px;
+  text-decoration: none;
+}
+a.chip:hover { color: var(--accent); border-color: var(--accent); }
+.chip small { color: var(--ink-3); }
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.preview-card {
+  min-width: 0;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  box-shadow: 0 8px 28px rgba(28, 35, 49, 0.06);
+}
+.browser-chrome {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 42px;
+  padding: 8px 11px;
+  background: var(--raised);
+  border-bottom: 1px solid var(--border);
+}
+.browser-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--border); }
+.browser-address {
+  min-width: 0;
+  flex: 1;
+  margin-left: 5px;
+  overflow: hidden;
+  padding: 4px 8px;
+  color: var(--ink-3);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font: 10px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.preview-canvas { position: relative; height: 500px; overflow: hidden; background: #fff; }
+.preview-canvas::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 34px;
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.9));
+  pointer-events: none;
+}
+.preview-canvas iframe {
+  width: 1440px;
+  height: 6200px;
+  border: 0;
+  transform-origin: top left;
+  pointer-events: none;
+}
+.preview-footer {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  min-height: 72px;
+  padding: 14px 16px;
+  color: var(--ink);
+  background: var(--surface);
+  border-top: 2px solid var(--border);
+}
+.preview-footer strong { display: block; font-size: 14px; line-height: 1.3; }
+.preview-footer span { display: block; margin-top: 2px; color: var(--ink-3); font-size: 11px; }
+.preview-open {
+  flex: 0 0 auto;
+  padding: 7px 10px;
+  color: var(--accent);
+  background: var(--accent-wash);
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--border));
+  border-radius: 6px;
+  font: 700 11px/1.2 var(--font-body);
+  cursor: pointer;
+}
+.preview-open:hover { color: var(--surface); background: var(--accent); }
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+.pager button {
+  padding: 8px 15px;
+  color: var(--ink-2);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+.pager button:disabled { opacity: 0.35; cursor: default; }
+.pager span { min-width: 120px; color: var(--ink-3); font-size: 12px; text-align: center; }
+
+.preview-modal {
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+  max-height: none;
+  padding: 0;
+  overflow: hidden;
+  color: var(--ink);
+  background: var(--surface);
+  border: 0;
+}
+.preview-modal::backdrop { background: rgba(10, 14, 20, 0.8); }
+.modal-shell { display: flex; flex-direction: column; height: 100%; }
+.modal-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 54px;
+  padding: 8px 16px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+.modal-title { min-width: 0; flex: 1; overflow: hidden; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; }
+.modal-bar a, .modal-close {
+  padding: 7px 11px;
+  color: var(--ink-2);
+  background: var(--raised);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font: 650 12px/1.2 var(--font-body);
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-close { color: var(--surface); background: var(--ink); border-color: var(--ink); }
+.modal-frame { width: 100%; flex: 1; border: 0; background: #fff; }
+
+.status-list {
+  margin-top: 40px;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.status-row {
+  display: grid;
+  grid-template-columns: 150px 220px 1fr;
+  gap: 22px;
+  align-items: start;
+  padding: 22px 24px;
+  border-bottom: 1px solid var(--border);
+}
+.status-row:last-child { border-bottom: 0; }
+.status-name { color: var(--ink); font-weight: 650; }
+.status-pill {
+  justify-self: start;
+  padding: 3px 9px;
+  border-radius: 100px;
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+.status-complete { color: var(--good); background: var(--good-wash); }
+.status-proven { color: var(--accent); background: var(--accent-wash); }
+.status-pilot { color: var(--watch); background: var(--watch-wash); }
+.status-detail { font-size: 13px; }
+
+.boundary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  margin-top: 28px;
+}
+.boundary-panel { padding: 25px; border-radius: 10px; }
+.boundary-panel h3 { margin-bottom: 8px; }
+.boundary-panel p { font-size: 13px; }
+.boundary-proves { background: var(--good-wash); border: 1px solid color-mix(in srgb, var(--good) 28%, var(--border)); }
+.boundary-next { background: var(--watch-wash); border: 1px solid color-mix(in srgb, var(--watch) 28%, var(--border)); }
+
+.note {
+  margin-top: 28px;
+  padding: 17px 20px;
+  color: var(--ink-2);
+  background: var(--accent-wash);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 7px 7px 0;
+  font-size: 13px;
+}
+
+footer { padding: 42px 0; border-top: 1px solid var(--border); text-align: center; }
+footer p { color: var(--ink-3); font-size: 12px; }
+
+@media (max-width: 780px) {
+  :root { --gutter: 20px; }
+  nav { gap: 15px; overflow-x: auto; }
+  nav .brand { min-width: max-content; }
+  .hero { padding: 96px 0 62px; }
+  section { padding: 68px 0; }
+  .stat-strip, .grid-2, .grid-3, .boundary { grid-template-columns: 1fr; }
+  .preview-grid { grid-template-columns: 1fr; }
+  .stat { border-right: 0; border-bottom: 1px solid var(--border); }
+  .stat:last-child { border-bottom: 0; }
+  .workstream { grid-template-columns: 1fr; gap: 8px; }
+  .status-row { grid-template-columns: 1fr; gap: 7px; }
+  .manifest-head { display: block; }
+  .manifest-head p { margin-top: 5px; }
+}
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="brand">EZ Solutions</span>
+  <a href="#requirements">Requirements</a>
+  <a href="#exploration">What we did</a>
+  <a href="#state">Current state</a>
+</nav>
+
+<header class="wrap">
+  <div class="hero">
+    <p class="eyebrow">WordPress Technology Exploration · July 2026</p>
+    <h1>Can one WordPress foundation support <span>customer-specific sites at scale?</span></h1>
+    <p class="lead">This pilot tested the customer’s content, design, operations, privacy, and WordPress requirements in one self-contained environment. The result is a working proof of the core architecture, with clear boundaries between what is validated and what still needs productionization.</p>
+
+    <div class="stat-strip" aria-label="Pilot summary">
+      <div class="stat"><div class="stat-value">51</div><div class="stat-label">Published pilot location pages</div></div>
+      <div class="stat"><div class="stat-value">51/51</div><div class="stat-label">Pages passing quality gates</div></div>
+      <div class="stat"><div class="stat-value">13</div><div class="stat-label">Design concepts explored</div></div>
+      <div class="stat"><div class="stat-value">9</div><div class="stat-label">Customer verticals represented</div></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="band" id="requirements">
+    <div class="wrap">
+      <p class="eyebrow">Customer requirements</p>
+      <h2>What the customer needs the platform to support</h2>
+      <p class="section-lead">The request is broader than page generation. It combines customer-facing quality with the operating model required to manage hundreds of WordPress sites.</p>
+
+      <div class="grid grid-3">
+        <article class="card">
+          <span class="card-number">1</span>
+          <h3>Scale without sameness</h3>
+          <p>Create 50+ location pages per customer while keeping each page locally relevant, substantial, and visibly distinct when reviewed side by side.</p>
+        </article>
+        <article class="card">
+          <span class="card-number">2</span>
+          <h3>Customer-specific design</h3>
+          <p>Preserve brand colors, typography, imagery, navigation, and footer standards while allowing layout variety across industries and locations.</p>
+        </article>
+        <article class="card">
+          <span class="card-number">3</span>
+          <h3>Native WordPress delivery</h3>
+          <p>Use editable Gutenberg content, structured sections, valid blocks, SEO metadata, internal links, and customer-specific fields without relying on Elementor.</p>
+        </article>
+        <article class="card">
+          <span class="card-number">4</span>
+          <h3>Repeatable quality controls</h3>
+          <p>Automatically check content depth, imagery, readability, uniqueness, metadata, block validity, and unsupported business claims before publication.</p>
+        </article>
+        <article class="card">
+          <span class="card-number">5</span>
+          <h3>Fleet operations</h3>
+          <p>Support central visibility and repeatable maintenance across a portfolio of 300+ client sites, including plugin inventory and bulk updates.</p>
+        </article>
+        <article class="card">
+          <span class="card-number">6</span>
+          <h3>Controlled AI and deployment</h3>
+          <p>Allow agents to work with WordPress through governed tools, support private local inference, and run inside the customer’s self-hosted, VPN-based environment.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="exploration">
+    <div class="wrap">
+      <p class="eyebrow">What we did</p>
+      <h2>Built and tested the main parts of the operating model</h2>
+      <p class="section-lead">The exploration connected design, content generation, WordPress publishing, automated QA, fleet management, and AI access in a single local pilot.</p>
+
+      <div class="grid" style="margin-top: 34px;">
+        <article class="workstream">
+          <div class="workstream-label">Platform</div>
+          <div><h3>Created a self-contained WordPress pilot</h3><p>WordPress, MariaDB, WP-CLI, and MainWP run together in Docker. The environment is portable at the development level and does not depend on a hosted website builder.</p></div>
+        </article>
+        <article class="workstream">
+          <div class="workstream-label">Content</div>
+          <div><h3>Generated and published 51 Pennsylvania location pages</h3><p>Structured JSON specifications feed a reusable section library that assembles native Gutenberg blocks, SEO metadata, featured imagery, calls to action, FAQs, and nearby-location links.</p></div>
+        </article>
+        <article class="workstream">
+          <div class="workstream-label">Design</div>
+          <div><h3>Explored brand and layout range before standardizing the theme layer</h3><p>Thirteen concepts cover HVAC plus eight additional verticals. A token-based theme and palette override system separates reusable page structure from customer-specific visual identity.</p></div>
+        </article>
+        <article class="workstream">
+          <div class="workstream-label">Quality</div>
+          <div><h3>Made quality checks part of every render</h3><p>The gate verifies word count, imagery, paragraph length, uniqueness, metadata, block validity, content structure, and risky claims. Corpus-level checks measure duplicate language and repeated openings.</p></div>
+        </article>
+        <article class="workstream">
+          <div class="workstream-label">Operations</div>
+          <div><h3>Connected the pilot to fleet and structured-content workflows</h3><p>MainWP was used to test centralized plugin visibility and updates. An ACF custom-field schema and content type were also created to validate customer-specific structured content.</p></div>
+        </article>
+        <article class="workstream">
+          <div class="workstream-label">AI access</div>
+          <div><h3>Validated both governed WordPress tools and private inference</h3><p>The WordPress MCP endpoint exposed 43 tools and successfully created a valid published page. A local Ollama-compatible endpoint also completed an end-to-end generation test without sending content to an external API.</p></div>
+        </article>
+        <article class="workstream">
+          <div class="workstream-label">Imagery</div>
+          <div><h3>Separated production sourcing from model experimentation</h3><p>The page pilot uses a commercially licensable image pool with attribution. Separately, ten image-model configurations were compared for quality, latency, and cost to inform future sourcing decisions.</p></div>
+        </article>
+      </div>
+
+      <div class="manifest-head">
+        <div><p class="eyebrow">Design manifest</p><h3>13 concepts across 9 verticals</h3></div>
+        <p>Open any concept to review the exploration artifact.</p>
+      </div>
+      <div id="design-previews" class="preview-grid"></div>
+      <div class="pager" aria-label="Design preview pages">
+        <button id="design-prev" type="button">← Previous</button>
+        <span id="design-page"></span>
+        <button id="design-next" type="button">Next →</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="state">
+    <div class="wrap">
+      <p class="eyebrow">Current state</p>
+      <h2>Core feasibility is proven; production operations are the next layer</h2>
+      <p class="section-lead">The pilot demonstrates that the requirements can work together. It is a development proof, not yet a packaged production platform.</p>
+
+      <div class="status-list" role="table" aria-label="Current pilot status">
+        <div class="status-row" role="row">
+          <div class="status-name" role="cell">Location pages</div>
+          <span class="status-pill status-complete" role="cell">Complete in pilot</span>
+          <div class="status-detail" role="cell">51 pages are published in the local WordPress pilot with unique URLs, metadata, imagery, headings, calls to action, and internal location links.</div>
+        </div>
+        <div class="status-row" role="row">
+          <div class="status-name" role="cell">Quality gates</div>
+          <span class="status-pill status-complete" role="cell">51/51 pass</span>
+          <div class="status-detail" role="cell">Every page clears the automated depth, image, uniqueness, readability, metadata, claims, structure, and Gutenberg-validity checks.</div>
+        </div>
+        <div class="status-row" role="row">
+          <div class="status-name" role="cell">Theme and brand layer</div>
+          <span class="status-pill status-proven" role="cell">Framework proven</span>
+          <div class="status-detail" role="cell">The reusable theme, section system, and palette overrides work. A repeatable client-onboarding and theme-adaptation workflow still needs to be productized.</div>
+        </div>
+        <div class="status-row" role="row">
+          <div class="status-name" role="cell">Fleet management</div>
+          <span class="status-pill status-proven" role="cell">Connection proven</span>
+          <div class="status-detail" role="cell">The pilot is connected to MainWP; dashboard sync, plugin inventory, and bulk update operations were verified against the child site.</div>
+        </div>
+        <div class="status-row" role="row">
+          <div class="status-name" role="cell">Agent access</div>
+          <span class="status-pill status-proven" role="cell">Publishing proven</span>
+          <div class="status-detail" role="cell">The MCP path can create valid Gutenberg content directly in WordPress. Curated tool sets, permissions, audit controls, and production guardrails remain future work.</div>
+        </div>
+        <div class="status-row" role="row">
+          <div class="status-name" role="cell">Private local AI</div>
+          <span class="status-pill status-pilot" role="cell">Validated; recovery needed</span>
+          <div class="status-detail" role="cell">Zero-egress generation worked end to end before the local model environment failed. Ollama must be reinstalled and sized for the available hardware before further validation.</div>
+        </div>
+        <div class="status-row" role="row">
+          <div class="status-name" role="cell">Deployment</div>
+          <span class="status-pill status-pilot" role="cell">Development pilot</span>
+          <div class="status-detail" role="cell">The stack currently runs on one development machine. Packaging, environment configuration, monitoring, backup, recovery, security review, and deployment to the customer’s infrastructure are not yet complete.</div>
+        </div>
+      </div>
+
+      <div class="boundary">
+        <div class="boundary-panel boundary-proves">
+          <h3>What the pilot proves</h3>
+          <p>A shared WordPress foundation can generate high-volume, differentiated, brandable, editable content while enforcing measurable quality and connecting to fleet and AI tooling.</p>
+        </div>
+        <div class="boundary-panel boundary-next">
+          <h3>What remains</h3>
+          <p>Turn the development proof into an operational product: package deployment, define client onboarding, establish agent governance, restore local inference, and validate the workflow on real customer brands and infrastructure.</p>
+        </div>
+      </div>
+
+      <div class="manifest-head">
+        <div><p class="eyebrow">Published pilot manifest</p><h3>51 Pennsylvania location pages</h3></div>
+        <p>Links open the local WordPress pilot on port 8181.</p>
+      </div>
+      <div id="page-previews" class="preview-grid"></div>
+      <div class="pager" aria-label="Location page previews">
+        <button id="page-prev" type="button">← Previous</button>
+        <span id="page-number"></span>
+        <button id="page-next" type="button">Next →</button>
+      </div>
+
+      <p class="note"><strong>Scope note:</strong> “Published” and “current” refer to the local development pilot. This document does not represent a production deployment or a completed customer rollout.</p>
+    </div>
+  </section>
+</main>
+
+<dialog id="preview-modal" class="preview-modal" aria-labelledby="modal-title">
+  <div class="modal-shell">
+    <div class="modal-bar">
+      <div id="modal-title" class="modal-title">Preview</div>
+      <a id="modal-new-tab" href="#" target="_blank" rel="noopener">Open in new tab ↗</a>
+      <button id="modal-close" class="modal-close" type="button">Close</button>
+    </div>
+    <iframe id="modal-frame" class="modal-frame" title="Full-page preview"></iframe>
+  </div>
+</dialog>
+
+<footer>
+  <div class="wrap"><p>EZ Solutions WordPress Technology Exploration · July 2026</p></div>
+</footer>
+
+<script>
+const designItems = [
+  { url: '../tmp-bethlehem-design.html', name: 'Bethlehem HVAC', detail: 'Split Industrial', address: 'bethlehem.pen' },
+  { url: '../tmp-pittsburgh-design.html', name: 'Pittsburgh HVAC', detail: 'Warm Industrial', address: 'pittsburgh.pen' },
+  { url: '../tmp-erie-design.html', name: 'Erie HVAC', detail: 'Lakefront Bold', address: 'erie.pen' },
+  { url: '../tmp-lancaster-design.html', name: 'Lancaster HVAC', detail: 'Heritage Serif', address: 'lancaster.pen' },
+  { url: '../tmp-restaurant-design.html', name: 'Lombardo’s Italian', detail: 'Restaurant', address: 'restaurant.pen' },
+  { url: '../tmp-plumbing-design.html', name: 'FlowRight Pro', detail: 'Plumbing', address: 'plumbing.pen' },
+  { url: '../tmp-cpa-design.html', name: 'Gift & Associates', detail: 'CPA', address: 'cpa.pen' },
+  { url: '../tmp-auto-design.html', name: 'Precision Motors', detail: 'Auto shop', address: 'auto.pen' },
+  { url: '../tmp-landscaping-design.html', name: 'GreenCraft Outdoors', detail: 'Landscaping', address: 'landscaping.pen' },
+  { url: '../tmp-law-design.html', name: 'Sterling & Associates', detail: 'Law firm', address: 'law.pen' },
+  { url: '../tmp-dental-design.html', name: 'Bright Smile Family', detail: 'Dental', address: 'dental.pen' },
+  { url: '../tmp-roofing-design.html', name: 'Ironclad Exteriors', detail: 'Roofing', address: 'roofing.pen' },
+  { url: '../tmp-styleguide-design.html', name: 'EZ Style Guide', detail: 'Design standards', address: 'style-guide.pen' }
+];
+
+const pageItems = [
+  [91,'Allentown'],[95,'Altoona'],[165,'Beaver Falls'],[92,'Bethlehem'],[170,'Bradford'],[164,'Butler'],
+  [126,'Carlisle'],[125,'Chambersburg'],[136,'Coatesville'],[156,'Columbia'],[122,'Doylestown'],[171,'DuBois'],
+  [134,'East Stroudsburg'],[99,'Easton'],[137,'Ephrata'],[93,'Erie'],[157,'Gettysburg'],[161,'Greensburg'],
+  [158,'Hanover'],[90,'Harrisburg'],[132,'Hazleton'],[128,'Hershey'],[163,'Indiana'],[162,'Johnstown'],
+  [102,'King of Prussia'],[87,'Lancaster'],[129,'Lebanon'],[130,'Lewisburg'],[155,'Lititz'],[167,'Meadville'],
+  [127,'Mechanicsburg'],[121,'Media'],[166,'New Castle'],[101,'Norristown'],[168,'Oil City'],[135,'Phoenixville'],
+  [94,'Pittsburgh'],[100,'Pottstown'],[123,'Quakertown'],[89,'Reading'],[124,'Scranton'],[131,'Selinsgrove'],
+  [159,'Shippensburg'],[96,'State College'],[133,'Stroudsburg'],[169,'Warren'],[160,'Waynesboro'],[103,'West Chester'],
+  [98,'Wilkes-Barre'],[97,'Williamsport'],[88,'York']
+].map(([id, name]) => ({
+  url: 'http://localhost:8181/?page_id=' + id,
+  name,
+  detail: 'Published pilot page',
+  address: 'localhost:8181/?page_id=' + id
+}));
+
+const modal = document.getElementById('preview-modal');
+const modalFrame = document.getElementById('modal-frame');
+const modalTitle = document.getElementById('modal-title');
+const modalNewTab = document.getElementById('modal-new-tab');
+
+function openPreview(item) {
+  modalTitle.textContent = item.name + ' — ' + item.detail;
+  modalFrame.src = item.url;
+  modalNewTab.href = item.url;
+  modal.showModal();
+  document.body.style.overflow = 'hidden';
+}
+
+function closePreview() {
+  modal.close();
+  modalFrame.src = 'about:blank';
+  document.body.style.overflow = '';
+}
+
+document.getElementById('modal-close').addEventListener('click', closePreview);
+modal.addEventListener('cancel', (event) => { event.preventDefault(); closePreview(); });
+
+function previewCard(item) {
+  const card = document.createElement('article');
+  card.className = 'preview-card';
+  card.innerHTML = '<div class="browser-chrome"><i class="browser-dot"></i><i class="browser-dot"></i><i class="browser-dot"></i><div class="browser-address"></div></div>' +
+    '<div class="preview-canvas"><iframe loading="lazy" title=""></iframe></div>' +
+    '<div class="preview-footer"><div><strong></strong><span></span></div><button class="preview-open" type="button">Full screen</button></div>';
+  card.querySelector('.browser-address').textContent = item.address;
+  const iframe = card.querySelector('iframe');
+  iframe.src = item.url;
+  iframe.title = item.name + ' preview';
+  card.querySelector('strong').textContent = item.name;
+  card.querySelector('.preview-footer span').textContent = item.detail;
+  card.querySelector('.preview-open').addEventListener('click', () => openPreview(item));
+  return card;
+}
+
+function scalePreviews() {
+  document.querySelectorAll('.preview-canvas').forEach((canvas) => {
+    const iframe = canvas.querySelector('iframe');
+    if (iframe) iframe.style.transform = 'scale(' + (canvas.clientWidth / 1440) + ')';
+  });
+}
+
+function makePager(items, perPage, gridId, previousId, nextId, labelId) {
+  let page = 0;
+  const grid = document.getElementById(gridId);
+  const previous = document.getElementById(previousId);
+  const next = document.getElementById(nextId);
+  const label = document.getElementById(labelId);
+  const pages = Math.ceil(items.length / perPage);
+
+  function render() {
+    grid.replaceChildren(...items.slice(page * perPage, page * perPage + perPage).map(previewCard));
+    previous.disabled = page === 0;
+    next.disabled = page === pages - 1;
+    label.textContent = (page + 1) + ' / ' + pages + ' (' + items.length + ' total)';
+    requestAnimationFrame(scalePreviews);
+  }
+
+  previous.addEventListener('click', () => { if (page > 0) { page -= 1; render(); } });
+  next.addEventListener('click', () => { if (page < pages - 1) { page += 1; render(); } });
+  render();
+}
+
+makePager(designItems, 3, 'design-previews', 'design-prev', 'design-next', 'design-page');
+makePager(pageItems, 9, 'page-previews', 'page-prev', 'page-next', 'page-number');
+window.addEventListener('resize', scalePreviews);
+
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('nav a');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    navLinks.forEach((link) => link.classList.remove('active'));
+    const active = document.querySelector('nav a[href="#' + entry.target.id + '"]');
+    if (active) active.classList.add('active');
+  });
+}, { threshold: 0.2 });
+sections.forEach((section) => observer.observe(section));
+</script>
+</body>
+</html>
