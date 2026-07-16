@@ -488,31 +488,31 @@ footer p { color: var(--ink-3); font-size: 12px; }
       <div class="grid" style="margin-top: 34px;">
         <article class="workstream">
           <div class="workstream-label">Platform</div>
-          <div><h3>Created a self-contained WordPress pilot <span class="status-pill status-proven">Working, dev-only</span></h3><p>WordPress, MariaDB, WP-CLI, and MainWP run together in Docker — no hosted builder dependency. It runs on one development machine; packaging, monitoring, backup, and target-infrastructure deployment are not done yet.</p></div>
+          <div><h3>Created a self-contained WordPress pilot <span class="status-pill status-proven">Working, dev-only</span></h3><p>WordPress, MariaDB, WP-CLI, and MainWP in Docker. No hosted builder. Still dev-machine only.</p></div>
         </article>
         <article class="workstream">
           <div class="workstream-label">Content</div>
-          <div><h3>Generated and published 51 Pennsylvania location pages <span class="status-pill status-complete">51/51 published</span></h3><p>Structured JSON specs feed a reusable section library that assembles native Gutenberg blocks, SEO metadata, featured imagery, CTAs, FAQs, and nearby-location links. Every page has a unique URL, heading structure, and internal links. <a href="#pages">See all 51 pages ↓</a></p></div>
+          <div><h3>Generated and published 51 Pennsylvania location pages <span class="status-pill status-complete">51/51 published</span></h3><p>JSON specs → reusable section library → native Gutenberg blocks, SEO metadata, imagery, CTAs, internal links. <a href="#pages">See all 51 pages ↓</a></p></div>
         </article>
         <article class="workstream">
           <div class="workstream-label">Design</div>
-          <div><h3>Explored brand range, then standardized the theme layer <span class="status-pill status-proven">Framework proven</span></h3><p>Thirteen concepts across nine verticals. A token-based theme with palette and font-pairing overrides separates page structure from visual identity — swapping six CSS variables re-brands a page. A repeatable client-onboarding workflow still needs building. <a href="#designs">See the 13 concepts ↓</a></p></div>
+          <div><h3>Explored brand range, then standardized the theme layer <span class="status-pill status-proven">Framework proven</span></h3><p>13 concepts, 9 verticals. Six CSS variables re-brand a page; onboarding workflow still to build. <a href="#designs">See the 13 concepts ↓</a></p></div>
         </article>
         <article class="workstream">
           <div class="workstream-label">Quality</div>
-          <div><h3>Made quality checks part of every render <span class="status-pill status-complete">51/51 pass</span></h3><p>The gate verifies word count, imagery, paragraph length, uniqueness, metadata, block validity, structure, and risky claims on every render. Corpus-level checks catch duplicate language and repeated openings across pages.</p></div>
+          <div><h3>Made quality checks part of every render <span class="status-pill status-complete">51/51 pass</span></h3><p>Every render is gated: depth, imagery, readability, uniqueness, metadata, block validity, risky claims.</p></div>
         </article>
         <article class="workstream">
           <div class="workstream-label">Operations</div>
-          <div><h3>Connected the pilot to fleet tooling <span class="status-pill status-proven">Connection proven</span></h3><p>MainWP dashboard sync, plugin inventory, and bulk updates verified against the pilot as a child site. An ACF field schema validated per-site structured content.</p></div>
+          <div><h3>Connected the pilot to fleet tooling <span class="status-pill status-proven">Connection proven</span></h3><p>MainWP sync, plugin inventory, and bulk updates verified against the pilot site.</p></div>
         </article>
         <article class="workstream">
           <div class="workstream-label">AI access</div>
-          <div><h3>Tested governed WordPress tools and private inference <span class="status-pill status-pilot">Proven; hardening left</span></h3><p>The WordPress MCP endpoint exposed 43 tools and created a valid published page. Local zero-egress generation worked end to end, but the Ollama environment needs a reinstall sized to the hardware. Tool curation, permissions, and audit controls are future work.</p></div>
+          <div><h3>Tested governed WordPress tools and private inference <span class="status-pill status-pilot">Proven; hardening left</span></h3><p>MCP: 43 tools, published a valid page. Local zero-egress generation worked; Ollama needs a reinstall. Governance is future work.</p></div>
         </article>
         <article class="workstream">
           <div class="workstream-label">Imagery</div>
-          <div><h3>Split production sourcing from model experimentation <span class="status-pill status-complete">10 configs compared</span></h3><p>Pages use an 83-image licensed pool with on-page AI/stock provenance badges. Separately, ten image-model configurations were benchmarked for quality, latency, and cost.</p></div>
+          <div><h3>Split production sourcing from model experimentation <span class="status-pill status-complete">10 configs compared</span></h3><p>83-image licensed pool with AI/stock badges. Ten image models benchmarked for cost, speed, quality.</p></div>
         </article>
       </div>
 
