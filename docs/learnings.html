@@ -437,13 +437,33 @@ footer p { color: var(--ink-3); font-size: 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+.pairing-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 42px; }
+.pairing { min-width: 0; padding: 22px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; }
+.pairing .spec-h { font-size: 21px; font-weight: 700; color: var(--ink); line-height: 1.25; }
+.pairing .spec-b { margin-top: 8px; font-size: 12.5px; line-height: 1.6; }
+.pairing .spec-l { margin-top: 12px; color: var(--ink-3); font-size: 11px; }
+.swatch-row { display: flex; gap: 8px; margin: 12px 0 6px; }
+.swatch { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--border); }
+.role-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin-top: 18px; text-align: center; }
+.role-grid .swatch { margin: 0 auto 6px; width: 40px; height: 40px; }
+.role-name { color: var(--ink); font-size: 11.5px; font-weight: 650; }
+.role-use { color: var(--ink-3); font-size: 10.5px; }
+.guide-check { list-style: none; margin-top: 10px; font-size: 13.5px; }
+.guide-check li { padding: 5px 0 5px 24px; position: relative; }
+.guide-check li::before { content: '✓'; position: absolute; left: 2px; color: var(--good); font-weight: 700; }
+@media (max-width: 900px) { .pairing-grid { grid-template-columns: repeat(2, 1fr); } .role-grid { grid-template-columns: repeat(3, 1fr); } }
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&family=Raleway:wght@400;700&family=Mulish:wght@700&family=Outfit&family=Barlow+Condensed:wght@700&family=Cabin&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav>
   <span class="brand">EZ Solutions</span>
   <a href="#requirements">Requirements</a>
+  <a href="#guide">Design guide</a>
   <a href="#exploration">What we did</a>
   <a href="#designs">Designs</a>
   <a href="#pages">Pages</a>
@@ -486,7 +506,90 @@ footer p { color: var(--ink-3); font-size: 12px; }
     </div>
   </section>
 
-  <section id="exploration">
+  <section id="guide">
+    <div class="wrap">
+      <p class="eyebrow">Design standards</p>
+      <h2>The rules every site is built from</h2>
+      <p class="section-lead">Documented standards used across the existing 300+ site portfolio. The design concepts and the pilot theme both work inside these constraints.</p>
+
+      <div class="pairing-grid">
+        <div class="pairing">
+          <div class="spec-h" style="font-family: 'Oswald', sans-serif;">Reliable HVAC</div>
+          <div class="spec-b" style="font-family: 'Roboto', sans-serif;">Professional heating and cooling services for your home and business.</div>
+          <div class="spec-l">Oswald + Roboto</div>
+        </div>
+        <div class="pairing">
+          <div class="spec-h" style="font-family: 'Raleway', sans-serif;">Professional Solutions</div>
+          <div class="spec-b" style="font-family: 'Raleway', sans-serif;">Professional heating and cooling services for your home and business.</div>
+          <div class="spec-l">Raleway + Raleway</div>
+        </div>
+        <div class="pairing">
+          <div class="spec-h" style="font-family: 'Mulish', sans-serif;">Modern Comfort</div>
+          <div class="spec-b" style="font-family: 'Outfit', sans-serif;">Professional heating and cooling services for your home and business.</div>
+          <div class="spec-l">Mulish + Outfit</div>
+        </div>
+        <div class="pairing">
+          <div class="spec-h" style="font-family: 'Barlow Condensed', sans-serif;">Industrial Strength</div>
+          <div class="spec-b" style="font-family: 'Cabin', sans-serif;">Professional heating and cooling services for your home and business.</div>
+          <div class="spec-l">Barlow Condensed + Cabin</div>
+        </div>
+      </div>
+
+      <div class="grid grid-2" style="margin-top: 18px;">
+        <div class="card">
+          <h3>Color: max 5, high contrast</h3>
+          <div class="swatch-row">
+            <span class="swatch" style="background:#1C2331"></span>
+            <span class="swatch" style="background:#4A7FBF"></span>
+            <span class="swatch" style="background:#C9A84C"></span>
+            <span class="swatch" style="background:#B8A07A"></span>
+            <span class="swatch" style="background:#F5F5F5"></span>
+          </div>
+          <p style="color: var(--good); font-size: 12.5px;">✓ Each color distinguishable at a glance</p>
+          <div class="swatch-row">
+            <span class="swatch" style="background:#7A8B6A"></span>
+            <span class="swatch" style="background:#8B9B7A"></span>
+            <span class="swatch" style="background:#9A9478"></span>
+            <span class="swatch" style="background:#A89B80"></span>
+            <span class="swatch" style="background:#E8E4D8"></span>
+          </div>
+          <p style="color: var(--watch); font-size: 12.5px;">✗ Too close — fails the side-by-side test</p>
+        </div>
+        <div class="card">
+          <h3>Every color has one job</h3>
+          <div class="role-grid">
+            <div><span class="swatch" style="background:#1C2331"></span><div class="role-name">Primary</div><div class="role-use">H1, H2</div></div>
+            <div><span class="swatch" style="background:#4A7FBF"></span><div class="role-name">Secondary</div><div class="role-use">H3, H4</div></div>
+            <div><span class="swatch" style="background:#C9A84C"></span><div class="role-name">Accent</div><div class="role-use">Buttons, icons</div></div>
+            <div><span class="swatch" style="background:#FFFFFF"></span><div class="role-name">Background 1</div><div class="role-use">Main</div></div>
+            <div><span class="swatch" style="background:#F3F5F7"></span><div class="role-name">Background 2</div><div class="role-use">Alt sections</div></div>
+            <div><span class="swatch" style="background:#333333"></span><div class="role-name">Body text</div><div class="role-use">Not from palette</div></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Footer standard — every site</h3>
+          <ul class="guide-check">
+            <li>Logo links to Home</li>
+            <li>Links to internal pages (top-level if more than 10)</li>
+            <li>Address linked to Google Maps</li>
+            <li>Phone number and business hours</li>
+            <li>Linked social icons when applicable</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Standard build brief</h3>
+          <ul class="guide-check">
+            <li>Rebuild: same brand colors and fonts, new sitemap</li>
+            <li>New build: primary/secondary/accent hex, heading + body fonts, light vs dark</li>
+            <li>750–1,000 words per page, keyword-optimized</li>
+            <li>Global header and footer on every page</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="exploration">
     <div class="wrap">
       <p class="eyebrow">What we did</p>
       <h2>What we built, and where each piece stands</h2>
