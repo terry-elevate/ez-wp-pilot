@@ -756,6 +756,19 @@ requestAnimationFrame(scalePreviews);
 makePager(designItems, 3, 'design-previews', 'design-prev', 'design-next', 'design-page');
 makePager(pageItems, 9, 'page-previews', 'page-prev', 'page-next', 'page-number');
 
+// Matrix examples open in the same full-screen modal (easy to share in one tab)
+document.querySelectorAll('.mtx a').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const cells = link.closest('tr').querySelectorAll('td');
+    openPreview({
+      url: link.getAttribute('href'),
+      name: cells[1].textContent,
+      detail: cells[2].textContent + ' · ' + cells[3].textContent + ' · ' + cells[4].textContent
+    });
+  });
+});
+
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('nav a');
 const observer = new IntersectionObserver((entries) => {
