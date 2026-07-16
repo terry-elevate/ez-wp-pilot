@@ -152,6 +152,13 @@ section { padding: 96px 0; }
 .card ul { margin: 13px 0 0 18px; font-size: 13px; }
 .card li + li { margin-top: 5px; }
 
+.mtx-wrap { overflow-x: auto; }
+.mtx { border-collapse: collapse; width: 100%; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; font-size: 13.5px; }
+.mtx th, .mtx td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--border); vertical-align: middle; color: var(--ink); font-variant-numeric: tabular-nums; }
+.mtx th { color: var(--ink-3); font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; }
+.mtx tr:last-child td { border-bottom: 0; }
+.mtx img { display: block; width: 84px; height: 84px; object-fit: cover; border-radius: 6px; }
+
 .req-list { list-style: none; margin-top: 38px; max-width: 760px; }
 .req-list li {
   display: grid;
@@ -512,7 +519,7 @@ footer p { color: var(--ink-3); font-size: 12px; }
         </article>
         <article class="workstream">
           <div class="workstream-label">Imagery</div>
-          <div><h3>Split production sourcing from model experimentation <span class="status-pill status-complete">10 configs compared</span></h3><p>A licensed image library with clear AI/stock labeling on every photo, plus a cost-and-quality comparison of image generators.</p></div>
+          <div><h3>Split production sourcing from model experimentation <span class="status-pill status-complete">10 configs compared</span></h3><p>A licensed image library with clear AI/stock labeling on every photo, plus a cost-and-quality comparison of image generators. <a href="#matrix">See the comparison ↓</a></p></div>
         </article>
       </div>
 
@@ -543,6 +550,27 @@ footer p { color: var(--ink-3); font-size: 12px; }
         <p>The Keystone Comfort Co. brief run through hosted AI site builders, for comparison.</p>
       </div>
       <div id="builder-previews" class="preview-grid"></div>
+
+      <div class="manifest-head" id="matrix">
+        <div><p class="eyebrow">Image generation</p><h3>Ten model runs, one prompt: cost × quality</h3></div>
+        <p>Same prompt, every model we could reach. Click any image for full size.</p>
+      </div>
+      <div class="mtx-wrap">
+        <table class="mtx">
+          <tr><th>Example</th><th>Model</th><th>Quality</th><th>$ / image</th><th>Latency</th></tr>
+          <tr><td><a href="matrix/gpt-image-1-low.png" target="_blank"><img src="matrix/gpt-image-1-low.png" alt="gpt-image-1 low" loading="lazy"></a></td><td>gpt-image-1</td><td>low</td><td>$0.011</td><td>12.5s</td></tr>
+          <tr><td><a href="matrix/gpt-image-1-mini-medium.png" target="_blank"><img src="matrix/gpt-image-1-mini-medium.png" alt="gpt-image-1-mini medium" loading="lazy"></a></td><td>gpt-image-1-mini</td><td>medium</td><td>$0.011</td><td>16.1s</td></tr>
+          <tr><td><a href="matrix/gemini-2.5-flash-image.png" target="_blank"><img src="matrix/gemini-2.5-flash-image.png" alt="Nano Banana" loading="lazy"></a></td><td>gemini-2.5-flash (Nano Banana)</td><td>default</td><td>$0.039</td><td>6.0s</td></tr>
+          <tr><td><a href="matrix/gpt-image-1-medium.png" target="_blank"><img src="matrix/gpt-image-1-medium.png" alt="gpt-image-1 medium" loading="lazy"></a></td><td>gpt-image-1</td><td>medium</td><td>$0.042</td><td>17.6s</td></tr>
+          <tr><td><a href="matrix/gpt-image-1.5-medium.png" target="_blank"><img src="matrix/gpt-image-1.5-medium.png" alt="gpt-image-1.5 medium" loading="lazy"></a></td><td>gpt-image-1.5</td><td>medium</td><td>$0.040</td><td>18.9s</td></tr>
+          <tr><td><a href="matrix/gpt-image-2-medium.png" target="_blank"><img src="matrix/gpt-image-2-medium.png" alt="gpt-image-2 medium" loading="lazy"></a></td><td>gpt-image-2</td><td>medium</td><td>$0.041</td><td>53.2s</td></tr>
+          <tr><td><a href="matrix/gemini-3.1-flash-image.png" target="_blank"><img src="matrix/gemini-3.1-flash-image.png" alt="Nano Banana 2" loading="lazy"></a></td><td>gemini-3.1-flash (Nano Banana 2)</td><td>default</td><td>$0.045</td><td>8.0s</td></tr>
+          <tr><td><a href="matrix/gemini-3-pro-image.png" target="_blank"><img src="matrix/gemini-3-pro-image.png" alt="Nano Banana Pro" loading="lazy"></a></td><td>gemini-3-pro (Nano Banana Pro)</td><td>1–2K</td><td>$0.134</td><td>16.2s</td></tr>
+          <tr><td><a href="matrix/gpt-image-1-high.png" target="_blank"><img src="matrix/gpt-image-1-high.png" alt="gpt-image-1 high" loading="lazy"></a></td><td>gpt-image-1</td><td>high</td><td>$0.167</td><td>41.4s</td></tr>
+          <tr><td><a href="matrix/gpt-image-2-high.png" target="_blank"><img src="matrix/gpt-image-2-high.png" alt="gpt-image-2 high" loading="lazy"></a></td><td>gpt-image-2</td><td>high</td><td>$0.165</td><td>159.9s</td></tr>
+        </table>
+      </div>
+      <p class="note">Mid-tier pricing converges at ~$0.04 per image across vendors; the real spread is speed — Gemini flash models return in 6–8s where the high tiers take 40–160s.</p>
 
       <p class="note"><strong>Scope note:</strong> “Published” refers to the development pilot. This document does not represent a production deployment or a completed customer rollout.</p>
     </div>
