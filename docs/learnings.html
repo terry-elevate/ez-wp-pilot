@@ -152,6 +152,28 @@ section { padding: 96px 0; }
 .card ul { margin: 13px 0 0 18px; font-size: 13px; }
 .card li + li { margin-top: 5px; }
 
+.req-list { list-style: none; margin-top: 38px; max-width: 760px; }
+.req-list li {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 18px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+.req-list li:last-child { border-bottom: 0; }
+.req-icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--accent);
+  background: var(--accent-wash);
+  border-radius: 10px;
+}
+.req-icon svg { width: 22px; height: 22px; }
+.req-list h3 { margin-bottom: 4px; }
+.req-list p { font-size: 14px; max-width: 640px; }
+
 .workstream {
   display: grid;
   grid-template-columns: 140px 1fr;
@@ -420,19 +442,6 @@ footer p { color: var(--ink-3); font-size: 12px; }
   <a href="#pages">Pages</a>
 </nav>
 
-<header class="wrap">
-  <div class="hero">
-    <h1>Can one WordPress foundation support <span>branded sites at scale?</span></h1>
-    <p class="lead">We built a working pilot to find out: 51 location pages, one theme, automated quality gates, fleet tooling, and AI access — all running in one self-contained environment. This page shows what we built, what held up, and what didn't.</p>
-
-    <div class="stat-strip" aria-label="Pilot summary">
-      <div class="stat"><div class="stat-value">51</div><div class="stat-label">Published pilot location pages</div></div>
-      <div class="stat"><div class="stat-value">51/51</div><div class="stat-label">Pages passing quality gates</div></div>
-      <div class="stat"><div class="stat-value">13</div><div class="stat-label">Design concepts explored</div></div>
-      <div class="stat"><div class="stat-value">9</div><div class="stat-label">Verticals represented</div></div>
-    </div>
-  </div>
-</header>
 
 <main>
   <section class="band" id="requirements">
@@ -441,38 +450,32 @@ footer p { color: var(--ink-3); font-size: 12px; }
       <h2>What came out of the meetings</h2>
       <p class="section-lead">Six requirements, straight from the working sessions. More than page generation — it's the whole operating model for running hundreds of WordPress sites.</p>
 
-      <div class="grid grid-3">
-        <article class="card">
-          <span class="card-number">1</span>
-          <h3>Scale without sameness</h3>
-          <p>50+ location pages per site, each one locally relevant, substantial, and visibly distinct when reviewed side by side.</p>
-        </article>
-        <article class="card">
-          <span class="card-number">2</span>
-          <h3>Brand-true design</h3>
-          <p>Keep the brand's colors, typography, imagery, navigation, and footer standards — while still allowing layout variety across industries and locations.</p>
-        </article>
-        <article class="card">
-          <span class="card-number">3</span>
-          <h3>Native WordPress delivery</h3>
-          <p>Editable Gutenberg content, structured sections, valid blocks, SEO metadata, internal links, and per-site fields. No Elementor dependency.</p>
-        </article>
-        <article class="card">
-          <span class="card-number">4</span>
-          <h3>Repeatable quality controls</h3>
-          <p>Automatic checks on content depth, imagery, readability, uniqueness, metadata, block validity, and unsupported business claims — before anything publishes.</p>
-        </article>
-        <article class="card">
-          <span class="card-number">5</span>
-          <h3>Fleet operations</h3>
-          <p>Central visibility and repeatable maintenance across a 300+ site portfolio: plugin inventory, bulk updates, one dashboard.</p>
-        </article>
-        <article class="card">
-          <span class="card-number">6</span>
-          <h3>Controlled AI and deployment</h3>
-          <p>Agents work with WordPress through governed tools, inference can run privately on local hardware, and the whole thing runs self-hosted behind a VPN.</p>
-        </article>
-      </div>
+      <ul class="req-list">
+        <li>
+          <span class="req-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M17.5 14v7M14 17.5h7"/></svg></span>
+          <div><h3>Scale without sameness</h3><p>50+ location pages per site, each one locally relevant, substantial, and visibly distinct when reviewed side by side.</p></div>
+        </li>
+        <li>
+          <span class="req-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 1 1 9-9c0 2.5-2 3-3.5 3H15a2 2 0 0 0-1.4 3.4c.5.5.4 1.6-.6 1.6z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10.5" cy="7.5" r="1"/><circle cx="15" cy="7.5" r="1"/></svg></span>
+          <div><h3>Brand-true design</h3><p>Keep the brand's colors, typography, imagery, navigation, and footer standards — while still allowing layout variety across industries and locations.</p></div>
+        </li>
+        <li>
+          <span class="req-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h9"/><rect x="2.5" y="3.5" width="19" height="17" rx="2"/></svg></span>
+          <div><h3>Native WordPress delivery</h3><p>Editable Gutenberg content, structured sections, valid blocks, SEO metadata, internal links, and per-site fields. No Elementor dependency.</p></div>
+        </li>
+        <li>
+          <span class="req-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <div><h3>Repeatable quality controls</h3><p>Automatic checks on content depth, imagery, readability, uniqueness, metadata, block validity, and unsupported business claims — before anything publishes.</p></div>
+        </li>
+        <li>
+          <span class="req-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><circle cx="7" cy="7" r="0.5" fill="currentColor"/><circle cx="7" cy="17" r="0.5" fill="currentColor"/></svg></span>
+          <div><h3>Fleet operations</h3><p>Central visibility and repeatable maintenance across a 300+ site portfolio: plugin inventory, bulk updates, one dashboard.</p></div>
+        </li>
+        <li>
+          <span class="req-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></span>
+          <div><h3>Controlled AI and deployment</h3><p>Agents work with WordPress through governed tools, inference can run privately on local hardware, and the whole thing runs self-hosted behind a VPN.</p></div>
+        </li>
+      </ul>
     </div>
   </section>
 
