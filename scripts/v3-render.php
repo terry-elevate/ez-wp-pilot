@@ -1,14 +1,16 @@
 <?php
 // v3-render: Takes a layout spec JSON and renders the page using section library.
-// Usage: wp eval-file v3-render.php /path/to/spec.json
+// Usage: wp eval-file v3-render.php /path/to/spec.json ["City, PA"]
 // Spec format: { "city": "Pittsburgh, PA", "sections": [ { "type": "hero_cover", ... }, ... ] }
 
 require_once __DIR__ . '/v3-sections.php';
+require_once __DIR__ . '/pencil-designs.php';
 
 $file = isset( $args[0] ) ? $args[0] : '';
 if ( ! $file || ! file_exists( $file ) ) { echo "Spec file not found: $file\n"; exit; }
 $specs = json_decode( file_get_contents( $file ), true );
 if ( ! is_array( $specs ) ) { echo 'Bad JSON: ' . json_last_error_msg() . "\n"; exit; }
+$only_city = isset( $args[1] ) ? trim( $args[1] ) : '';
 
 // Normalize: single spec vs array of specs
 if ( isset( $specs['city'] ) ) { $specs = array( $specs ); }
@@ -17,9 +19,20 @@ $pool = get_option( 'ez_img_pool', array() );
 $img_counter = array();
 
 function pick_img( $topic, &$img_counter, $pool ) {
-    $fallbacks = array( 'ductwork' => 'basement', 'condenser' => 'minisplit',
-                        'thermostat' => 'furnace', 'filter' => 'technician' );
+    $requested = $topic;
+    $fallbacks = array(
+        'basement' => 'ductwork',
+        'hero_winter' => 'winter',
+        'hero_street' => 'suburban',
+        'condenser' => 'minisplit',
+        'thermostat' => 'furnace',
+        'filter' => 'technician',
+    );
     if ( empty( $pool[ $topic ] ) && isset( $fallbacks[ $topic ] ) ) { $topic = $fallbacks[ $topic ]; }
+    if ( empty( $pool[ $topic ] ) && ! empty( $pool['suburban'] ) ) {
+        error_log( "Image topic '{$requested}' missing; using suburban fallback" );
+        $topic = 'suburban';
+    }
     if ( empty( $pool[ $topic ] ) ) { return null; }
     $i = $img_counter[ $topic ] ?? 0;
     $img_counter[ $topic ] = $i + 1;
@@ -33,7 +46,9 @@ function pick_img( $topic, &$img_counter, $pool ) {
 
 $updated = 0;
 foreach ( $specs as $spec ) {
+    $spec = pencil_apply_design_contract( $spec );
     $city = $spec['city'];
+    if ( $only_city && strcasecmp( $only_city, $city ) !== 0 ) { continue; }
     $existing = get_posts( array( 'post_type' => 'page', 'post_status' => 'publish', 'numberposts' => 1,
         'meta_key' => '_location_city', 'meta_value' => $city ) );
     if ( ! $existing ) { echo "NO PAGE for {$city}\n"; continue; }
@@ -55,8 +70,17 @@ foreach ( $specs as $spec ) {
         }
 
         switch ( $type ) {
+            case 'hero_pencil_split':
+                $rendered = sec_hero_pencil_split(
+                    $img,
+                    $sec['eyebrow'] ?? '',
+                    $sec['headline'],
+                    $sec['text'] ?? $sec['subline'] ?? '',
+                    $sec['cta'] ?? 'Get an Assessment'
+                );
+                break;
             case 'hero_cover':
-                $rendered = sec_hero_cover( $img, $sec['headline'], $sec['subline'] ?? '', $sec['cta'] ?? 'Get an Assessment' );
+                $rendered = sec_hero_cover( $img, $sec['headline'], $sec['subline'] ?? $sec['text'] ?? '', $sec['cta'] ?? 'Get an Assessment' );
                 break;
             case 'hero_split':
                 $rendered = sec_hero_split( $img, $sec['headline'], $sec['text'] ?? '', $sec['cta'] ?? 'Get an Assessment' );
@@ -94,7 +118,7 @@ foreach ( $specs as $spec ) {
                 break;
 
             case 'cards':
-                $rendered = sec_cards( $sec['heading'], $sec['cards'], $sec['cols'] ?? 3, $sec['variant'] ?? '' );
+                $rendered = sec_cards( $sec['heading'], $sec['cards'], $sec['cols'] ?? 3, $sec['variant'] ?? '', $pool, $img_counter );
                 break;
 
             case 'table':
@@ -148,12 +172,25 @@ foreach ( $specs as $spec ) {
                 break;
 
             case 'feature_row':
-                $rendered = sec_feature_row( $sec['heading'], $sec['features'] );
+                $rendered = sec_feature_row( $sec['heading'], $sec['features'], $pool, $img_counter );
                 break;
 
             case 'cta_fullbleed':
                 $rendered = sec_cta_fullbleed( $sec['heading'], $sec['text'], $sec['cta'] ?? 'Get an Assessment' );
                 $band = null;
+                break;
+
+            case 'trust_bar':
+                $rendered = sec_trust_bar( $sec['items'] );
+                $band = null;
+                break;
+
+            case 'photo_gallery':
+                $rendered = sec_photo_gallery( $sec['heading'] ?? 'Our Work', $sec['topics'] ?? array('technician','furnace','suburban'), $pool, $img_counter );
+                break;
+
+            case 'split_feature':
+                $rendered = sec_split_feature( $sec['heading'], $sec['features'], $img );
                 break;
 
             default:
@@ -218,6 +255,17 @@ foreach ( $specs as $spec ) {
     if ( $hero_img ) { set_post_thumbnail( $page->ID, $hero_img['id'] ); }
     update_post_meta( $page->ID, '_gen_version', 'v3' );
     update_post_meta( $page->ID, '_layout_type', $spec['layout_type'] ?? 'custom' );
+    if ( ! empty( $spec['design_family'] ) ) {
+        update_post_meta( $page->ID, '_design_family', $spec['design_family'] );
+    } else {
+        delete_post_meta( $page->ID, '_design_family' );
+    }
+    if ( ! empty( $spec['brand_palette'] ) ) {
+        update_post_meta( $page->ID, '_brand_palette', $spec['brand_palette'] );
+    }
+    if ( ! empty( $spec['layout_variant'] ) ) {
+        update_post_meta( $page->ID, '_layout_variant', $spec['layout_variant'] );
+    }
 
     $wc = str_word_count( wp_strip_all_tags( $content ) );
     $ic = substr_count( $content, '<img' );

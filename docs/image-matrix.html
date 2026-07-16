@@ -1,0 +1,98 @@
+<title>Image Model Matrix — same prompt, every model</title>
+<style>
+:root {
+  --ground:#FAFAF7; --surface:#FFFFFF; --border:#E2E0DA;
+  --ink:#1C2331; --ink2:#4A5568; --ink3:#8B919E; --accent:#4A7FBF;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --ground:#131517; --surface:#1A1D21; --border:#2E3238; --ink:#E4E2DD; --ink2:#A8ADB8; --ink3:#6B7280; --accent:#6BA3D6; }
+}
+:root[data-theme="dark"] { --ground:#131517; --surface:#1A1D21; --border:#2E3238; --ink:#E4E2DD; --ink2:#A8ADB8; --ink3:#6B7280; --accent:#6BA3D6; }
+:root[data-theme="light"] { --ground:#FAFAF7; --surface:#FFFFFF; --border:#E2E0DA; --ink:#1C2331; --ink2:#4A5568; --ink3:#8B919E; --accent:#4A7FBF; }
+body { background:var(--ground); color:var(--ink2); font:15px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif; margin:0; padding:48px 32px; }
+main { max-width:1080px; margin:0 auto; }
+h1 { font-family:Baskerville,'Libre Baskerville',Georgia,serif; font-weight:400; font-size:34px; color:var(--ink); margin:0 0 8px; }
+.sub { color:var(--ink3); margin:0 0 40px; max-width:65ch; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:20px; margin-bottom:56px; }
+.cell { margin:0; background:var(--surface); border:1px solid var(--border); border-radius:8px; overflow:hidden; }
+.cell img { width:100%; display:block; aspect-ratio:1; object-fit:cover; }
+.cell figcaption { padding:12px 14px; font-size:13px; color:var(--ink); display:flex; flex-wrap:wrap; gap:6px; align-items:baseline; }
+.cell .q { color:var(--accent); font-weight:600; }
+.cell .meta { color:var(--ink3); font-size:12px; width:100%; font-variant-numeric:tabular-nums; }
+h2 { font-size:15px; color:var(--ink); margin:0 0 12px; }
+.twrap { overflow-x:auto; }
+table { border-collapse:collapse; width:100%; background:var(--surface); border:1px solid var(--border); border-radius:8px; font-size:13.5px; }
+th,td { text-align:left; padding:10px 14px; border-bottom:1px solid var(--border); }
+th { color:var(--ink3); font-weight:500; font-size:12px; text-transform:uppercase; letter-spacing:.06em; }
+td { color:var(--ink); font-variant-numeric:tabular-nums; }
+tr:last-child td { border-bottom:none; }
+tr.nr td { color:var(--ink3); }
+.err { color:#B7472A; }
+.note { font-size:12.5px; color:var(--ink3); margin-top:14px; max-width:72ch; }
+</style>
+<main>
+<h1>Image model matrix</h1>
+<p class="sub">One prompt — the HVAC technician + furnace shot — through every image model this account can reach, at 1024&times;1024. Judge quality by eye; cost and latency are measured below.</p>
+
+<div class="grid">
+    <figure class="cell">
+      <img src="matrix/gpt-image-1-mini-medium.png" alt="gpt-image-1-mini · medium" loading="lazy">
+      <figcaption>
+        <strong>gpt-image-1-mini</strong> <span class="q">medium</span>
+        <span class="meta">$0.011 · 16.1s · 1056 img tokens</span>
+      </figcaption>
+    </figure>
+    <figure class="cell">
+      <img src="matrix/gpt-image-1-low.png" alt="gpt-image-1 · low" loading="lazy">
+      <figcaption>
+        <strong>gpt-image-1</strong> <span class="q">low</span>
+        <span class="meta">$0.011 · 12.5s · 272 img tokens</span>
+      </figcaption>
+    </figure>
+    <figure class="cell">
+      <img src="matrix/gpt-image-1-medium.png" alt="gpt-image-1 · medium" loading="lazy">
+      <figcaption>
+        <strong>gpt-image-1</strong> <span class="q">medium</span>
+        <span class="meta">$0.042 · 17.6s · 1056 img tokens</span>
+      </figcaption>
+    </figure>
+    <figure class="cell">
+      <img src="matrix/gpt-image-1-high.png" alt="gpt-image-1 · high" loading="lazy">
+      <figcaption>
+        <strong>gpt-image-1</strong> <span class="q">high</span>
+        <span class="meta">$0.167 · 41.4s · 4160 img tokens</span>
+      </figcaption>
+    </figure>
+    <figure class="cell">
+      <img src="matrix/gpt-image-1.5-medium.png" alt="gpt-image-1.5 · medium" loading="lazy">
+      <figcaption>
+        <strong>gpt-image-1.5</strong> <span class="q">medium</span>
+        <span class="meta">$0.040 · 18.9s · 1437 img tokens</span>
+      </figcaption>
+    </figure>
+    <figure class="cell">
+      <img src="matrix/gpt-image-2-medium.png" alt="gpt-image-2 · medium" loading="lazy">
+      <figcaption>
+        <strong>gpt-image-2</strong> <span class="q">medium</span>
+        <span class="meta">$0.041 · 53.2s · 1756 img tokens</span>
+      </figcaption>
+    </figure>
+    <figure class="cell">
+      <img src="matrix/gpt-image-2-high.png" alt="gpt-image-2 · high" loading="lazy">
+      <figcaption>
+        <strong>gpt-image-2</strong> <span class="q">high</span>
+        <span class="meta">$0.165 · 159.9s · 7024 img tokens</span>
+      </figcaption>
+    </figure>
+</div>
+
+<h2>Cost &amp; speed</h2>
+<div class="twrap">
+<table>
+<tr><th>Model</th><th>Quality</th><th>$ / image</th><th>Latency</th><th>Output tokens</th></tr>
+<tr><td>gpt-image-1-mini</td><td>medium</td><td>$0.011</td><td>16.1s</td><td>1056</td></tr><tr><td>gpt-image-1</td><td>low</td><td>$0.011</td><td>12.5s</td><td>272</td></tr><tr><td>gpt-image-1</td><td>medium</td><td>$0.042</td><td>17.6s</td><td>1056</td></tr><tr><td>gpt-image-1</td><td>high</td><td>$0.167</td><td>41.4s</td><td>4160</td></tr><tr><td>gpt-image-1.5</td><td>medium</td><td>$0.040</td><td>18.9s</td><td>1437</td></tr><tr><td>gpt-image-2</td><td>medium</td><td>$0.041</td><td>53.2s</td><td>1756</td></tr><tr><td>gpt-image-2</td><td>high</td><td>$0.165</td><td>159.9s</td><td>7024</td></tr>
+<tr class='nr'><td>gemini-2.5-flash-image (Nano Banana)</td><td>—</td><td>$0.039</td><td colspan=2>No GEMINI_API_KEY in .env</td></tr><tr class='nr'><td>gemini-3.1-flash-image (Nano Banana 2)</td><td>—</td><td>$0.045</td><td colspan=2>No GEMINI_API_KEY in .env</td></tr><tr class='nr'><td>gemini-3-pro-image (Nano Banana Pro)</td><td>—</td><td>n/a</td><td colspan=2>No GEMINI_API_KEY in .env</td></tr><tr class='nr'><td>imagen-4</td><td>—</td><td>$0.040</td><td colspan=2>No GEMINI_API_KEY in .env</td></tr>
+</table>
+</div>
+<p class="note">Prices are the published 1024&times;1024 rates (July 2026). Gemini rows are listed for comparison but not generated — add GEMINI_API_KEY to .env and extend scripts/image-model-matrix.py to fill them in. The 51-page pilot used ~20 AI images: at gpt-image-1 medium that's ~$0.84 total; gpt-image-2 medium is the same money for the newer model.</p>
+</main>

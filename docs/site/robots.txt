@@ -1,0 +1,8 @@
+# START YOAST BLOCK
+# ---------------------------
+User-agent: *
+Disallow:
+
+Sitemap: http://127.0.0.1:8181/sitemap_index.xml
+# ---------------------------
+# END YOAST BLOCK

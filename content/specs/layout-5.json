@@ -1,140 +1,166 @@
 [
- {
-  "city": "Carlisle, PA",
-  "meta_description": "Three-story Carlisle foursquare with one thermostat? Zoning and ductless options measured against your house's real numbers — not a template.",
-  "layout_type": "storyteller",
-  "sections": [
-   {
-    "type": "hero_split",
-    "headline": "One thermostat cannot run three floors",
-    "text": "The third floor is twelve degrees off the thermostat's opinion, and everyone in the house knows it except the thermostat.",
-    "image_topic": "victorian",
-    "cta": "Schedule Assessment"
-   },
-   {
-    "type": "content_prose",
-    "heading": "Why vertical Carlisle houses fail with central control",
-    "paras": [
-     "Walk the blocks between Dickinson College and the historic district and you'll pass the same house again and again: the American Foursquare. Three living levels stacked over a stone or brick cellar, a center hall pulling air up through the middle like a chimney, and almost without exception a single thermostat screwed to the first-floor hallway wall, making climate decisions for rooms it has never met.",
-     "That arrangement was fine when coal heat ran all day and nobody expected bedrooms to match the parlor. It is not fine now. The complaints we hear from Carlisle's vertical houses are remarkably consistent: the first floor is comfortable, the second floor is tolerable, and the third floor swings between sauna and icebox depending on the season. None of that is a broken furnace. It is a control problem, and control problems have engineering answers."
-    ]
-   },
-   {
-    "type": "content_indent",
-    "heading": "The physics of stack effect",
-    "paras": [
-     "Warm air rises — everyone knows it, but the scale surprises people. In a typical two-and-a-half-story Carlisle foursquare with original balloon framing, stack effect alone can produce a five-to-eight degree difference between the first-floor hallway and the third-floor bedrooms in winter, before the heating system contributes anything. In summer the same physics runs in reverse: heat loads accumulate upward, the attic radiates downward through thin insulation, and the top floor becomes the collection point for everything the house absorbed all day. The hallway thermostat sits in the most thermally stable spot in the building — center of the house, no exterior wall, no sun exposure, tempered by air from every room around it. When it reads seventy degrees and shuts the system down, it is reporting one accurate fact about one privileged location and applying it to twenty-two hundred square feet that live under completely different conditions."
-    ]
-   },
-   {
-    "type": "content_media_right",
-    "heading": "Solution one: zone the ductwork you already own",
-    "image_topic": "ductwork",
-    "paras": [
-     "If your foursquare was retrofitted with forced-air between the fifties and eighties — most were — the duct trunk in the cellar can usually be divided into two or three zones with motorized dampers. Each zone gets its own thermostat, and a zone control board arbitrates: when only the third floor calls for cooling, dampers close off the floors that don't need it, and the full capacity of the system goes upstairs where the problem actually lives.",
-     "Done properly, zoning includes a static-pressure review, because closing dampers on a blower designed to feed the whole house raises pressure in the remaining open runs. Modern variable-speed equipment handles this gracefully by slowing itself down; older single-speed blowers sometimes need a bypass strategy or a weighted damper. This is the part of the job where experience matters more than parts — a zoning retrofit that ignores airflow math trades a temperature complaint for a noise complaint.",
-     "A two-zone conversion in a typical foursquare is a one-to-two-day project that leaves the ductwork, equipment, and walls essentially untouched. It is the highest-leverage change available for houses whose ducts are in decent shape."
-    ]
-   },
-   {
-    "type": "content_media_left",
-    "heading": "Solution two: give the third floor independence",
-    "image_topic": "minisplit",
-    "paras": [
-     "Some third floors can't be saved by dampers — the classic case is the foursquare whose top level was finished later and never got real ductwork, just one anemic supply run teed off the second-floor branch. Pushing conditioned air up two stories through undersized duct is a losing fight regardless of how the zones are drawn.",
-     "For these houses, a single ductless heat pump head mounted in the third-floor hall or master bedroom solves the problem directly. It heats and cools independently, its thermostat lives on the floor it serves, and the line set typically routes through a closet chase or along a rear exterior wall where it isn't visible from the street. Current cold-climate heads maintain useful heating output well below zero Fahrenheit, so the third floor gains not just summer relief but genuinely better winter comfort than the radiators or duct run ever delivered.",
-     "The economics are worth stating plainly: a one-head ductless installation generally costs less than a full zoning retrofit if your third floor needs duct repair anyway, and more if your existing ducts are healthy. Which side of that line your house falls on is exactly what a site visit is for."
-    ]
-   },
-   {
-    "type": "feature_row",
-    "heading": "What we measure before any quote",
-    "features": [
-     {
-      "title": "Room-by-room temperatures",
-      "text": "Logged against the thermostat's reading at the same moment to reveal the actual stratification pattern."
-     },
-     {
-      "title": "Static pressure mapping",
-      "text": "Measured at the air handler to determine whether your blower can tolerate zone dampers without noise or starvation."
-     },
-     {
-      "title": "Duct condition review",
-      "text": "Inside the trunk for the disconnections and crushed runs that vertical houses accumulate over decades."
-     },
-     {
-      "title": "Attic insulation audit",
-      "text": "Depth and air-sealing condition, since a leaky attic hat makes every downstairs fix work harder and costs more."
-     },
-     {
-      "title": "Electrical capacity check",
-      "text": "Spare amperage in the panel if a ductless head is on the table, especially for historic-district upgrades."
-     }
-    ]
-   },
-   {
-    "type": "content_prose",
-    "heading": "Carlisle specifics: humidity, walls, and historic rules",
-    "paras": [
-     "Cumberland Valley summers add a wrinkle that pure temperature talk misses: humidity. A third floor that reads seventy-four degrees but sits at sixty-five percent relative humidity will feel worse than a seventy-eight-degree room with dry air. Any zoning or ductless plan for a Carlisle house should state its dehumidification strategy explicitly — longer low-speed cooling cycles, a dedicated dehumidifier tied to the return, or a ductless head with a proper dry mode.",
-     "Houses inside the historic district carry one more constraint: exterior equipment and line-set routing that faces the street can require approval. Rear-wall condenser placement and internal chase routing keep the facade clean and the review board uninvolved. Plaster walls, for what it's worth, are an argument for ductless rather than against it — a three-inch line-set hole beats cutting new duct chases through hundred-year-old lath every time.",
-     "The same physics governs Carlisle's three-story colonials, the tall twins along the borough's north side, and most of the Victorian stock with finished attics. If your house has three habitable levels and one thermostat, the pattern holds: the control system is outnumbered. The specific fix varies — zoning suits houses with sound ducts, ductless suits houses without them, and some houses justify both — but the diagnosis is nearly universal."
-    ]
-   },
-   {
-    "type": "quote",
-    "text": "An assessment takes ninety minutes, produces room-by-room readings, and ends with zoning and ductless options priced against your house's actual numbers — not a template's.",
-    "cite": "Honest assessment, honest quote",
-    "variant": "accent"
-   },
-   {
-    "type": "faq",
-    "heading": "What Carlisle owners ask about zoning",
-    "variant": "minimal",
-    "items": [
-     {
-      "q": "Will zoning raise my utility bill by running the system more often?",
-      "a": "Typically the opposite. Zoned systems stop conditioning empty floors to fix an occupied one, and total runtime usually drops. The bill reflects where the air goes, and after zoning it goes only where it's called for."
-     },
-     {
-      "q": "Can I just put a smart thermostat upstairs instead?",
-      "a": "A remote sensor tells a smart thermostat the truth about the third floor, which helps — but the system still conditions all three floors every time it runs. Sensors improve the information; only zoning or separate equipment changes the delivery."
-     },
-     {
-      "q": "Is a three-zone setup overkill for a foursquare?",
-      "a": "Usually two zones — first floor versus upper floors — captures most of the benefit at less cost. Three zones earn their keep when the third floor is a primary bedroom or office rather than occasional space. The measurement visit settles it with data instead of preference."
-     },
-     {
-      "q": "What happens if I add dampers to a really old blower?",
-      "a": "Single-speed furnaces from the seventies sometimes develop noise or reduced airflow when dampers restrict the ductwork. A static-pressure check at the start determines whether you need a bypass damper, a variable-speed retrofit, or a different approach entirely."
-     }
-    ]
-   },
-   {
-    "type": "pills",
-    "items": [
-     "5,600 heating degree days — heat pump heating viable",
-     "Historic district rules apply near Dickinson College",
-     "Limestone cellars — moisture control first",
-     "Two-zone retrofit: 1–2 days, no wall cutting"
-    ],
-    "variant": "glass"
-   },
-   {
-    "type": "cta_center",
-    "heading": "Get the measurement, skip the guesswork",
-    "text": "An assessment takes about ninety minutes, produces the room-by-room readings this page describes, and ends with zoning and ductless options priced side by side against your house's actual numbers — not a template's. If the honest answer is that a five-hundred-dollar balancing visit fixes it, that's the answer you'll get.",
-    "cta": "Schedule Assessment",
-    "band": "warm-gradient"
-   },
-   {
-    "type": "nearby",
-    "cities": [
-     "Mechanicsburg, PA",
-     "Shippensburg, PA",
-     "Harrisburg, PA"
-    ]
-   }
-  ]
- }
+    {
+        "city": "Carlisle, PA",
+        "meta_description": "Three-story Carlisle foursquare with one thermostat? Zoning and ductless options measured against your house's real numbers — not a template.",
+        "layout_type": "storyteller",
+        "sections": [
+            {
+                "type": "hero_offset",
+                "headline": "One thermostat cannot run three floors",
+                "text": "The third floor is twelve degrees off the thermostat's opinion, and everyone in the house knows it except the thermostat.",
+                "image_topic": "victorian",
+                "cta": "Schedule the Walkthrough"
+            },
+            {
+                "type": "trust_bar",
+                "items": [
+                    {
+                        "label": "15+ Years Serving PA"
+                    },
+                    {
+                        "label": "Licensed & Insured"
+                    },
+                    {
+                        "label": "Same-Day Emergency"
+                    },
+                    {
+                        "label": "Local to Your Area"
+                    }
+                ]
+            },
+            {
+                "type": "content_prose",
+                "heading": "Why vertical Carlisle houses fail with central control",
+                "paras": [
+                    "Walk the blocks between Dickinson College and the historic district and you'll pass the same house again and again: the American Foursquare. Three living levels stacked over a stone or brick cellar, a center hall pulling air up through the middle like a chimney, and almost without exception a single thermostat screwed to the first-floor hallway wall, making climate decisions for rooms it has never met.",
+                    "That arrangement was fine when coal heat ran all day and nobody expected bedrooms to match the parlor. It is not fine now. The complaints we hear from Carlisle's vertical houses are remarkably consistent: the first floor is comfortable, the second floor is tolerable, and the third floor swings between sauna and icebox depending on the season. None of that is a broken furnace. It is a control problem, and control problems have engineering answers."
+                ]
+            },
+            {
+                "type": "content_indent",
+                "heading": "The physics of stack effect",
+                "paras": [
+                    "Warm air rises — everyone knows it, but the scale surprises people. In a typical two-and-a-half-story Carlisle foursquare with original balloon framing, stack effect alone can produce a five-to-eight degree difference between the first-floor hallway and the third-floor bedrooms in winter, before the heating system contributes anything. In summer the same physics runs in reverse: heat loads accumulate upward, the attic radiates downward through thin insulation, and the top floor becomes the collection point for everything the house absorbed all day. The hallway thermostat sits in the most thermally stable spot in the building — center of the house, no exterior wall, no sun exposure, tempered by air from every room around it. When it reads seventy degrees and shuts the system down, it is reporting one accurate fact about one privileged location and applying it to twenty-two hundred square feet that live under completely different conditions."
+                ]
+            },
+            {
+                "type": "content_media_right",
+                "heading": "Solution one: zone the ductwork you already own",
+                "image_topic": "ductwork",
+                "paras": [
+                    "If your foursquare was retrofitted with forced-air between the fifties and eighties — most were — the duct trunk in the cellar can usually be divided into two or three zones with motorized dampers. Each zone gets its own thermostat, and a zone control board arbitrates: when only the third floor calls for cooling, dampers close off the floors that don't need it, and the full capacity of the system goes upstairs where the problem actually lives.",
+                    "Done properly, zoning includes a static-pressure review, because closing dampers on a blower designed to feed the whole house raises pressure in the remaining open runs. Modern variable-speed equipment handles this gracefully by slowing itself down; older single-speed blowers sometimes need a bypass strategy or a weighted damper. This is the part of the job where experience matters more than parts — a zoning retrofit that ignores airflow math trades a temperature complaint for a noise complaint.",
+                    "A two-zone conversion in a typical foursquare is a one-to-two-day project that leaves the ductwork, equipment, and walls essentially untouched. It is the highest-leverage change available for houses whose ducts are in decent shape."
+                ]
+            },
+            {
+                "type": "content_media_left",
+                "heading": "Solution two: give the third floor independence",
+                "image_topic": "minisplit",
+                "paras": [
+                    "Some third floors can't be saved by dampers — the classic case is the foursquare whose top level was finished later and never got real ductwork, just one anemic supply run teed off the second-floor branch. Pushing conditioned air up two stories through undersized duct is a losing fight regardless of how the zones are drawn.",
+                    "For these houses, a single ductless heat pump head mounted in the third-floor hall or master bedroom solves the problem directly. It heats and cools independently, its thermostat lives on the floor it serves, and the line set typically routes through a closet chase or along a rear exterior wall where it isn't visible from the street. Current cold-climate heads maintain useful heating output well below zero Fahrenheit, so the third floor gains not just summer relief but genuinely better winter comfort than the radiators or duct run ever delivered.",
+                    "The economics are worth stating plainly: a one-head ductless installation generally costs less than a full zoning retrofit if your third floor needs duct repair anyway, and more if your existing ducts are healthy. Which side of that line your house falls on is exactly what a site visit is for."
+                ]
+            },
+            {
+                "type": "feature_row",
+                "heading": "What we measure before any quote",
+                "features": [
+                    {
+                        "title": "Room-by-room temperatures",
+                        "text": "Logged against the thermostat's reading at the same moment to reveal the actual stratification pattern."
+                    },
+                    {
+                        "title": "Static pressure mapping",
+                        "text": "Measured at the air handler to determine whether your blower can tolerate zone dampers without noise or starvation."
+                    },
+                    {
+                        "title": "Duct condition review",
+                        "text": "Inside the trunk for the disconnections and crushed runs that vertical houses accumulate over decades."
+                    },
+                    {
+                        "title": "Attic insulation audit",
+                        "text": "Depth and air-sealing condition, since a leaky attic hat makes every downstairs fix work harder and costs more."
+                    },
+                    {
+                        "title": "Electrical capacity check",
+                        "text": "Spare amperage in the panel if a ductless head is on the table, especially for historic-district upgrades."
+                    }
+                ]
+            },
+            {
+                "type": "content_prose",
+                "heading": "Carlisle specifics: humidity, walls, and historic rules",
+                "paras": [
+                    "Cumberland Valley summers add a wrinkle that pure temperature talk misses: humidity. A third floor that reads seventy-four degrees but sits at sixty-five percent relative humidity will feel worse than a seventy-eight-degree room with dry air. Any zoning or ductless plan for a Carlisle house should state its dehumidification strategy explicitly — longer low-speed cooling cycles, a dedicated dehumidifier tied to the return, or a ductless head with a proper dry mode.",
+                    "Houses inside the historic district carry one more constraint: exterior equipment and line-set routing that faces the street can require approval. Rear-wall condenser placement and internal chase routing keep the facade clean and the review board uninvolved. Plaster walls, for what it's worth, are an argument for ductless rather than against it — a three-inch line-set hole beats cutting new duct chases through hundred-year-old lath every time.",
+                    "The same physics governs Carlisle's three-story colonials, the tall twins along the borough's north side, and most of the Victorian stock with finished attics. If your house has three habitable levels and one thermostat, the pattern holds: the control system is outnumbered. The specific fix varies — zoning suits houses with sound ducts, ductless suits houses without them, and some houses justify both — but the diagnosis is nearly universal."
+                ]
+            },
+            {
+                "type": "quote",
+                "text": "An assessment takes ninety minutes, produces room-by-room readings, and ends with zoning and ductless options priced against your house's actual numbers — not a template's.",
+                "cite": "Honest assessment, honest quote",
+                "variant": "accent"
+            },
+            {
+                "type": "faq",
+                "heading": "What Carlisle owners ask about zoning",
+                "variant": "minimal",
+                "items": [
+                    {
+                        "q": "Will zoning raise my utility bill by running the system more often?",
+                        "a": "Typically the opposite. Zoned systems stop conditioning empty floors to fix an occupied one, and total runtime usually drops. The bill reflects where the air goes, and after zoning it goes only where it's called for."
+                    },
+                    {
+                        "q": "Can I just put a smart thermostat upstairs instead?",
+                        "a": "A remote sensor tells a smart thermostat the truth about the third floor, which helps — but the system still conditions all three floors every time it runs. Sensors improve the information; only zoning or separate equipment changes the delivery."
+                    },
+                    {
+                        "q": "Is a three-zone setup overkill for a foursquare?",
+                        "a": "Usually two zones — first floor versus upper floors — captures most of the benefit at less cost. Three zones earn their keep when the third floor is a primary bedroom or office rather than occasional space. The measurement visit settles it with data instead of preference."
+                    },
+                    {
+                        "q": "What happens if I add dampers to a really old blower?",
+                        "a": "Single-speed furnaces from the seventies sometimes develop noise or reduced airflow when dampers restrict the ductwork. A static-pressure check at the start determines whether you need a bypass damper, a variable-speed retrofit, or a different approach entirely."
+                    }
+                ]
+            },
+            {
+                "type": "pills",
+                "items": [
+                    "5,600 heating degree days — heat pump heating viable",
+                    "Historic district rules apply near Dickinson College",
+                    "Limestone cellars — moisture control first",
+                    "Two-zone retrofit: 1–2 days, no wall cutting"
+                ],
+                "variant": "glass"
+            },
+            {
+                "type": "cta_center",
+                "heading": "Get the measurement, skip the guesswork",
+                "text": "An assessment takes about ninety minutes, produces the room-by-room readings this page describes, and ends with zoning and ductless options priced side by side against your house's actual numbers — not a template's. If the honest answer is that a five-hundred-dollar balancing visit fixes it, that's the answer you'll get.",
+                "cta": "Schedule Assessment",
+                "band": "warm-gradient"
+            },
+            {
+                "type": "photo_gallery",
+                "heading": "Our Work in Your Neighborhood",
+                "topics": [
+                    "technician",
+                    "suburban",
+                    "furnace"
+                ]
+            },
+            {
+                "type": "nearby",
+                "cities": [
+                    "Mechanicsburg, PA",
+                    "Shippensburg, PA",
+                    "Harrisburg, PA"
+                ]
+            }
+        ]
+    }
 ]

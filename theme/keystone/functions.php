@@ -1,10 +1,25 @@
 <?php
 add_action( 'wp_enqueue_scripts', function() {
+    wp_enqueue_style(
+        'keystone-site',
+        get_stylesheet_uri(),
+        array(),
+        filemtime( get_stylesheet_directory() . '/style.css' )
+    );
+}, 5 );
+
+add_action( 'wp_enqueue_scripts', function() {
     if ( is_singular( 'page' ) && get_post_meta( get_the_ID(), '_location_city', true ) ) {
+        wp_enqueue_style(
+            'keystone-google-fonts',
+            'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&family=Oswald:wght@400;600&family=Roboto:wght@400;500&family=Barlow+Condensed:wght@600;700&family=Cabin:wght@400;500&display=swap',
+            array(),
+            null
+        );
         wp_enqueue_style(
             'keystone-location',
             get_stylesheet_directory_uri() . '/assets/css/location.css',
-            array(),
+            array( 'keystone-google-fonts' ),
             filemtime( get_stylesheet_directory() . '/assets/css/location.css' )
         );
         wp_enqueue_style(
@@ -21,7 +36,11 @@ add_filter( 'body_class', function( $classes ) {
         $layout_type = get_post_meta( get_the_ID(), '_layout_type', true );
         if ( $layout_type ) {
             $slug = sanitize_title( $layout_type );
-            $classes[] = 'brand-' . $slug;
+            $classes[] = 'layout-' . $slug;
+        }
+        $design_family = get_post_meta( get_the_ID(), '_design_family', true );
+        if ( $design_family ) {
+            $classes[] = 'design-' . sanitize_title( $design_family );
         }
         $brand = get_post_meta( get_the_ID(), '_brand_palette', true );
         if ( $brand ) {

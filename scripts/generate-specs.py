@@ -9,6 +9,16 @@ random.seed(42)
 
 CONTENT_DIR = "content"
 
+# Approved Pencil designs own the visual structure for mapped pages. The
+# combinatorial generator may vary content flow only inside that design family.
+PENCIL_DESIGNS = {
+    'Bethlehem, PA': {
+        'design_family': 'bethlehem-split-industrial',
+        'brand_palette': 'bethlehem',
+        'layout_variant': 'services-first',
+    },
+}
+
 all_entries = []
 for fname in sorted(os.listdir(CONTENT_DIR)):
     if fname.startswith('v3-') and fname.endswith('.json'):
@@ -429,6 +439,7 @@ for idx, entry in enumerate(all_entries):
         'layout_type': layout_name,
         'sections': page_sections,
     }
+    spec.update(PENCIL_DESIGNS.get(entry['city'], {}))
     specs.append(spec)
 
 # Write specs

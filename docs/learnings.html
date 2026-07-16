@@ -518,6 +518,12 @@ footer p { color: var(--ink-3); font-size: 12px; }
         <span id="design-page"></span>
         <button id="design-next" type="button">Next →</button>
       </div>
+
+      <div class="manifest-head">
+        <div><p class="eyebrow">Off-the-shelf AI builders</p><h3>Same brief, commercial builders</h3></div>
+        <p>The Keystone Comfort Co. brief run through hosted AI site builders, for comparison.</p>
+      </div>
+      <div id="builder-previews" class="preview-grid"></div>
     </div>
   </section>
 
@@ -609,42 +615,85 @@ footer p { color: var(--ink-3); font-size: 12px; }
 
 <script>
 const designItems = [
-  { url: '../tmp-bethlehem-design.html', name: 'Bethlehem HVAC', detail: 'Split Industrial', address: 'bethlehem.pen' },
-  { url: '../tmp-pittsburgh-design.html', name: 'Pittsburgh HVAC', detail: 'Warm Industrial', address: 'pittsburgh.pen' },
-  { url: '../tmp-erie-design.html', name: 'Erie HVAC', detail: 'Lakefront Bold', address: 'erie.pen' },
-  { url: '../tmp-lancaster-design.html', name: 'Lancaster HVAC', detail: 'Heritage Serif', address: 'lancaster.pen' },
-  { url: '../tmp-restaurant-design.html', name: 'Lombardo’s Italian', detail: 'Restaurant', address: 'restaurant.pen' },
-  { url: '../tmp-plumbing-design.html', name: 'FlowRight Pro', detail: 'Plumbing', address: 'plumbing.pen' },
-  { url: '../tmp-cpa-design.html', name: 'Gift & Associates', detail: 'CPA', address: 'cpa.pen' },
-  { url: '../tmp-auto-design.html', name: 'Precision Motors', detail: 'Auto shop', address: 'auto.pen' },
-  { url: '../tmp-landscaping-design.html', name: 'GreenCraft Outdoors', detail: 'Landscaping', address: 'landscaping.pen' },
-  { url: '../tmp-law-design.html', name: 'Sterling & Associates', detail: 'Law firm', address: 'law.pen' },
-  { url: '../tmp-dental-design.html', name: 'Bright Smile Family', detail: 'Dental', address: 'dental.pen' },
-  { url: '../tmp-roofing-design.html', name: 'Ironclad Exteriors', detail: 'Roofing', address: 'roofing.pen' },
-  { url: '../tmp-styleguide-design.html', name: 'EZ Style Guide', detail: 'Design standards', address: 'style-guide.pen' }
+  { url: 'designs/bethlehem-design.html', name: 'Bethlehem HVAC', detail: 'Split Industrial', address: 'bethlehem.pen' },
+  { url: 'designs/pittsburgh-design.html', name: 'Pittsburgh HVAC', detail: 'Warm Industrial', address: 'pittsburgh.pen' },
+  { url: 'designs/erie-design.html', name: 'Erie HVAC', detail: 'Lakefront Bold', address: 'erie.pen' },
+  { url: 'designs/lancaster-design.html', name: 'Lancaster HVAC', detail: 'Heritage Serif', address: 'lancaster.pen' },
+  { url: 'designs/restaurant-design.html', name: 'Lombardo’s Italian', detail: 'Restaurant', address: 'restaurant.pen' },
+  { url: 'designs/plumbing-design.html', name: 'FlowRight Pro', detail: 'Plumbing', address: 'plumbing.pen' },
+  { url: 'designs/cpa-design.html', name: 'Gift & Associates', detail: 'CPA', address: 'cpa.pen' },
+  { url: 'designs/auto-design.html', name: 'Precision Motors', detail: 'Auto shop', address: 'auto.pen' },
+  { url: 'designs/landscaping-design.html', name: 'GreenCraft Outdoors', detail: 'Landscaping', address: 'landscaping.pen' },
+  { url: 'designs/law-design.html', name: 'Sterling & Associates', detail: 'Law firm', address: 'law.pen' },
+  { url: 'designs/dental-design.html', name: 'Bright Smile Family', detail: 'Dental', address: 'dental.pen' },
+  { url: 'designs/roofing-design.html', name: 'Ironclad Exteriors', detail: 'Roofing', address: 'roofing.pen' },
+  { url: 'designs/styleguide-design.html', name: 'EZ Style Guide', detail: 'Design standards', address: 'style-guide.pen' }
 ];
 
 const pageItems = [
-  [91,'Allentown'],[95,'Altoona'],[165,'Beaver Falls'],[92,'Bethlehem'],[170,'Bradford'],[164,'Butler'],
-  [126,'Carlisle'],[125,'Chambersburg'],[136,'Coatesville'],[156,'Columbia'],[122,'Doylestown'],[171,'DuBois'],
-  [134,'East Stroudsburg'],[99,'Easton'],[137,'Ephrata'],[93,'Erie'],[157,'Gettysburg'],[161,'Greensburg'],
-  [158,'Hanover'],[90,'Harrisburg'],[132,'Hazleton'],[128,'Hershey'],[163,'Indiana'],[162,'Johnstown'],
-  [102,'King of Prussia'],[87,'Lancaster'],[129,'Lebanon'],[130,'Lewisburg'],[155,'Lititz'],[167,'Meadville'],
-  [127,'Mechanicsburg'],[121,'Media'],[166,'New Castle'],[101,'Norristown'],[168,'Oil City'],[135,'Phoenixville'],
-  [94,'Pittsburgh'],[100,'Pottstown'],[123,'Quakertown'],[89,'Reading'],[124,'Scranton'],[131,'Selinsgrove'],
-  [159,'Shippensburg'],[96,'State College'],[133,'Stroudsburg'],[169,'Warren'],[160,'Waynesboro'],[103,'West Chester'],
-  [98,'Wilkes-Barre'],[97,'Williamsport'],[88,'York']
-].map(([id, name]) => ({
-  url: 'http://localhost:8181/?page_id=' + id,
+  ['six-things-to-know-before-switching-your-allentown-home-to-a-heat-pump','Allentown'],
+  ['a-pre-winter-tune-up-checklist-built-for-altoona-weather','Altoona'],
+  ['duplex-peace-treaty-separate-comfort-for-beaver-falls-two-family-homes','Beaver Falls'],
+  ['historic-districts-fresh-air-ventilation-done-right-in-bethlehem','Bethlehem'],
+  ['deep-cold-answers-for-bradford-where-winter-means-it','Bradford'],
+  ['the-spring-ac-startup-ritual-butler-homes-should-steal-from-us','Butler'],
+  ['one-thermostat-cant-run-a-three-story-carlisle-foursquare','Carlisle'],
+  ['what-a-maintenance-plan-actually-buys-you-in-chambersburg','Chambersburg'],
+  ['bought-your-first-house-in-coatesville-read-this-before-winter','Coatesville'],
+  ['storefront-below-apartments-above-hvac-for-columbias-mixed-use-blocks','Columbia'],
+  ['straight-answers-on-replacing-hvac-in-a-doylestown-borough-home','Doylestown'],
+  ['opening-the-treasure-lake-place-a-camp-owners-season-checklist','DuBois'],
+  ['finished-the-basement-now-finish-the-airflow-east-stroudsburg','East Stroudsburg'],
+  ['is-it-time-to-replace-that-aging-air-conditioner-in-your-easton-home','Easton'],
+  ['seven-warning-signs-an-ephrata-furnace-gives-before-it-quits','Ephrata'],
+  ['can-your-furnace-survive-another-lake-effect-winter-in-erie','Erie'],
+  ['discreet-hvac-for-homes-inside-gettysburgs-historic-district','Gettysburg'],
+  ['aging-in-place-near-st-clair-park-comfort-and-safety-upgrades-that-matter','Greensburg'],
+  ['five-hvac-myths-hanover-homeowners-can-finally-retire','Hanover'],
+  ['living-near-the-susquehanna-means-humidity-here-is-how-harrisburg-homes-beat-it','Harrisburg'],
+  ['heating-at-1700-feet-why-hazleton-homes-need-different-furnace-math','Hazleton'],
+  ['healthy-air-for-busy-hershey-households-a-practical-qa','Hershey'],
+  ['four-draft-fixes-for-the-farmhouses-around-indiana-county','Indiana'],
+  ['mechanicals-in-a-flood-city-johnstown-questions-answered-plainly','Johnstown'],
+  ['why-two-story-townhomes-in-king-of-prussia-run-hot-upstairs','King of Prussia'],
+  ['older-home-modern-comfort-heating-care-for-lancaster-rowhouses','Lancaster'],
+  ['heating-a-lebanon-home-on-a-fixed-budget-what-pays-off-first','Lebanon'],
+  ['guest-rooms-that-stay-booked-innkeeper-hvac-along-market-street','Lewisburg'],
+  ['living-above-the-shop-on-main-street-lititz-apartment-comfort','Lititz'],
+  ['damp-spring-in-meadville-six-moves-that-stop-mold-before-it-starts','Meadville'],
+  ['cumberland-valley-builders-skipped-these-two-hvac-details-check-your-mechanicsburg-home','Mechanicsburg'],
+  ['quiet-comfort-for-everybodys-hometown-ductless-living-in-media','Media'],
+  ['fixer-upper-hvac-triage-what-new-castle-bargain-hunters-should-budget','New Castle'],
+  ['smarter-thermostats-lower-bills-a-norristown-field-guide','Norristown'],
+  ['original-windows-warm-rooms-balancing-heat-in-oil-citys-heritage-homes','Oil City'],
+  ['exposed-brick-comfortable-lofts-conditioning-phoenixvilles-converted-spaces','Phoenixville'],
+  ['ductless-comfort-for-pittsburgh-rowhouses-from-lawrenceville-to-the-slopes','Pittsburgh'],
+  ['trim-the-utility-bill-practical-efficiency-upgrades-for-pottstown-houses','Pottstown'],
+  ['oil-tank-on-its-last-legs-conversion-options-for-quakertown-homes','Quakertown'],
+  ['cut-summer-cooling-costs-in-reading-without-giving-up-comfort','Reading'],
+  ['steam-heat-survival-guide-for-scrantons-older-blocks','Scranton'],
+  ['retiring-the-oil-furnace-what-selinsgrove-homes-choose-instead','Selinsgrove'],
+  ['between-tenants-the-turnover-hvac-routine-for-shippensburg-duplexes','Shippensburg'],
+  ['rental-hvac-in-state-college-what-landlords-keep-missing','State College'],
+  ['second-home-in-the-poconos-freeze-protection-answers-for-stroudsburg-properties','Stroudsburg'],
+  ['wood-stove-downstairs-heat-pump-everywhere-else-a-warren-combination-that-works','Warren'],
+  ['heating-the-workshop-the-garage-and-the-pole-barn-outside-waynesboro','Waynesboro'],
+  ['five-air-quality-fixes-west-chester-allergy-sufferers-swear-by','West Chester'],
+  ['when-the-wyoming-valley-freezes-response-time-is-everything','Wilkes-Barre'],
+  ['keeping-millionaires-row-warm-boiler-care-in-williamsport','Williamsport'],
+  ['what-york-homeowners-ask-us-after-a-furnace-dies-at-midnight','York']
+].map(([slug, name]) => ({
+  url: 'site/' + slug + '/',
   name,
   detail: 'Published pilot page',
-  address: 'localhost:8181/?page_id=' + id
+  address: 'keystone…/' + slug.slice(0, 34) + '…'
 }));
 
 const modal = document.getElementById('preview-modal');
-const modalFrame = document.getElementById('modal-frame');
 const modalTitle = document.getElementById('modal-title');
 const modalNewTab = document.getElementById('modal-new-tab');
+
+const modalFrame = document.getElementById('modal-frame');
 
 function openPreview(item) {
   modalTitle.textContent = item.name + ' — ' + item.detail;
@@ -685,6 +734,7 @@ function scalePreviews() {
     if (iframe) iframe.style.transform = 'scale(' + (canvas.clientWidth / 1440) + ')';
   });
 }
+window.addEventListener('resize', scalePreviews);
 
 function makePager(items, perPage, gridId, previousId, nextId, labelId) {
   let page = 0;
@@ -707,9 +757,28 @@ function makePager(items, perPage, gridId, previousId, nextId, labelId) {
   render();
 }
 
+const builderItems = [
+  {
+    url: 'https://terry1055e91d46-etfdr.wordpress.com/',
+    public: true,
+    name: 'WordPress.com AI Builder',
+    detail: 'Hosted result · same brief',
+    address: 'terry1055e91d46-etfdr.wordpress.com'
+  },
+  {
+    url: 'https://playground.wordpress.net/?login=no&mode=seamless#eyIkc2NoZW1hIjoiaHR0cHM6Ly9wbGF5Z3JvdW5kLndvcmRwcmVzcy5uZXQvYmx1ZXByaW50LXNjaGVtYS5qc29uIiwibGFuZGluZ1BhZ2UiOiIvIiwicHJlZmVycmVkVmVyc2lvbnMiOnsicGhwIjoiOC4zIiwid3AiOiJsYXRlc3QifSwiZmVhdHVyZXMiOnsibmV0d29ya2luZyI6dHJ1ZX0sImV4dHJhTGlicmFyaWVzIjpbIndwLWNsaSJdLCJzdGVwcyI6W3sic3RlcCI6ImxvZ2luIiwidXNlcm5hbWUiOiJzZWVkcHJvZCJ9LHsic3RlcCI6Imluc3RhbGxQbHVnaW4iLCJwbHVnaW5EYXRhIjp7InJlc291cmNlIjoidXJsIiwidXJsIjoiaHR0cHM6Ly9wdWItNDMyMjk0Y2I2MjM3NDE4ZTg4NjkwZjJkYTMwZTgxZTAucjIuZGV2L3NlZWRwcm9kLWNvbWluZy1zb29uLXByby01LTYuMTguMTYuemlwIn0sIm9wdGlvbnMiOnsiYWN0aXZhdGUiOnRydWV9fSx7InN0ZXAiOiJzZXRTaXRlT3B0aW9ucyIsIm9wdGlvbnMiOnsiYmxvZ25hbWUiOiJLZXlzdG9uZSBDb21mb3J0IENvLiIsInRpbWV6b25lX3N0cmluZyI6IkFtZXJpY2EvTmV3X1lvcmsifX0seyJzdGVwIjoid3AtY2xpIiwiY29tbWFuZCI6IndwIHNlZWRwcm9kX2ltcG9ydF90aGVtZV9mcm9tX3VybCBodHRwczovL3B1Yi00MzIyOTRjYjYyMzc0MThlODg2OTBmMmRhMzBlODFlMC5yMi5kZXYvYWkvZXhwb3J0X3BhZ2UtMjc3MDQuemlwIn0seyJzdGVwIjoid3AtY2xpIiwiY29tbWFuZCI6IndwIHNlZWRwcm9kX2VuYWJsZV90aGVtZSB0cnVlIn1dfQ',
+    public: true,
+    name: 'SeedProd AI',
+    detail: 'Playground snapshot · same brief',
+    address: 'playground.wordpress.net · seedprod'
+  }
+];
+
+document.getElementById('builder-previews').replaceChildren(...builderItems.map(previewCard));
+requestAnimationFrame(scalePreviews);
+
 makePager(designItems, 3, 'design-previews', 'design-prev', 'design-next', 'design-page');
 makePager(pageItems, 9, 'page-previews', 'page-prev', 'page-next', 'page-number');
-window.addEventListener('resize', scalePreviews);
 
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('nav a');

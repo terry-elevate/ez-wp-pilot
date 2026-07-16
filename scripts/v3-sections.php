@@ -62,6 +62,16 @@ function sec_buttons( $buttons_html ) {
     return "<!-- wp:buttons {\"layout\":{\"type\":\"flex\",\"justifyContent\":\"center\"}} -->\n<div class=\"wp-block-buttons\">{$buttons_html}</div>\n<!-- /wp:buttons -->";
 }
 
+// Corner badge distinguishing AI-generated from stock imagery.
+// Attribution meta: "AI-generated (gpt-image-1)" vs Openverse credit strings.
+function sec_img_badge( $img ) {
+    if ( ! $img || empty( $img['cred'] ) ) { return ''; }
+    $is_ai = stripos( $img['cred'], 'AI-generated' ) !== false;
+    $kind  = $is_ai ? 'ai' : 'stock';
+    $label = $is_ai ? 'AI' : 'Stock';
+    return "<span class=\"s-img-badge s-img-badge--{$kind}\" title=\"" . esc_attr( $img['cred'] ) . "\">{$label}</span>";
+}
+
 function sec_img_tag( $img ) {
     if ( ! $img ) { return ''; }
     return "<img src=\"" . esc_url( $img['url'] ) . "\" alt=\"" . esc_attr( $img['alt'] ) . "\" class=\"wp-image-{$img['id']}\"/>";
@@ -72,7 +82,7 @@ function sec_img_block( $img, $align = '' ) {
     $a = $align ? ",\"align\":\"{$align}\"" : '';
     $ac = $align ? " align{$align}" : '';
     return "<!-- wp:image {\"id\":{$img['id']},\"sizeSlug\":\"large\",\"linkDestination\":\"none\"{$a}} -->\n"
-         . "<figure class=\"wp-block-image size-large{$ac}\"><img src=\"" . esc_url( $img['url'] ) . "\" alt=\"" . esc_attr( $img['alt'] ) . "\" class=\"wp-image-{$img['id']}\"/></figure>\n<!-- /wp:image -->";
+         . "<figure class=\"wp-block-image size-large{$ac}\"><img src=\"" . esc_url( $img['url'] ) . "\" alt=\"" . esc_attr( $img['alt'] ) . "\" class=\"wp-image-{$img['id']}\"/>" . sec_img_badge( $img ) . "</figure>\n<!-- /wp:image -->";
 }
 
 // --- Band wrapper ---
@@ -103,13 +113,34 @@ function sec_wrap( $inner, $spacing = '4.5rem' ) {
 // HERO SECTIONS
 // ============================================================================
 
+/**
+ * Canonical Bethlehem split hero translated from the Pencil comp into native
+ * Gutenberg blocks. The photo stays on the left and the dark content panel on
+ * the right; page content only fills the defined slots.
+ */
+function sec_hero_pencil_split( $img, $eyebrow, $headline, $intro_text, $cta_text ) {
+    if ( ! $img ) { return sec_hero_text( $headline, $intro_text, $cta_text ); }
+
+    $text_col = "<!-- wp:paragraph {\"className\":\"s-pencil-hero__eyebrow\"} -->\n"
+              . '<p class="s-pencil-hero__eyebrow">' . sec_esc( $eyebrow ) . "</p>\n<!-- /wp:paragraph -->\n\n"
+              . sec_h( $headline, 2, 's-pencil-hero__title' ) . "\n\n"
+              . "<!-- wp:paragraph {\"className\":\"s-pencil-hero__lead\"} -->\n"
+              . '<p class="s-pencil-hero__lead">' . sec_esc( $intro_text ) . "</p>\n<!-- /wp:paragraph -->\n\n"
+              . sec_buttons( sec_button( $cta_text ) . sec_button( 'Explore Services', '#content', true ) );
+
+    return "<!-- wp:media-text {\"mediaId\":{$img['id']},\"mediaLink\":\"#\",\"mediaType\":\"image\",\"mediaWidth\":50,\"align\":\"full\",\"className\":\"s-pencil-hero s-pencil-hero--split-industrial\"} -->\n"
+         . '<div class="wp-block-media-text alignfull s-pencil-hero s-pencil-hero--split-industrial" style="grid-template-columns:50% auto">'
+         . '<figure class="wp-block-media-text__media"><img src="' . esc_url( $img['url'] ) . '" alt="' . esc_attr( $img['alt'] ) . '" class="wp-image-' . $img['id'] . '"/>' . sec_img_badge( $img ) . '</figure>'
+         . "<div class=\"wp-block-media-text__content\">\n{$text_col}\n</div></div>\n<!-- /wp:media-text -->";
+}
+
 function sec_hero_cover( $img, $headline, $subline, $cta_text ) {
     if ( ! $img ) { return sec_hero_text( $headline, $subline, $cta_text ); }
-    $inner = "<!-- wp:paragraph {\"align\":\"center\",\"className\":\"s-lead\",\"textColor\":\"base\",\"fontSize\":\"medium\"} -->\n<p class=\"has-text-align-center s-lead has-base-color has-text-color has-medium-font-size\">" . sec_esc( $subline ) . "</p>\n<!-- /wp:paragraph -->\n\n"
-           . "<!-- wp:heading {\"textAlign\":\"center\",\"level\":2,\"textColor\":\"base\",\"className\":\"s-hero-cover\"} -->\n<h2 class=\"wp-element-heading has-text-align-center has-base-color has-text-color s-hero-cover\">" . sec_esc( $headline ) . "</h2>\n<!-- /wp:heading -->\n\n"
+    $inner = "<!-- wp:heading {\"textAlign\":\"center\",\"level\":2,\"textColor\":\"base\",\"className\":\"s-hero-cover__title\"} -->\n<h2 class=\"wp-element-heading has-text-align-center has-base-color has-text-color s-hero-cover__title\">" . sec_esc( $headline ) . "</h2>\n<!-- /wp:heading -->\n\n"
+           . "<!-- wp:paragraph {\"align\":\"center\",\"className\":\"s-lead\",\"textColor\":\"base\",\"fontSize\":\"medium\"} -->\n<p class=\"has-text-align-center s-lead has-base-color has-text-color has-medium-font-size\">" . sec_esc( $subline ) . "</p>\n<!-- /wp:paragraph -->\n\n"
            . sec_buttons( sec_button( $cta_text ) . sec_button( 'Learn More', '#content', true ) );
-    return "<!-- wp:cover {\"url\":\"" . esc_url( $img['url'] ) . "\",\"id\":{$img['id']},\"dimRatio\":70,\"overlayColor\":\"contrast\",\"isUserOverlayColor\":true,\"minHeight\":85,\"minHeightUnit\":\"vh\",\"align\":\"full\",\"className\":\"s-hero-cover\",\"style\":{\"spacing\":{\"padding\":{\"top\":\"8rem\",\"bottom\":\"8rem\",\"left\":\"2rem\",\"right\":\"2rem\"}}},\"layout\":{\"type\":\"constrained\"}} -->\n"
-         . "<div class=\"wp-block-cover alignfull s-hero-cover\" style=\"min-height:85vh;padding-top:8rem;padding-right:2rem;padding-bottom:8rem;padding-left:2rem\"><span aria-hidden=\"true\" class=\"wp-block-cover__background has-contrast-background-color has-background-dim-70 has-background-dim\"></span>"
+    return "<!-- wp:cover {\"url\":\"" . esc_url( $img['url'] ) . "\",\"id\":{$img['id']},\"dimRatio\":65,\"overlayColor\":\"contrast\",\"isUserOverlayColor\":true,\"align\":\"full\",\"className\":\"s-hero-cover\",\"style\":{\"spacing\":{\"padding\":{\"top\":\"3rem\",\"bottom\":\"3rem\",\"left\":\"2rem\",\"right\":\"2rem\"}}},\"layout\":{\"type\":\"constrained\"}} -->\n"
+         . "<div class=\"wp-block-cover alignfull s-hero-cover\" style=\"padding-top:3rem;padding-right:2rem;padding-bottom:3rem;padding-left:2rem\"><span aria-hidden=\"true\" class=\"wp-block-cover__background has-contrast-background-color has-background-dim-70 has-background-dim\"></span>"
          . "<img class=\"wp-block-cover__image-background wp-image-{$img['id']}\" alt=\"" . esc_attr( $img['alt'] ) . "\" src=\"" . esc_url( $img['url'] ) . "\"/>"
          . "<div class=\"wp-block-cover__inner-container\">\n{$inner}\n</div></div>\n<!-- /wp:cover -->";
 }
@@ -117,9 +148,9 @@ function sec_hero_cover( $img, $headline, $subline, $cta_text ) {
 function sec_hero_split( $img, $headline, $intro_text, $cta_text ) {
     $text_col = sec_h( $headline, 2, 's-hero-split__text' ) . "\n\n" . sec_p( $intro_text ) . "\n\n" . sec_buttons( sec_button( $cta_text ) );
     if ( ! $img ) { return sec_band( $text_col, 'cream' ); }
-    return "<!-- wp:media-text {\"mediaId\":{$img['id']},\"mediaLink\":\"#\",\"mediaType\":\"image\",\"mediaWidth\":50,\"mediaPosition\":\"right\",\"align\":\"full\",\"style\":{\"elements\":{\"link\":{\"color\":{\"text\":\"var:preset|color|contrast\"}}}}} -->\n"
-         . "<div class=\"wp-block-media-text alignfull has-media-on-the-right\" style=\"grid-template-columns:auto 50%\"><div class=\"wp-block-media-text__content\">\n{$text_col}\n</div>"
-         . "<figure class=\"wp-block-media-text__media\"><img src=\"" . esc_url( $img['url'] ) . "\" alt=\"" . esc_attr( $img['alt'] ) . "\" class=\"wp-image-{$img['id']}\" style=\"object-fit:cover;height:100%\"/></figure></div>\n<!-- /wp:media-text -->";
+    return "<!-- wp:media-text {\"mediaId\":{$img['id']},\"mediaLink\":\"#\",\"mediaType\":\"image\",\"mediaWidth\":50,\"mediaPosition\":\"right\",\"align\":\"full\",\"className\":\"s-hero-split\",\"style\":{\"elements\":{\"link\":{\"color\":{\"text\":\"var:preset|color|contrast\"}}}}} -->\n"
+         . "<div class=\"wp-block-media-text alignfull has-media-on-the-right s-hero-split\" style=\"grid-template-columns:auto 50%\"><div class=\"wp-block-media-text__content\">\n{$text_col}\n</div>"
+         . "<figure class=\"wp-block-media-text__media\"><img src=\"" . esc_url( $img['url'] ) . "\" alt=\"" . esc_attr( $img['alt'] ) . "\" class=\"wp-image-{$img['id']}\" style=\"object-fit:cover;height:100%\"/>" . sec_img_badge( $img ) . "</figure></div>\n<!-- /wp:media-text -->";
 }
 
 function sec_hero_text( $headline, $subline, $cta_text ) {
@@ -154,7 +185,7 @@ function sec_content_media_left( $heading, $paras, $img, $list = null ) {
     if ( $list ) { $text .= "\n\n" . sec_list( $list ); }
     if ( ! $img ) { return sec_wrap( $text ); }
     return sec_wrap( "<!-- wp:media-text {\"mediaId\":{$img['id']},\"mediaLink\":\"#\",\"mediaType\":\"image\",\"mediaWidth\":50} -->\n"
-         . "<div class=\"wp-block-media-text\" style=\"grid-template-columns:50% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"" . esc_url( $img['url'] ) . "\" alt=\"" . esc_attr( $img['alt'] ) . "\" class=\"wp-image-{$img['id']}\"/></figure>"
+         . "<div class=\"wp-block-media-text\" style=\"grid-template-columns:50% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"" . esc_url( $img['url'] ) . "\" alt=\"" . esc_attr( $img['alt'] ) . "\" class=\"wp-image-{$img['id']}\"/>" . sec_img_badge( $img ) . "</figure>"
          . "<div class=\"wp-block-media-text__content\">\n{$text}\n</div></div>\n<!-- /wp:media-text -->" );
 }
 
@@ -164,7 +195,7 @@ function sec_content_media_right( $heading, $paras, $img, $list = null ) {
     if ( ! $img ) { return sec_wrap( $text ); }
     return sec_wrap( "<!-- wp:media-text {\"mediaId\":{$img['id']},\"mediaLink\":\"#\",\"mediaType\":\"image\",\"mediaWidth\":50,\"mediaPosition\":\"right\"} -->\n"
          . "<div class=\"wp-block-media-text has-media-on-the-right\" style=\"grid-template-columns:auto 50%\"><div class=\"wp-block-media-text__content\">\n{$text}\n</div>"
-         . "<figure class=\"wp-block-media-text__media\"><img src=\"" . esc_url( $img['url'] ) . "\" alt=\"" . esc_attr( $img['alt'] ) . "\" class=\"wp-image-{$img['id']}\"/></figure></div>\n<!-- /wp:media-text -->" );
+         . "<figure class=\"wp-block-media-text__media\"><img src=\"" . esc_url( $img['url'] ) . "\" alt=\"" . esc_attr( $img['alt'] ) . "\" class=\"wp-image-{$img['id']}\"/>" . sec_img_badge( $img ) . "</figure></div>\n<!-- /wp:media-text -->" );
 }
 
 function sec_content_wide_img( $heading, $paras, $img ) {
@@ -229,15 +260,25 @@ function sec_stats( $items ) {
 // CARD SECTIONS
 // ============================================================================
 
-function sec_cards( $heading, $cards, $cols = 3, $variant = '' ) {
+function sec_cards( $heading, $cards, $cols = 3, $variant = '', $img_pool = null, &$img_counter = null ) {
     $grid_class = $cols === 2 ? 's-cards-2' : 's-cards-3';
     $card_class = 's-card';
     if ( $variant === 'accent' ) { $card_class .= ' s-card--accent'; }
     if ( $variant === 'glass' ) { $card_class .= ' s-card--glass'; }
+    if ( $variant === 'photo' ) { $card_class .= ' s-card--photo'; }
 
     $cols_html = '';
     foreach ( $cards as $card ) {
         $inner = '';
+        // Try to add a card image
+        $card_img = null;
+        if ( ! empty( $card['image_topic'] ) && $img_pool && $img_counter !== null ) {
+            $card_img = pick_img( $card['image_topic'], $img_counter, $img_pool );
+        }
+        if ( $card_img ) {
+            $inner .= "<!-- wp:image {\"id\":{$card_img['id']},\"sizeSlug\":\"medium\",\"linkDestination\":\"none\",\"className\":\"s-card__img\"} -->\n"
+                     . "<figure class=\"wp-block-image size-medium s-card__img\"><img src=\"" . esc_url( $card_img['url'] ) . "\" alt=\"" . esc_attr( $card_img['alt'] ) . "\" class=\"wp-image-{$card_img['id']}\"/>" . sec_img_badge( $card_img ) . "</figure>\n<!-- /wp:image -->\n";
+        }
         if ( ! empty( $card['title'] ) ) { $inner .= sec_h( $card['title'], 3 ); }
         if ( ! empty( $card['text'] ) ) { $inner .= "\n\n" . sec_p( $card['text'] ); }
         if ( ! empty( $card['list'] ) ) { $inner .= "\n\n" . sec_list( $card['list'] ); }
@@ -248,18 +289,45 @@ function sec_cards( $heading, $cards, $cols = 3, $variant = '' ) {
     return sec_wrap( $inner );
 }
 
-// Feature row — icon-centric cards (premium pattern)
-function sec_feature_row( $heading, $features ) {
+// Feature row — photo-top service cards (Pencil Split Industrial style)
+function sec_feature_row( $heading, $features, $img_pool = null, &$img_counter = null ) {
+    $topic_map = array( 'repair'=>'technician', 'install'=>'technician', 'maintenance'=>'technician',
+        'heating'=>'furnace', 'furnace'=>'furnace', 'boiler'=>'furnace', 'cooling'=>'condenser',
+        'air'=>'ductwork', 'duct'=>'ductwork', 'ventilation'=>'ductwork', 'insulation'=>'ductwork',
+        'thermostat'=>'thermostat', 'filter'=>'filter', 'heat pump'=>'heatpump',
+        'humidity'=>'minisplit', 'zone'=>'minisplit', 'diagnostic'=>'technician',
+        'emergency'=>'technician', 'assessment'=>'technician', 'inspection'=>'technician' );
+
     $cols_html = '';
     foreach ( $features as $f ) {
-        $inner = "<!-- wp:group {\"className\":\"s-card__icon\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group s-card__icon\">●</div>\n<!-- /wp:group -->\n"
-               . sec_h( $f['title'] ?? $f, 3 ) . "\n\n"
-               . ( ! empty( $f['text'] ) ? sec_p( $f['text'] ) : '' );
-        $cols_html .= "<!-- wp:column {\"className\":\"s-card\"} -->\n<div class=\"wp-block-column s-card\">{$inner}</div>\n<!-- /wp:column -->\n";
+        $title = is_string( $f ) ? $f : ( $f['title'] ?? '' );
+        $title_lower = strtolower( $title );
+
+        // Get photo for card top
+        $card_img = null;
+        if ( $img_pool && $img_counter !== null ) {
+            $img_topic = 'technician';
+            foreach ( $topic_map as $kw => $tp ) {
+                if ( strpos( $title_lower, $kw ) !== false ) { $img_topic = $tp; break; }
+            }
+            $card_img = pick_img( $img_topic, $img_counter, $img_pool );
+        }
+
+        $inner = '';
+        if ( $card_img ) {
+            // Photo on top (180px, cover)
+            $inner .= "<!-- wp:image {\"id\":{$card_img['id']},\"sizeSlug\":\"medium\",\"linkDestination\":\"none\",\"className\":\"s-feature-card__img\"} -->\n"
+                    . "<figure class=\"wp-block-image size-medium s-feature-card__img\"><img src=\"" . esc_url( $card_img['url'] ) . "\" alt=\"" . esc_attr( $card_img['alt'] ) . "\" class=\"wp-image-{$card_img['id']}\"/>" . sec_img_badge( $card_img ) . "</figure>\n<!-- /wp:image -->\n";
+        }
+        // Text body below
+        $inner .= sec_h( $title, 3 ) . "\n";
+        if ( ! empty( $f['text'] ) ) { $inner .= sec_p( $f['text'] ); }
+
+        $cols_html .= "<!-- wp:column {\"className\":\"s-card s-feature-card\"} -->\n<div class=\"wp-block-column s-card s-feature-card\">{$inner}</div>\n<!-- /wp:column -->\n";
     }
-    $inner = sec_h( $heading, 2, 'has-text-align-center' ) . "\n\n"
+    $inner = sec_h( $heading, 2 ) . "\n\n"
            . "<!-- wp:columns {\"align\":\"wide\",\"className\":\"s-feature-row\"} -->\n<div class=\"wp-block-columns alignwide s-feature-row\">{$cols_html}</div>\n<!-- /wp:columns -->";
-    return sec_wrap( $inner );
+    return sec_band( $inner, 'sand' );
 }
 
 // ============================================================================
@@ -281,7 +349,7 @@ function sec_table( $heading, $headers, $rows, $variant = '' ) {
     $tbody .= '</tbody>';
     $inner = sec_h( $heading, 2, 'has-text-align-center' ) . "\n\n"
            . "<!-- wp:group {\"className\":\"{$cls}\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group {$cls}\">"
-           . "<!-- wp:table {\"hasFixedLayout\":true} -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\">{$thead}{$tbody}</table></figure>\n<!-- /wp:table -->"
+           . "<!-- wp:table -->\n<figure class=\"wp-block-table\"><table>{$thead}{$tbody}</table></figure>\n<!-- /wp:table -->"
            . "</div>\n<!-- /wp:group -->";
     return sec_wrap( $inner );
 }
@@ -410,4 +478,62 @@ function sec_sep( $variant = '' ) {
     $cls = 's-sep';
     if ( $variant ) { $cls .= " s-sep--{$variant}"; }
     return "<!-- wp:separator {\"className\":\"{$cls}\"} -->\n<hr class=\"wp-block-separator has-alpha-channel-opacity {$cls}\"/>\n<!-- /wp:separator -->";
+}
+
+// ============================================================================
+// TRUST BAR — credentials strip with checkmarks
+// ============================================================================
+
+function sec_trust_bar( $items ) {
+    $cells = '';
+    foreach ( $items as $item ) {
+        $text = '';
+        if ( ! empty( $item['number'] ) ) { $text .= sec_esc( $item['number'] ) . ' '; }
+        if ( ! empty( $item['label'] ) ) { $text .= sec_esc( $item['label'] ); }
+        $cells .= "<div class=\"s-trust__item\">{$text}</div>";
+    }
+    $inner = "<!-- wp:html -->\n<div class=\"s-trust-bar\">{$cells}</div>\n<!-- /wp:html -->";
+    return $inner;
+}
+
+// ============================================================================
+// PHOTO GALLERY — masonry-style image grid
+// ============================================================================
+
+function sec_photo_gallery( $heading, $topics, $pool, &$img_counter ) {
+    $imgs = array();
+    foreach ( $topics as $t ) {
+        $img = pick_img( $t, $img_counter, $pool );
+        if ( $img ) { $imgs[] = $img; }
+    }
+    if ( empty( $imgs ) ) { return ''; }
+    $gallery = '';
+    foreach ( $imgs as $img ) {
+        $gallery .= "<!-- wp:image {\"id\":{$img['id']},\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n"
+                  . "<figure class=\"wp-block-image size-large\"><img src=\"" . esc_url( $img['url'] ) . "\" alt=\"" . esc_attr( $img['alt'] ) . "\" class=\"wp-image-{$img['id']}\"/>" . sec_img_badge( $img ) . "</figure>\n<!-- /wp:image -->\n";
+    }
+    $inner = sec_h( $heading, 2, 'has-text-align-center' ) . "\n\n"
+           . "<!-- wp:gallery {\"columns\":" . min( count( $imgs ), 3 ) . ",\"linkTo\":\"none\",\"align\":\"wide\",\"className\":\"s-gallery\"} -->\n"
+           . "<figure class=\"wp-block-gallery alignwide has-nested-images columns-" . min( count( $imgs ), 3 ) . " is-cropped s-gallery\">\n{$gallery}</figure>\n<!-- /wp:gallery -->";
+    return sec_wrap( $inner );
+}
+
+// ============================================================================
+// SPLIT FEATURE — large photo left, features right (premium layout)
+// ============================================================================
+
+function sec_split_feature( $heading, $features, $img ) {
+    if ( ! $img ) { return sec_feature_row( $heading, $features ); }
+    $list_items = '';
+    foreach ( $features as $f ) {
+        $title = $f['title'] ?? ( is_string( $f ) ? $f : '' );
+        $text = $f['text'] ?? '';
+        $list_items .= "<!-- wp:list-item -->\n<li><strong>" . sec_esc( $title ) . "</strong>" . ( $text ? " — " . sec_esc( $text ) : '' ) . "</li>\n<!-- /wp:list-item -->\n";
+    }
+    $text_col = sec_h( $heading, 2 ) . "\n\n"
+              . "<!-- wp:list {\"className\":\"s-icon-list\"} -->\n<ul class=\"wp-block-list s-icon-list\">{$list_items}</ul>\n<!-- /wp:list -->\n\n"
+              . sec_buttons( sec_button( 'Get Started' ) );
+    return sec_wrap( "<!-- wp:media-text {\"mediaId\":{$img['id']},\"mediaLink\":\"#\",\"mediaType\":\"image\",\"mediaWidth\":55,\"align\":\"wide\",\"className\":\"s-split-feature\"} -->\n"
+         . "<div class=\"wp-block-media-text alignwide s-split-feature\" style=\"grid-template-columns:55% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"" . esc_url( $img['url'] ) . "\" alt=\"" . esc_attr( $img['alt'] ) . "\" class=\"wp-image-{$img['id']}\" style=\"object-fit:cover;height:100%\"/>" . sec_img_badge( $img ) . "</figure>"
+         . "<div class=\"wp-block-media-text__content\">\n{$text_col}\n</div></div>\n<!-- /wp:media-text -->" );
 }

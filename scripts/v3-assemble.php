@@ -12,9 +12,20 @@ $img_use_counter = array();
 function v3_esc( $v ) { return esc_html( trim( (string) $v ) ); }
 
 function v3_pick_image( $topic, &$counter, $pool ) {
-    $fallbacks = array( 'ductwork' => 'basement', 'condenser' => 'minisplit',
-                        'thermostat' => 'furnace', 'filter' => 'technician' );
+    $requested = $topic;
+    $fallbacks = array(
+        'basement' => 'ductwork',
+        'hero_winter' => 'winter',
+        'hero_street' => 'suburban',
+        'condenser' => 'minisplit',
+        'thermostat' => 'furnace',
+        'filter' => 'technician',
+    );
     if ( empty( $pool[ $topic ] ) && isset( $fallbacks[ $topic ] ) ) { $topic = $fallbacks[ $topic ]; }
+    if ( empty( $pool[ $topic ] ) && ! empty( $pool['suburban'] ) ) {
+        error_log( "Image topic '{$requested}' missing; using suburban fallback" );
+        $topic = 'suburban';
+    }
     if ( empty( $pool[ $topic ] ) ) { return null; }
     $i = $counter[ $topic ] ?? 0;
     $counter[ $topic ] = $i + 1;
